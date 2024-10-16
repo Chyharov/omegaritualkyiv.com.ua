@@ -1,0 +1,24 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px solid tomato;
+  width: 100%;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}

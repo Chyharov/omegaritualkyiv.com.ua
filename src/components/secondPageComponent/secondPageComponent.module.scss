@@ -1,0 +1,23 @@
+@import '../../sass/utils/mixin';
+
+.secondPageComponent__container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondPageComponentTitle {
+    margin-bottom: 40px;
+
+    color: var(--secondTextColor);
+    
+    @include mq(tab) {
+        color: var(--disableColor);
+    }
+    
+    @include mq(desk) {
+        color: var(--accentColor);
+    }
+}

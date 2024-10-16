@@ -1,0 +1,14 @@
+@import '../../sass/utils/mixin';
+
+.header__title {
+
+  color: var(--secondTextColor);
+  
+  @include mq(tab) {
+    color: var(--disableColor);
+  }
+  
+  @include mq(desk) {
+    color: var(--accentColor);
+  }
+}

@@ -1,0 +1,18 @@
+@import './sass/utils/_common.scss';
+@import './sass/utils/_fonts.scss';
+@import './sass/utils/_mixin.scss';
+@import './sass/utils/_variables.scss';
+@import './sass/utils/_container.scss';
+@import './sass/utils/_textVariables.scss';
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
