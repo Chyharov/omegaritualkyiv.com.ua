@@ -1,0 +1,17 @@
+@import '../../sass/utils/mixin';
+
+.sectionHero {
+    @include mq(desk) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: url(../../images/HeroImages.jpeg);
+    }
+}
+
+.hero__container {
+    @include mq(desk) {
+        
+        background-color: rgba(0, 0, 0, .5);
+        height: 360px;
+    }
+}
