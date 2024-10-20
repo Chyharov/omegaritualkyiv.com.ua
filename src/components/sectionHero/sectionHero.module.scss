@@ -19,11 +19,76 @@
 .hero__address {
     @include mq(desk) {
         height: 218px;
+        padding-left: 15px;
+        border-left: 1px solid #fff;
     }
 }
 
-.hero__title {
+.hero__titleContainer {
     @include mq(desk) {
         width: 675px;
+    }
+}
+
+.title__hero {
+    @include mq(desk) {
+        font-family: Lato;
+        font-size: 27px;
+        line-height: 1.25;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.title__heroSpan {
+    color: #d4b669;
+}
+
+.btnConsultation {
+    @include mq(desk) {
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #446084;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 400;
+    }
+}
+
+.addressList {
+    @include mq(desk) {
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.addressList__item {
+    @include mq(desk) {
+        font-family: Lato;
+        font-style: normal;
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+}
+
+.heroPhonesList {
+    @include mq(desk) {
+        margin-left: 15px;
+    }
+}
+
+.heroPhonesList__item {
+    @include mq(desk) {
+        font-family: Lato;
+        font-style: normal;
+        font-size: 23px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.6;
     }
 }
