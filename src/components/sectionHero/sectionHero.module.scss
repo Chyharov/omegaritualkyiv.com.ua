@@ -1,8 +1,10 @@
 @import '../../sass/utils/mixin';
 
-.sectionHero {
+.hero__background {
     @include mq(desk) {
         background-image: url(../../images/HeroImages.jpeg);
+        width: 100%;
+        height: 360px;
     }
 }
 
