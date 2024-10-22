@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/omegaritualkyiv.com.ua/static/css/main.f43fb9a6.css",
-    "main.js": "/omegaritualkyiv.com.ua/static/js/main.d1989905.js",
-    "static/css/294.8103842e.chunk.css": "/omegaritualkyiv.com.ua/static/css/294.8103842e.chunk.css",
-    "static/js/294.a4c8978d.chunk.js": "/omegaritualkyiv.com.ua/static/js/294.a4c8978d.chunk.js",
+    "main.js": "/omegaritualkyiv.com.ua/static/js/main.229363b4.js",
+    "static/css/294.2ba15e29.chunk.css": "/omegaritualkyiv.com.ua/static/css/294.2ba15e29.chunk.css",
+    "static/js/294.1494e047.chunk.js": "/omegaritualkyiv.com.ua/static/js/294.1494e047.chunk.js",
     "static/css/314.be4e2f35.chunk.css": "/omegaritualkyiv.com.ua/static/css/314.be4e2f35.chunk.css",
     "static/js/314.53d5b9ed.chunk.js": "/omegaritualkyiv.com.ua/static/js/314.53d5b9ed.chunk.js",
     "static/media/Poppins-Regular.ttf": "/omegaritualkyiv.com.ua/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -13,14 +13,14 @@
     "static/media/Alata-Regular.ttf": "/omegaritualkyiv.com.ua/static/media/Alata-Regular.a90e0970a7aca7d36f95.ttf",
     "index.html": "/omegaritualkyiv.com.ua/index.html",
     "main.f43fb9a6.css.map": "/omegaritualkyiv.com.ua/static/css/main.f43fb9a6.css.map",
-    "main.d1989905.js.map": "/omegaritualkyiv.com.ua/static/js/main.d1989905.js.map",
-    "294.8103842e.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/294.8103842e.chunk.css.map",
-    "294.a4c8978d.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/294.a4c8978d.chunk.js.map",
+    "main.229363b4.js.map": "/omegaritualkyiv.com.ua/static/js/main.229363b4.js.map",
+    "294.2ba15e29.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/294.2ba15e29.chunk.css.map",
+    "294.1494e047.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/294.1494e047.chunk.js.map",
     "314.be4e2f35.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/314.be4e2f35.chunk.css.map",
     "314.53d5b9ed.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/314.53d5b9ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f43fb9a6.css",
-    "static/js/main.d1989905.js"
+    "static/js/main.229363b4.js"
   ]
 }
