@@ -3,7 +3,10 @@ import s from './sectionHero.module.scss';
 const sectionHero = () => {
   return (
     <section className={s.sectionHero}>
-      <div className={'container ' + s.hero__container}>
+        <div className={s.hero__container}>
+      <div className='container'>
+
+        
         <div className={s.hero__background}>
           <div className={s.hero__titleContainer}>
             <h1 className={s.title__hero}>
@@ -54,7 +57,8 @@ const sectionHero = () => {
             </address>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     </section>
   );
 };
