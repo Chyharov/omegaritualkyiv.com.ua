@@ -2,7 +2,7 @@
 
 .sectionHero {
     @include mq(desk) {
-        background-image: url(../../images/HeroImages.jpeg);
+        background-image: url(../../images/hero/HeroImages.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
     }
