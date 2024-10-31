@@ -34,10 +34,27 @@
     @include mq(desk) {
         width: 240px;
         height: 180px;
-        padding: 10px;
-        background-color: aqua;
+        background: linear-gradient(345deg, rgba(255, 255, 255, 1) 13%, rgba(66, 60, 60, 1) 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+.serviceList__itemDesctioption {
+    @include mq(desk) {
+        width: 160px;
+        font-family: Lato;
+        font-size: 27px;
+        text-align: left;
+        padding: 30px 20px;
+    }
+}
+
+.serviceList__itemLink {
+    @include mq(desk) {
+        padding: 10px;
+        background-color: #446084;
+        color: #fff;
     }
 }
