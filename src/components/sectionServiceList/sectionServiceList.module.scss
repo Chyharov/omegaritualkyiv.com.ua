@@ -20,7 +20,7 @@
 .serviceList {
     @include mq(desk) {
         display: grid;
-        gap: 1rem;
+        gap: 40px;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         justify-items: center;
@@ -32,9 +32,10 @@
 
 .serviceList__item {
     @include mq(desk) {
+        position: relative;
         width: 240px;
         height: 180px;
-        background: linear-gradient(345deg, rgba(255, 255, 255, 1) 13%, rgba(66, 60, 60, 1) 100%);
+        background: linear-gradient(292deg, white 20%, #8b8989 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -57,4 +58,10 @@
         background-color: #446084;
         color: #fff;
     }
+}
+
+.serviceList__itemImg {
+    position: absolute;
+    width: 240px;
+    height: 180px;
 }

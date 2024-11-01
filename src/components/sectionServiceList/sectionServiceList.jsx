@@ -95,7 +95,8 @@ const sectionServiceList = () => {
 
           <ul className={s.serviceList}>
         {serviceList.map(photo => (
-            <li key={photo.id} className={s.serviceList__item} style={{ backgroundImage: `url(${photo.src})` }}>
+          <li key={photo.id} className={s.serviceList__item} >
+            <img src={photo.src} alt={photo.alt} className={s.serviceList__itemImg}/>
               <p className={s.serviceList__itemDesctioption}>
                 {photo.title}
               </p>

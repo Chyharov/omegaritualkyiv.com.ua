@@ -10,11 +10,12 @@
 
 .hero__background {
     @include mq(desk) {
-        width: 100%;
+        margin: 0 auto;
+        width: 1080px;
         height: 360px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
 
