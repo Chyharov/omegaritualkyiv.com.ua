@@ -1,0 +1,9 @@
+@import '../../sass/utils/mixin';
+
+.sectionRitualGoods {
+
+    @include mq(desk) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
