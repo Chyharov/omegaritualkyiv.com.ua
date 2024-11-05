@@ -4,7 +4,7 @@
 
     @include mq(desk) {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
 }
 
@@ -47,5 +47,15 @@
 .ritualGoodsList__itemImg {
     @include mq(desk) {
         margin-bottom: 25px;
+    }
+}
+
+.ritualGoodsList__itemDesctioption {
+    @include mq(desk) {
+        font-family: Lato;
+        font-size: 28px; 
+        font-weight: 400;
+        color: rgb(119, 119, 119);
+
     }
 }
