@@ -67,6 +67,23 @@
     }
 }
 
+.btnConsultation {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        @include mq(desk) {
+            background-color: #334862;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+        &:focus {
+            @include mq(desk) {
+                background-color: #334862;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+}
+
 .addressList {
     @include mq(desk) {
         margin-left: 15px;
