@@ -39,6 +39,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        &:hover,
+        &:focus {
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(292deg, white 20%, #494747 100%);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
     }
 }
 
@@ -60,13 +67,15 @@
     }
 }
 
-.serviceList__itemLink:hover,
-.serviceList__itemLink:focus {
+.serviceList__item {
     @include mq(desk) {
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #334862;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    &:hover .serviceList__itemLink,
+    &:focus .serviceList__itemLink {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: #000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
+}
 }
 
 .serviceList__itemImg {
