@@ -33,7 +33,17 @@
         height: 310px;
         background-color: rgb(234, 234, 234);
         padding: 12px;
+
+        &:hover .ritualGoodsList__itemDesctioption,
+        &:focus .ritualGoodsList__itemDesctioption {
+            color: rgb(197, 170, 103);
+        }
     }
+}
+
+.ritualGoodsList__item:hover {
+    scale: 1.03;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .ritualGoodsList__itemDesctioption {
