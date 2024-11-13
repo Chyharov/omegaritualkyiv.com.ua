@@ -4,6 +4,7 @@ import ComponentForMainPage from 'components/componentForMainPage/componentForMa
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
 import SectionRitualGoods from 'components/sectionRitualGoods/sectionRitualGoods'
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
+import SectionFeneralPrice from 'components/sectionFeneralPrice/sectionFeneralPrice';
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
         <SectionServiceList />
         <SectionRitualGoods />
         <SectionNeedHelp />
+        <SectionFeneralPrice />
         <ComponentForMainPage />
       </main>
     </>
