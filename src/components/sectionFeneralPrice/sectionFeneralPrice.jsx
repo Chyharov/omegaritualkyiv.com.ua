@@ -9,9 +9,7 @@ const sectionFeneralPrice = () => {
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
               <h3 className={s.feneralPriceList__itemTitle}>Економ</h3>
-              <div>
                 <p className={s.feneralPriceList__itemPrice}>11 500 ГРН</p>
-              </div>
             </div>
             <ul className={s.feneralPriceList__itemList}>
               <li className={s.feneralPriceList__itemListItem}>Труну дерев'яну (оббиту тканиною)</li>
@@ -26,43 +24,39 @@ const sectionFeneralPrice = () => {
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
               <h3 className={s.feneralPriceList__itemTitle}>Стандарт</h3>
-              <div>
                 <p className={s.feneralPriceList__itemPrice}>УТОЧНЮЙТЕ</p>
-              </div>
             </div>
             <ul>
-              <li>
+             <li className={s.feneralPriceList__itemListItem}>
                 Труна дерев'яна-комбінована (оббита драпірованим атласом з
                 дерев'яною лакованою накладкою)
               </li>
-              <li>Похоронний набір</li>
-              <li>Покривало атласне</li>
-              <li>Вінок із штучних квітів (4шт)</li>
-              <li>Хрест на могилу з табличкою</li>
-              <li>Автокатафалк (15-17 посадкових місць)</li>
-              <li>Похоронна бригада (4 особи)</li>
-              <li>Ритуальні рушники (2шт)</li>
+             <li className={s.feneralPriceList__itemListItem}>Похоронний набір</li>
+             <li className={s.feneralPriceList__itemListItem}>Покривало атласне</li>
+             <li className={s.feneralPriceList__itemListItem}>Вінок із штучних квітів (4шт)</li>
+             <li className={s.feneralPriceList__itemListItem}>Хрест на могилу з табличкою</li>
+             <li className={s.feneralPriceList__itemListItem}>Автокатафалк (15-17 посадкових місць)</li>
+             <li className={s.feneralPriceList__itemListItem}>Похоронна бригада (4 особи)</li>
+             <li className={s.feneralPriceList__itemListItem}>Ритуальні рушники (2шт)</li>
             </ul>
           </li>
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
               <h3 className={s.feneralPriceList__itemTitle}>VIP</h3>
-              <div>
                 <p className={s.feneralPriceList__itemPrice}>УТОЧНЮЙТЕ</p>
-              </div>
             </div>
             <ul>
-              <li>Труна дерев'яна лакована</li>
-              <li>Похоронний набір</li>
-              <li>Покривало атласне</li>
-              <li>Ритуальні рушники (2шт)</li>
-              <li>Вінок із штучних квітів 180см (4шт)</li>
-              <li>Хрест на могилу з табличкою</li>
-              <li>Автокатафалк VIP класу (15-17 посад. місць)</li>
-              <li>Священик</li>
-              <li>Розпорядник похорону</li>
-              <li>Похоронна бригада (4 особи)</li>
-              <li>Музичний супровід</li>
+              <li className={s.feneralPriceList__itemListItem}>Труна дерев'яна лакована</li>
+              <li className={s.feneralPriceList__itemListItem}>Похоронний набір</li>
+              <li className={s.feneralPriceList__itemListItem}>Покривало атласне</li>
+              <li className={s.feneralPriceList__itemListItem}>Ритуальні рушники (2шт)</li>
+              <li className={s.feneralPriceList__itemListItem}>Вінок із штучних квітів 180см (4шт)</li>
+              <li className={s.feneralPriceList__itemListItem}>Хрест на могилу з табличкою</li>
+              <li className={s.feneralPriceList__itemListItem}>Автокатафалк VIP класу (15-17 посад. місць)</li>
+              <li className={s.feneralPriceList__itemListItem}>Священик</li>
+              <li className={s.feneralPriceList__itemListItem}>Розпорядник похорону</li>
+              <li className={s.feneralPriceList__itemListItem}>Похоронна бригада (4 особи)</li>
+              <li className={s.feneralPriceList__itemListItem}>Музичний супровід</li>
             </ul>
           </li>
         </ul>

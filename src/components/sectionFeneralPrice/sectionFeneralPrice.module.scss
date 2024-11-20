@@ -92,6 +92,9 @@ ul li.feneralPriceList__itemListItem {
     padding: 3px 0 3px 25px;
     list-style-type: none;
     position: relative;
+    color: #777777;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
 }
 
 ul li.feneralPriceList__itemListItem:before {
@@ -100,6 +103,5 @@ ul li.feneralPriceList__itemListItem:before {
     color: #333;
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 5px;
 }
