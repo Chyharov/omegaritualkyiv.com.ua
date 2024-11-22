@@ -61,6 +61,7 @@ const sectionFeneralPrice = () => {
           </li>
         </ul>
       </div>
+      <h2>test for page</h2>
     </section>
   );
 };
