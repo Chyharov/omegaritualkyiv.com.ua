@@ -40,7 +40,7 @@ const sectionFeneralPrice = () => {
           </svg>
           <h2 className={s.funeralPriceTitle}>Вартість похорону</h2>
         </div>
-        <ul className={s.feneralPriceList} style={{marginBottom: '40px'}}>
+        <ul className={s.feneralPriceList} style={{ marginBottom: '40px' }}>
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
               <h3 className={s.feneralPriceList__itemTitle}>Економ</h3>
@@ -103,7 +103,12 @@ const sectionFeneralPrice = () => {
           </li>
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
-              <h3 className={s.feneralPriceList__itemTitle} style={{margin: '0 auto' }}>VIP</h3>
+              <h3
+                className={s.feneralPriceList__itemTitle}
+                style={{ margin: '0 auto' }}
+              >
+                VIP
+              </h3>
               <p className={s.feneralPriceList__itemPrice}>УТОЧНЮЙТЕ</p>
             </div>
             <ul>
@@ -261,9 +266,7 @@ const sectionFeneralPrice = () => {
               <li className={s.feneralPriceList__itemListItem}>
                 Автокатафалк (15-17 посадочних місць)
               </li>
-              <li className={s.feneralPriceList__itemListItem}>
-                Священик
-              </li>
+              <li className={s.feneralPriceList__itemListItem}>Священик</li>
               <li className={s.feneralPriceList__itemListItem}>
                 Розпорядник похорону
               </li>
@@ -284,15 +287,11 @@ const sectionFeneralPrice = () => {
               <li className={s.feneralPriceList__itemListItem}>
                 Похоронний набір
               </li>
-              <li className={s.feneralPriceList__itemListItem}>
-                Покривало
-              </li>
+              <li className={s.feneralPriceList__itemListItem}>Покривало</li>
               <li className={s.feneralPriceList__itemListItem}>
                 Автокатафалк (15-17 посадкових місць)
               </li>
-              <li className={s.feneralPriceList__itemListItem}>
-                Священик
-              </li>
+              <li className={s.feneralPriceList__itemListItem}>Священик</li>
               <li className={s.feneralPriceList__itemListItem}>
                 Розпорядник похорону
               </li>
@@ -303,7 +302,12 @@ const sectionFeneralPrice = () => {
           </li>
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
-              <h3 className={s.feneralPriceList__itemTitle} style={{margin: '0 auto' }}>VIP</h3>
+              <h3
+                className={s.feneralPriceList__itemTitle}
+                style={{ margin: '0 auto' }}
+              >
+                VIP
+              </h3>
               <p className={s.feneralPriceList__itemPrice}>УТОЧНЮЙТЕ</p>
             </div>
             <ul>
@@ -335,6 +339,9 @@ const sectionFeneralPrice = () => {
             </ul>
           </li>
         </ul>
+        <p>
+          <span>*</span>Для біженців, переселенців та військових діють знижки.
+        </p>
       </div>
     </section>
   );
