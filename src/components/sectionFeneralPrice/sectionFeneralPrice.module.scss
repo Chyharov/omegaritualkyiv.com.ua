@@ -42,6 +42,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 }
 
@@ -99,9 +100,30 @@ ul li.feneralPriceList__itemListItem {
 
 ul li.feneralPriceList__itemListItem:before {
     content: '✔';
-    font-size: 13px;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
     color: #333;
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 0;
+}
+
+.discontForRefugees {
+    @include mq(desk) {
+        font-family: Lato, sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1;
+        color: #777;
+        margin: 0 auto;
+        width: 1080px;
+    }
+}
+
+.redStar {
+    @include mq(desk) {
+        color: #d83131;
+    }
 }

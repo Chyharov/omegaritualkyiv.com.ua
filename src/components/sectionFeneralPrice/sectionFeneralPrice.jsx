@@ -339,8 +339,8 @@ const sectionFeneralPrice = () => {
             </ul>
           </li>
         </ul>
-        <p>
-          <span>*</span>Для біженців, переселенців та військових діють знижки.
+        <p className={s.discontForRefugees}>
+          <span className={s.redStar}>*</span>Для біженців, переселенців та військових діють знижки.
         </p>
       </div>
     </section>
