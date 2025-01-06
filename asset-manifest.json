@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/omegaritualkyiv.com.ua/static/css/main.f43fb9a6.css",
-    "main.js": "/omegaritualkyiv.com.ua/static/js/main.a1af4da0.js",
-    "static/css/435.f9a7d7cf.chunk.css": "/omegaritualkyiv.com.ua/static/css/435.f9a7d7cf.chunk.css",
-    "static/js/435.7102e322.chunk.js": "/omegaritualkyiv.com.ua/static/js/435.7102e322.chunk.js",
+    "main.js": "/omegaritualkyiv.com.ua/static/js/main.c1ed5dff.js",
+    "static/css/435.b3457827.chunk.css": "/omegaritualkyiv.com.ua/static/css/435.b3457827.chunk.css",
+    "static/js/435.d862d578.chunk.js": "/omegaritualkyiv.com.ua/static/js/435.d862d578.chunk.js",
     "static/css/314.be4e2f35.chunk.css": "/omegaritualkyiv.com.ua/static/css/314.be4e2f35.chunk.css",
     "static/js/314.941f7d67.chunk.js": "/omegaritualkyiv.com.ua/static/js/314.941f7d67.chunk.js",
     "static/js/29.eb09cc4b.chunk.js": "/omegaritualkyiv.com.ua/static/js/29.eb09cc4b.chunk.js",
@@ -22,15 +22,15 @@
     "static/media/03.png": "/omegaritualkyiv.com.ua/static/media/03.7e9999f82e3e359aadf5.png",
     "index.html": "/omegaritualkyiv.com.ua/index.html",
     "main.f43fb9a6.css.map": "/omegaritualkyiv.com.ua/static/css/main.f43fb9a6.css.map",
-    "main.a1af4da0.js.map": "/omegaritualkyiv.com.ua/static/js/main.a1af4da0.js.map",
-    "435.f9a7d7cf.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/435.f9a7d7cf.chunk.css.map",
-    "435.7102e322.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/435.7102e322.chunk.js.map",
+    "main.c1ed5dff.js.map": "/omegaritualkyiv.com.ua/static/js/main.c1ed5dff.js.map",
+    "435.b3457827.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/435.b3457827.chunk.css.map",
+    "435.d862d578.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/435.d862d578.chunk.js.map",
     "314.be4e2f35.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/314.be4e2f35.chunk.css.map",
     "314.941f7d67.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/314.941f7d67.chunk.js.map",
     "29.eb09cc4b.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/29.eb09cc4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f43fb9a6.css",
-    "static/js/main.a1af4da0.js"
+    "static/js/main.c1ed5dff.js"
   ]
 }
