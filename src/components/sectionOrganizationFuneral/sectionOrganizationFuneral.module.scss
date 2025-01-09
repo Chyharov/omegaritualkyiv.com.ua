@@ -2,9 +2,31 @@
 
 @import '../../sass/utils/mixin';
 
-.sectionFeneralPrice {
+.sectionOrganizationFuneral {
     @include mq(desk) {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+}
+
+.organizationFuneralDescription {
+    @include mq(desk) {
+        padding: 20px;
+    }
+}
+
+.organizationFuneralContainer {
+    @include mq(desk) {
+        width: 1080px;
+        display: flex;
+        margin: 0 auto;
+        background-color: rgba(212, 182, 105, 0.7);
+    }
+}
+
+.organizationFuneralImage {
+    @include mq(desk) {
+        width: 604px;
+        height: 400px;
     }
 }
