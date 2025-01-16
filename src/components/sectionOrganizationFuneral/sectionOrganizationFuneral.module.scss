@@ -63,8 +63,16 @@
         color: #666666;
         background-color: #FFFFFF;
         padding: 10px 20px;
-        border: none;
+        border: 1px solid #FFFFFF;
         border-radius: 20px;
-        transition: background-color 0.3s ease;
+    }
+}
+
+.buttonOrganizationFuneral {
+    &:hover,
+    &:focus {
+        background-color: #666666;
+        color: #FFFFFF;
+        transition: background-color 0.5s ease;
     }
 }
