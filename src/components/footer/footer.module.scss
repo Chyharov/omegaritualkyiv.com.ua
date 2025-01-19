@@ -1,1 +1,15 @@
 @import '../../sass/utils/mixin';
+
+.footer {
+    @include mq(desk) {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+}
+
+.footer__container {
+    @include mq(desk) {
+        width: 1080px;
+        margin: 0 auto;
+    }
+}
