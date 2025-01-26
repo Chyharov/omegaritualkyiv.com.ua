@@ -1,6 +1,10 @@
 import Location from 'images/footer/Location.svg';
 import Phone from 'images/footer/Phone.svg';
 import Clock from 'images/footer/Clock.svg';
+import TelegramIcon from 'images/footer/telegramIcon.svg';
+import WhatsAppIcon from 'images/footer/whatsappIcon.svg';
+import ViberIcon from 'images/footer/viberIcon.svg';
+import InstagramIcon from 'images/footer/instagramIcon.png';
 import s from './footer.module.scss';
 
 const footer = () => {
@@ -51,10 +55,22 @@ const footer = () => {
                   />
                   <ul className={s.footerAddressList}>
                     <li className={s.footerAddressList__item}>
-                      <p>Київ, вул. Івана Федорова, 33</p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA"
+                      >
+                        м.Київ, вул. Івана Федорова, 33
+                      </a>
                     </li>
                     <li className={s.footerAddressList__item}>
-                      <p>Київ, вул. Колоскова, 9</p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://maps.app.goo.gl/AwovKjfD7p53WbF56"
+                      >
+                        м.Київ, вул. Колоскова 9
+                      </a>
                     </li>
                   </ul>
                 </li>
@@ -82,21 +98,68 @@ const footer = () => {
                     src={Clock}
                     alt="Clock"
                   />
-                <ul className={s.footerContactDescription}>
-                  
+                  <ul className={s.footerContactDescription}>
                     <p className={s.footerContactList__item}>
                       Щоденно | Цілодобово
                     </p>
-                </ul>
-                  </li>
+                  </ul>
+                </li>
               </ul>
-              <ul>
-                <li>Telegram</li>
-                <li>WhatsApp</li>
-                <li>Viper</li>
-                <li>Instagram</li>
+              <ul className={s.footerSocialList}>
+                <li className={s.footerSocialList__item}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://t.me/omegaritual33"
+                  >
+                    <img
+                      className={s.footerSocialList__itemIcon}
+                      src={TelegramIcon}
+                      alt="TelegramIcon"
+                    />
+                  </a>
+                </li>
+                <li className={s.footerSocialList__item}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="whatsapp://send?phone=+380939040707"
+                  >
+                    <img
+                      className={s.footerSocialList__itemIcon}
+                      src={WhatsAppIcon}
+                      alt="WhatsAppIcon"
+                    />
+                  </a>
+                </li>
+                <li className={s.footerSocialList__item}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="viber://chat?number=+380939040707"
+                  >
+                    <img
+                      className={s.footerSocialList__itemIcon}
+                      src={ViberIcon}
+                      alt="ViberIcon"
+                    />
+                  </a>
+                </li>
+                <li className={s.footerSocialList__item}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/omegaritual33/"
+                  >
+                    <img
+                      className={s.footerSocialList__itemIcon}
+                      src={InstagramIcon}
+                      alt="InstagramIcon"
+                    />
+                  </a>
+                </li>
               </ul>
-              <button>Викликати агента</button>
+              <button className={s.btnCallToAgent}>ВИКЛИКАТИ АГЕНТА</button>
             </div>
           </div>
         </nav>
