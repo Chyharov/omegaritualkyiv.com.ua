@@ -48,10 +48,10 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
-        color: rgb(51, 72, 98);
+        color: #334862;
         padding-top: 2px;
         padding-bottom: 2px;
-        width: 262px;
+        width: 247px;
         border-bottom: 1px solid #ececec;
     }
 }
@@ -59,9 +59,8 @@
 .footerNavListMenu {
     @include mq(desk) {
         width: 540px;
-            height: 250px;
-            columns: 250px;
-
+        height: 250px;
+        columns: 250px;
     }
 }
 
@@ -89,5 +88,41 @@
 .footerContactContainerBackground {
     @include mq(desk) {
         background-color: #333333;
+    }
+}
+
+.footerContactList__item,
+.phoneList__item,
+.footerAddressList__item {
+    @include mq(desk) {
+        font-family: Lato, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+        color: #ffffff;
+    }
+}
+
+.footerContactList__containe {
+    @include mq(desk) {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.footerContactList__svg {
+    @include mq(desk) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.phoneList,
+.footerAddressList,
+.footerContactDescription {
+    @include mq(desk) {
+        padding-left: 16px;
+        padding-bottom: 10px;
+        padding-top: 5px;
     }
 }

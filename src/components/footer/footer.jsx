@@ -1,3 +1,6 @@
+import Location from 'images/footer/Location.svg';
+import Phone from 'images/footer/Phone.svg';
+import Clock from 'images/footer/Clock.svg';
 import s from './footer.module.scss';
 
 const footer = () => {
@@ -5,10 +8,7 @@ const footer = () => {
     <footer className={s.footer}>
       <div className="container">
         <nav className={s.footer__navigation}>
-          <div
-            style={{ padding: '15px' }}
-            className={s.footerInformationContainer}
-          >
+          <div className={s.footerInformationContainer}>
             <h2 className={s.footerTitle}>ІНФОРМАЦІЯ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavList}>
@@ -42,27 +42,53 @@ const footer = () => {
             <h2 className={s.footerTitle}>КОНТАКТИ</h2>
             <div className={s.footerTitle__border}></div>
             <div className={s.footerContactContainerBackground}>
-              <ul>
-                <li>
-                  <p>Київ, вул. Івана Федорова, 33</p>
-                  <p>Київ, вул. Колоскова, 9</p>
+              <ul className={s.footerContactList}>
+                <li className={s.footerContactList__containe}>
+                  <img
+                    className={s.footerContactList__svg}
+                    src={Location}
+                    alt="Location"
+                  />
+                  <ul className={s.footerAddressList}>
+                    <li className={s.footerAddressList__item}>
+                      <p>Київ, вул. Івана Федорова, 33</p>
+                    </li>
+                    <li className={s.footerAddressList__item}>
+                      <p>Київ, вул. Колоскова, 9</p>
+                    </li>
+                  </ul>
                 </li>
-                <li>
+                <li className={s.footerContactList__containe}>
+                  <img
+                    className={s.footerContactList__svg}
+                    src={Phone}
+                    alt="Phone"
+                  />
                   <ul className={s.phoneList}>
-                    <li className={s.phoneList}>
+                    <li className={s.phoneList__item}>
                       <a href="tel:+380442090261">+38 (044) 209-02-61</a>
                     </li>
-                    <li className={s.phoneList}>
+                    <li className={s.phoneList__item}>
                       <a href="tel:+380939040707">+38 (093) 904-07-07</a>
                     </li>
-                    <li className={s.phoneList}>
+                    <li className={s.phoneList__item}>
                       <a href="tel:+380670112160">+38 (067) 011-21-60</a>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <p>Щоденно | Цілодобово</p>
-                </li>
+                <li className={s.footerContactList__containe}>
+                  <img
+                    className={s.footerContactList__svg}
+                    src={Clock}
+                    alt="Clock"
+                  />
+                <ul className={s.footerContactDescription}>
+                  
+                    <p className={s.footerContactList__item}>
+                      Щоденно | Цілодобово
+                    </p>
+                </ul>
+                  </li>
               </ul>
               <ul>
                 <li>Telegram</li>
