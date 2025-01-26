@@ -52,11 +52,42 @@
         padding-top: 2px;
         padding-bottom: 2px;
         width: 262px;
+        border-bottom: 1px solid #ececec;
     }
 }
 
 .footerNavListMenu {
-    width: 540px;
-    height: 250px;
-    columns: 250px;
+    @include mq(desk) {
+        width: 540px;
+            height: 250px;
+            columns: 250px;
+
+    }
+}
+
+.footerInformationContainer {
+    @include mq(desk) {
+        padding: 15px;
+        width: 270px;
+    }
+}
+
+.footerMenuContainer {
+    @include mq(desk) {
+        padding: 15px;
+        width: 540px;
+    }
+}
+
+.footerContactContainer {
+    @include mq(desk) {
+        padding: 15px;
+        width: 270px;
+    }
+}
+
+.footerContactContainerBackground {
+    @include mq(desk) {
+        background-color: #333333;
+    }
 }

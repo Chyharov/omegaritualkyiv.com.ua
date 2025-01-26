@@ -5,7 +5,10 @@ const footer = () => {
     <footer className={s.footer}>
       <div className="container">
         <nav className={s.footer__navigation}>
-          <div style={{padding: '15px'}}>
+          <div
+            style={{ padding: '15px' }}
+            className={s.footerInformationContainer}
+          >
             <h2 className={s.footerTitle}>ІНФОРМАЦІЯ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavList}>
@@ -14,7 +17,7 @@ const footer = () => {
               <li className={s.footerNavList__item}>Контакти</li>
             </ul>
           </div>
-          <div style={{padding: '15px'}}>
+          <div className={s.footerMenuContainer}>
             <h2 className={s.footerTitle}>ПОСЛУГИ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavListMenu}>
@@ -35,38 +38,40 @@ const footer = () => {
               <li className={s.footerNavList__item}>Дезобробка</li>
             </ul>
           </div>
-          <div style={{padding: '15px'}}>
+          <div className={s.footerContactContainer}>
             <h2 className={s.footerTitle}>КОНТАКТИ</h2>
             <div className={s.footerTitle__border}></div>
-            <ul>
-              <li className={s.footerNavList__item}>
-                <p>Київ, вул. Івана Федорова, 33</p>
-                <p>Київ, вул. Колоскова, 9</p>
-              </li>
-              <li className={s.footerNavList__item}>
-                <ul className={s.phoneList}>
-                  <li className={s.phoneList}>
-                    <a href="tel:+380442090261">+38 (044) 209-02-61</a>
-                  </li>
-                  <li className={s.phoneList}>
-                    <a href="tel:+380939040707">+38 (093) 904-07-07</a>
-                  </li>
-                  <li className={s.phoneList}>
-                    <a href="tel:+380670112160">+38 (067) 011-21-60</a>
-                  </li>
-                </ul>
-              </li>
-              <li className={s.footerNavList__item}>
-                <p>Щоденно | Цілодобово</p>
-              </li>
-            </ul>
-            <ul>
-              <li className={s.footerNavList__item}>Telegram</li>
-              <li className={s.footerNavList__item}>WhatsApp</li>
-              <li className={s.footerNavList__item}>Viper</li>
-              <li className={s.footerNavList__item}>Instagram</li>
-            </ul>
-            <button>Викликати агента</button>
+            <div className={s.footerContactContainerBackground}>
+              <ul>
+                <li>
+                  <p>Київ, вул. Івана Федорова, 33</p>
+                  <p>Київ, вул. Колоскова, 9</p>
+                </li>
+                <li>
+                  <ul className={s.phoneList}>
+                    <li className={s.phoneList}>
+                      <a href="tel:+380442090261">+38 (044) 209-02-61</a>
+                    </li>
+                    <li className={s.phoneList}>
+                      <a href="tel:+380939040707">+38 (093) 904-07-07</a>
+                    </li>
+                    <li className={s.phoneList}>
+                      <a href="tel:+380670112160">+38 (067) 011-21-60</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>Щоденно | Цілодобово</p>
+                </li>
+              </ul>
+              <ul>
+                <li>Telegram</li>
+                <li>WhatsApp</li>
+                <li>Viper</li>
+                <li>Instagram</li>
+              </ul>
+              <button>Викликати агента</button>
+            </div>
           </div>
         </nav>
       </div>
