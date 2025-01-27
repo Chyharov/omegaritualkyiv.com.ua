@@ -138,9 +138,17 @@
 
 .footerSocialList__itemIcon {
   @include mq(desk) {
+    filter: grayscale(70%);
     width: 36px;
     height: 36px;
   }
+}
+
+.footerSocialList__itemIcon:hover,
+.footerSocialList__itemIcon:focus {
+  @include mq(desk) {
+      filter: none;
+    }
 }
 
 .btnCallToAgent {
@@ -157,3 +165,12 @@
     line-height: 1.6;
   }
 }
+
+.btnCallToAgent:hover,
+.btnCallToAgent:focus {
+  @include mq(desk) {
+    border: none;
+    background-color: #334862;
+  }
+}
+
