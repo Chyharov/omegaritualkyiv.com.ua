@@ -7,6 +7,13 @@ const header = () => {
       <div className={`container ${s.header__container}`}>
 
         <img src={logo} alt="logo__header" />
+
+        <ul>
+          <li>Інформація</li>
+          <li>Послуги</li>
+          <li>Ритуальні товари</li>
+          <li>Ціни</li>
+        </ul>
         
       </div>
     </header>

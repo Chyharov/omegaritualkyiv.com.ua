@@ -1,7 +1,6 @@
 @import '../../sass/utils/mixin';
 
 .header__container {
-
   @include mq(desk) {
     padding-bottom: 20px;
     padding-top: 20px;
