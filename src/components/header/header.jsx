@@ -1,4 +1,5 @@
 import logo from 'images/header/logo.svg'
+import NavBar from 'components/NavBar/NavBar'
 import s from './header.module.scss';
 
 const header = () => {
@@ -7,6 +8,8 @@ const header = () => {
       <div className={`container ${s.header__container}`}>
 
         <img src={logo} alt="logo__header" />
+
+        {/* <NavBar /> */}
 
         <ul>
           <li>Інформація</li>

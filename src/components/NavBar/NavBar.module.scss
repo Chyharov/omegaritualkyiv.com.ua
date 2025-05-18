@@ -1,0 +1,140 @@
+@import '../../sass/utils/mixin';
+
+.menu__list {
+    @include mq(mob) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+    }
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 840px;
+  }
+}
+
+.menu__list_link {
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  color: var(--primaryTextColorDark);
+  width: 100%;
+
+  @include mq(desk) {
+    width: auto;
+    line-height: 1.38;
+  }
+}
+
+.menu__list_item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include mq(mob-only) {
+    border-bottom: 1px solid white;
+    padding: 8px;
+  }
+
+  @include mq(tab) {
+    align-items: center;
+    padding: 8px 4px;
+  }
+}
+
+.menu__list_item:not(:last-child) {
+  @include mq(tab) {
+      margin-right: 10px;
+    }
+ 
+}
+
+.menu__list_item a:hover,
+.menu__list_item a:focus {
+    border-bottom: 5px solid var(--primaryTextColor);
+    margin-bottom: -5px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    @include mq(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navBar .navigation {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navBar .navigation {
+      display: flex;
+    }
+  
+    .navBar .mobileNavigation {
+      display: none;
+    }
+  }
+
+.navBar .mobileNavigation .hamburgerMenu {
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  width: 42px;
+  height: 42px;
+  color: var(--primaryTextColor);
+  cursor: pointer;
+}
+
+.themeMenu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  @include mq(desk) {
+    margin-right: 0px;
+  }
+}
+
+.menuList__container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  background-color: var(--backgroundColorDark);
+
+  @include mq(tab) {
+    width: 840px;
+    position: static;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
