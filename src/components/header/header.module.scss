@@ -1,14 +1,9 @@
 @import '../../sass/utils/mixin';
 
-.header__title {
+.header__container {
 
-  color: var(--secondTextColor);
-  
-  @include mq(tab) {
-    color: var(--disableColor);
-  }
-  
   @include mq(desk) {
-    color: var(--accentColor);
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
