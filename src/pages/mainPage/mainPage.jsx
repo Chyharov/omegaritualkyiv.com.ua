@@ -36,8 +36,8 @@ const MainPage = () => {
     },
     {
       type: 'scroll',
-      to: 'ritualGoods',
-      label: t.ritualGoods,
+      to: 'price',
+      label: t.price,
       delay: 0.3,
     }
   ];

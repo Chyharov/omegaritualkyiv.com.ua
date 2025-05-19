@@ -2,7 +2,7 @@ import s from './sectionFeneralPrice.module.scss';
 
 const sectionFeneralPrice = () => {
   return (
-    <section className={s.sectionFeneralPrice}>
+    <section className={s.sectionFeneralPrice} id='price'>
       <div className="container">
         <div className={s.feneralPriceTitleContainer}>
           <svg

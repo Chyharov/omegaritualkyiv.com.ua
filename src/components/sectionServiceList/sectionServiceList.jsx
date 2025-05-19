@@ -89,7 +89,7 @@ const serviceList = [
 
 const sectionServiceList = () => {
   return (
-    <section className={s.sectionServiceList}>
+    <section className={s.sectionServiceList} id='services'>
       <div className={'container ' + s.serviceListContainer}>
         <h1 className={s.serviceList__title}>Послуги, які ми надаємо</h1>
 

@@ -29,7 +29,7 @@ const ritualGoodsList = [
 
 const sectionRitualGoods = () => {
   return (
-    <section className={s.sectionRitualGoods}>
+    <section className={s.sectionRitualGoods} id="ritualGoods">
       <div className="container">
         <h2 className={s.ritualGoodsTitle}>Ритуальні товари</h2>
 
