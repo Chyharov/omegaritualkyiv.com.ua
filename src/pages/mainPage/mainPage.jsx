@@ -55,13 +55,13 @@ const MainPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionHero language={language} />
-        <SectionServiceList language={language} />
-        <SectionRitualGoods language={language} />
-        <SectionNeedHelp language={language} />
-        <SectionFeneralPrice language={language} />
-        <SectionOrganizationFuneral language={language} />
-        <SectionRitualGoodsDescription language={language} />
+        <SectionHero />
+        <SectionServiceList />
+        <SectionRitualGoods />
+        <SectionNeedHelp />
+        <SectionFeneralPrice />
+        <SectionOrganizationFuneral />
+        <SectionRitualGoodsDescription />
       </main>
       <Footer />
     </>
