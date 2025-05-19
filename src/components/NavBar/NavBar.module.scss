@@ -1,63 +1,78 @@
 @import '../../sass/utils/mixin';
 
 .menu__list {
-    @include mq(mob) {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: flex-start;
-      justify-content: center;
-      width: 100%;
-    }
+  @include mq(mob) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
-  @include mq(tab) {
+  @include mq(desk) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 840px;
+    width: 530px;
+    height: 40px;
   }
 }
 
 .menu__list_link {
-  font-family: Open Sans Regular;
-  font-size: 16px;
-  color: var(--primaryTextColorDark);
-  width: 100%;
+  width: 160px;
+  display: flex;
+  transform: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  background-color: var(--eggShellWhite);
+  box-shadow: 2px 2px 15px 4px rgba(107, 103, 102, 0.15);
 
   @include mq(desk) {
     width: auto;
     line-height: 1.38;
+    margin-bottom: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
   }
 }
 
+.menu__list_link:last-child {
+  margin-bottom: 0px;
+}
+
 .menu__list_item {
+  font-family: 'Montserrat Regular';
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--richSoilBrown);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 
   @include mq(mob-only) {
-    border-bottom: 1px solid white;
-    padding: 8px;
+    padding: 12px;
   }
 
-  @include mq(tab) {
-    align-items: center;
-    padding: 8px 4px;
+  @include mq(desk) {
+    color: var(--eggShellWhite);
   }
 }
 
 .menu__list_item:not(:last-child) {
   @include mq(tab) {
-      margin-right: 10px;
-    }
- 
+    margin-right: 10px;
+  }
 }
 
 .menu__list_item a:hover,
 .menu__list_item a:focus {
-    border-bottom: 5px solid var(--primaryTextColor);
-    margin-bottom: -5px;
+  border-bottom: 5px solid var(--primaryTextColor);
+  margin-bottom: -5px;
 }
 
 .navBar {
@@ -65,28 +80,35 @@
   align-items: center;
   justify-content: center;
 
-    @include mq(tab) {
+  @include mq(tab) {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
   }
-  
-  @media screen and (max-width: 768px) {
-    .navBar .navigation {
-      display: none;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .navBar .navigation {
+    display: none;
   }
-  
-  @media (min-width: 769px) {
-    .navBar .navigation {
-      display: flex;
-    }
-  
-    .navBar .mobileNavigation {
-      display: none;
-    }
+}
+
+@media (min-width: 769px) {
+  .navBar .navigation {
+    display: flex;
   }
+
+  .navBar .mobileNavigation {
+    display: block;
+  }
+}
+
+@media (min-width: 1439px) {
+
+  .navBar .mobileNavigation {
+    display: none;
+  }
+}
 
 .navBar .mobileNavigation .hamburgerMenu {
   cursor: pointer;
@@ -110,21 +132,22 @@
 }
 
 .menuList__container {
-  padding-top: 16px;
   padding-bottom: 16px;
-  width: 100%;
+  width: 360px;
   position: absolute;
-  top: 75px;
-  left: 0px;
-  background-color: var(--backgroundColorDark);
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @include mq(tab) {
-    width: 840px;
-    position: static;
-    padding-top: 0px;
+  @include mq(desk) {
+    position: unset;
+    transform: none;
     padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 600px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
   }
 }
 
@@ -136,5 +159,24 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+  }
+}
+
+.bgShadow {
+  position: fixed;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(39, 18, 12, 0.7);
+  z-index: 9;
+
+  @include mq(desk) {
+    background-color: transparent;
+    top: 20px;
+    height: 40px;
+    width: 600px;
+    left: 50%;
+      transform: translateX(-50%);
   }
 }
