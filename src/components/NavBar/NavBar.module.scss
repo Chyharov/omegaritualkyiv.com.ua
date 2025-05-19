@@ -104,7 +104,6 @@
 }
 
 @media (min-width: 1439px) {
-
   .navBar .mobileNavigation {
     display: none;
   }
@@ -145,9 +144,9 @@
     padding-bottom: 0px;
     width: 600px;
     display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
   }
 }
 
@@ -173,10 +172,10 @@
 
   @include mq(desk) {
     background-color: transparent;
-    top: 32px;
+    top: 30px;
     height: 40px;
     width: 600px;
     left: 50%;
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
