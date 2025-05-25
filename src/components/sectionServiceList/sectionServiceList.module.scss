@@ -3,7 +3,7 @@
 .sectionServiceList {
     @include mq(desk) {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 }
 
@@ -27,7 +27,6 @@
         justify-items: center;
         width: 1080px;
         margin: 0 auto;
-        margin-bottom: 20px;
     }
 }
 
