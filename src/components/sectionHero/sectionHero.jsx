@@ -8,7 +8,7 @@ const sectionHero = () => {
           <div className={s.hero__background}>
             <div className={s.hero__titleContainer}>
               <h1 className={s.title__hero}>
-                Похоронний будинок{' '}
+              Похоронний дім{' '}
                 <span className={s.title__heroSpan}>Омега</span> має у своєму
                 розпорядженні всі необхідні товари та послуги, що дозволяють
                 проводити поховання або кремацію будь-якого рівня.
