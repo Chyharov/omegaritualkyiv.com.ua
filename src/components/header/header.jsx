@@ -7,7 +7,7 @@ const header = ({navItems}) => {
     <header className={s.header}>
       <div className={`container ${s.header__container}`}>
 
-        <img src={logo} alt="logo__header" />
+        <img className={s.header__logo} src={logo} alt="header__logo" />
 
         <NavBar navItems={navItems} />
         
