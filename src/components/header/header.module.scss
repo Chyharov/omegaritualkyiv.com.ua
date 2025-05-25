@@ -12,6 +12,10 @@
 
 .header__logo {
   width: 150px;
+
+  @include mq(desk) {
+    width: 244px;
+  }
 }
 
 .header__container {
