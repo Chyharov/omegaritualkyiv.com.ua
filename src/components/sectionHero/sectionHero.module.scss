@@ -63,7 +63,7 @@
 }
 
 .btnConsultation {
-font-size: 16px;
+  font-size: 16px;
   background: #fff;
   color: #d4b669;
   margin-bottom: 20px;
@@ -100,17 +100,17 @@ font-size: 16px;
 }
 
 .addressList {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   @include mq(desk) {
     margin-left: 15px;
   }
 }
 
 .addressList__item {
-    color: #fff;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 400;
+  color: #fff;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
   @include mq(desk) {
     font-family: Lato;
     line-height: 1.6;
@@ -124,10 +124,10 @@ font-size: 16px;
 }
 
 .heroPhonesList__item {
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
   @include mq(desk) {
     font-family: Lato;
     line-height: 1.6;

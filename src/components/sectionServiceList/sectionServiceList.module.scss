@@ -1,6 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionServiceList {
+    padding-top: 30px;
     @include mq(desk) {
         padding-top: 50px;
         padding-bottom: 0px;
@@ -9,12 +10,16 @@
 
 
 .serviceList__title {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    margin-bottom: 30px;
     @include mq(desk) {
         font-size: 26px;
         line-height: 1.3;
-        text-align: center;
-        margin-bottom: 30px;
-        color: rgb(85, 85, 85);
+        
+        
+        
     }
 }
 
@@ -31,41 +36,43 @@
 }
 
 .serviceList__item {
-    @include mq(desk) {
-        position: relative;
-        width: 240px;
-        height: 180px;
-        background: linear-gradient(292deg, white 20%, #8b8989 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        &:hover,
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(292deg, white 20%, #8b8989 100%);
+    &:hover,
         &:focus {
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             background: linear-gradient(292deg, white 20%, #494747 100%);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include mq(desk) {
+        width: 240px;
+
+       
     }
 }
 
 .serviceList__itemDesctioption {
+    text-align: left;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-left: 20px;
     @include mq(desk) {
+        padding: 20px 10px;
         width: 160px;
         font-family: Lato;
-        font-size: 27px;
-        text-align: left;
-        padding: 20px 10px;
     }
 }
 
 .serviceList__itemLink {
-    @include mq(desk) {
-        padding: 10px;
-        background-color: #446084;
-        color: #fff;
-        z-index: 1;
-    }
+    padding: 10px;
+    background-color: #446084;
+    color: #fff;
+    z-index: 1;
 }
 
 .serviceList__item {
@@ -76,11 +83,18 @@
         background-color: #000;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
+    margin-bottom: 0px;
 }
+}
+
+.serviceList__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .serviceList__itemImg {
     position: absolute;
     width: 240px;
     height: 180px;
+    top: 0;
+    right: 0;
 }
