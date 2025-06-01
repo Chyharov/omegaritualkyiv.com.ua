@@ -89,23 +89,25 @@ const serviceList = [
 
 const sectionServiceList = () => {
   return (
-    <section className={s.sectionServiceList} id='services'>
+    <section className={s.sectionServiceList} id="services">
       <div className={'container ' + s.serviceListContainer}>
         <h1 className={s.serviceList__title}>Послуги, які ми надаємо</h1>
 
-          <ul className={s.serviceList}>
-        {serviceList.map(photo => (
-          <li key={photo.id} className={s.serviceList__item} >
-            <img src={photo.src} alt={photo.alt} className={s.serviceList__itemImg}/>
-              <p className={s.serviceList__itemDesctioption}>
-                {photo.title}
-              </p>
+        <ul className={s.serviceList}>
+          {serviceList.map(photo => (
+            <li key={photo.id} className={s.serviceList__item}>
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className={s.serviceList__itemImg}
+              />
+              <p className={s.serviceList__itemDesctioption}>{photo.title}</p>
               <a className={s.serviceList__itemLink} href="/">
                 {photo.link}
               </a>
             </li>
-        ))}
-          </ul>
+          ))}
+        </ul>
       </div>
     </section>
   );
