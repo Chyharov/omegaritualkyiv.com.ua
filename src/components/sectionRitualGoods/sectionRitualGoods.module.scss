@@ -13,7 +13,7 @@
     font-size: 20px;
         text-align: center;
         margin-bottom: 30px;
-        color: rgb(85, 85, 85);
+        color: var(--secondTextColor);
     @include mq(desk) {
         font-size: 26px;
         line-height: 1.3;
@@ -70,7 +70,7 @@
 
 .ritualGoodsList__itemDesctioption {
     font-size: 26px;
-    color: rgb(119, 119, 119);
+    color: var(--secondTextColor);
     text-align: center;
     margin-bottom: 40px;
     @include mq(desk) {

@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 530px;
+    width: 650px;
     height: 40px;
   }
 }
@@ -49,7 +49,7 @@
   font-family: 'Montserrat Regular';
   font-size: 16px;
   line-height: 1.5;
-  color: var(--richSoilBrown);
+  color: var(--titleTextColor);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -59,7 +59,8 @@
   }
 
   @include mq(desk) {
-    color: var(--backgroundColor);
+    font-size: 22px;
+    color: var(--titleTextColor);
   }
 }
 

@@ -11,7 +11,7 @@
 .serviceList__title {
   font-size: 20px;
   text-align: center;
-  color: rgb(85, 85, 85);
+  color: var(--secondTextColor);
   margin-bottom: 30px;
   @include mq(desk) {
     font-size: 26px;
@@ -55,6 +55,7 @@
   font-size: 27px;
   margin-top: 40px;
   margin-left: 20px;
+  color: var(--titleTextColor);
   @include mq(desk) {
     padding: 20px 10px;
     width: 160px;
