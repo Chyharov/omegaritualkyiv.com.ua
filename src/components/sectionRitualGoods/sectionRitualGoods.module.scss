@@ -70,14 +70,12 @@
 
 .ritualGoodsList__itemDesctioption {
     font-size: 26px;
-    color: var(--secondTextColor);
+    color: var(--primaryTextColor);
     text-align: center;
     margin-bottom: 40px;
     @include mq(desk) {
         font-family: Lato;
         font-size: 28px; 
         font-weight: 400;
-        
-
     }
 }
