@@ -40,7 +40,7 @@ const sectionFeneralPrice = () => {
           </svg>
           <h2 className={s.funeralPriceTitle}>Вартість похорону</h2>
         </div>
-        <ul className={s.feneralPriceList} style={{ marginBottom: '40px' }}>
+        <ul className={s.feneralPriceList}>
           <li className={s.feneralPriceList__item}>
             <div className={s.feneralPriceList__itemContainer}>
               <h3 className={s.feneralPriceList__itemTitle}>Економ</h3>
