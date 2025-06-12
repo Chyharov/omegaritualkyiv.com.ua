@@ -4,6 +4,7 @@ import s from './sectionRitualGoodsDescription.module.scss';
 const sectionRitualGoodsDescription = () => {
   return (
     <section className={s.sectionRitualGoodsDescription}>
+      <img loading='lazy' className={s.ritualGoodsDescriptionImageMobile} src={RitualGoodsDescriptionImage} alt="ritualGoodsDescriptionImageMobile" />
       <div className="container">
         <div className={s.ritualGoodsContainer}>
           <img loading='lazy' className={s.ritualGoodsDescriptionImage} src={RitualGoodsDescriptionImage} alt="RitualGoodsDescriptionImage" />
