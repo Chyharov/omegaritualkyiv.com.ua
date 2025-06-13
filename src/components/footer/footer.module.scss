@@ -1,6 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .footer {
+  padding-bottom: 30px;
   @include mq(desk) {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -24,22 +25,19 @@
 }
 
 .footerTitle {
-  @include mq(desk) {
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 0.8px;
-    font-weight: 600;
-    color: #d4b669;
-  }
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  color: #d4b669;
 }
 
 .footerTitle__border {
-  @include mq(desk) {
-    margin-top: 10px;
-    margin-bottom: 16px;
-    width: 60px;
-    border-bottom: 2px solid #d4b669;
-  }
+  margin-top: 10px;
+  margin-bottom: 16px;
+  width: 60px;
+  border-bottom: 2px solid #d4b669;
 }
 
 .footerNavList__item {
