@@ -89,33 +89,35 @@
 }
 
 .footerContactContainerBackground {
+  padding: 5%;
+  background-color: var(--secondtitleColor);
   @include mq(desk) {
-    background-color: #333333;
   }
 }
 
 .footerContactList__item,
 .phoneList__item,
 .footerAddressList__item {
-  @include mq(desk) {
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #ffffff;
-  }
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--backgroundColor);
 }
 
 .footerContactList__containe {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
   @include mq(desk) {
-    display: flex;
-    align-items: flex-start;
+    margin-bottom: 0px;
   }
 }
 
 .footerContactList__svg {
+  width: 32px;
+  margin-right: 15px;
   @include mq(desk) {
-    width: 32px;
     height: 32px;
   }
 }
@@ -131,15 +133,18 @@
 }
 
 .footerSocialList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 25px 10px;
   @include mq(desk) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px 10px 20px 10px;
   }
 }
 
 .footerSocialList__itemIcon {
+  width: 45px;
+  height: 45px;
   @include mq(desk) {
     filter: grayscale(70%);
     width: 36px;
@@ -155,18 +160,16 @@
 }
 
 .btnCallToAgent {
-  @include mq(desk) {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 50px;
-    color: #ffffff;
-    background-color: #446084;
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-  }
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #446084;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .btnCallToAgent:hover,
