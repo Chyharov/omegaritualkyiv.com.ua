@@ -5,6 +5,7 @@
   margin-bottom: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 -10px 20px rgba(0, 0, 0, 0.05);
   @include mq(desk) {
+    box-shadow: none;
     padding-top: 50px;
     margin-bottom: 0px;
     background-color: var(--backgroundColor);

@@ -5,6 +5,7 @@ import TelegramIcon from 'images/footer/telegramIcon.svg';
 import WhatsAppIcon from 'images/footer/whatsappIcon.svg';
 import ViberIcon from 'images/footer/viberIcon.svg';
 import InstagramIcon from 'images/footer/instagramIcon.png';
+import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
 import s from './footer.module.scss';
 
 const footer = () => {
@@ -164,6 +165,7 @@ const footer = () => {
           </div>
         </nav>
       </div>
+      <ScrollToTopButton />
     </footer>
   );
 };
