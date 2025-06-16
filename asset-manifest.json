@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/omegaritualkyiv.com.ua/static/css/main.b88c3b9a.css",
-    "main.js": "/omegaritualkyiv.com.ua/static/js/main.eeee57eb.js",
-    "static/css/514.550906f4.chunk.css": "/omegaritualkyiv.com.ua/static/css/514.550906f4.chunk.css",
-    "static/js/514.b333f993.chunk.js": "/omegaritualkyiv.com.ua/static/js/514.b333f993.chunk.js",
+    "main.js": "/omegaritualkyiv.com.ua/static/js/main.651f3804.js",
+    "static/css/514.4b5cf6ca.chunk.css": "/omegaritualkyiv.com.ua/static/css/514.4b5cf6ca.chunk.css",
+    "static/js/514.2dc5c830.chunk.js": "/omegaritualkyiv.com.ua/static/js/514.2dc5c830.chunk.js",
     "static/js/317.16162b16.chunk.js": "/omegaritualkyiv.com.ua/static/js/317.16162b16.chunk.js",
     "static/media/5.png": "/omegaritualkyiv.com.ua/static/media/5.1f06f0349daebbb65973.png",
     "static/media/5.jpg": "/omegaritualkyiv.com.ua/static/media/5.e46c3e5b79cfca6b07b2.jpg",
@@ -31,13 +31,13 @@
     "static/media/burgerMenuClose.svg": "/omegaritualkyiv.com.ua/static/media/burgerMenuClose.a4ca55899d89e648e17a5e85032ae584.svg",
     "static/media/burgerMenu.svg": "/omegaritualkyiv.com.ua/static/media/burgerMenu.a0126a8fc4403527ad28731f97366787.svg",
     "main.b88c3b9a.css.map": "/omegaritualkyiv.com.ua/static/css/main.b88c3b9a.css.map",
-    "main.eeee57eb.js.map": "/omegaritualkyiv.com.ua/static/js/main.eeee57eb.js.map",
-    "514.550906f4.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/514.550906f4.chunk.css.map",
-    "514.b333f993.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/514.b333f993.chunk.js.map",
+    "main.651f3804.js.map": "/omegaritualkyiv.com.ua/static/js/main.651f3804.js.map",
+    "514.4b5cf6ca.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/514.4b5cf6ca.chunk.css.map",
+    "514.2dc5c830.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/514.2dc5c830.chunk.js.map",
     "317.16162b16.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/317.16162b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b88c3b9a.css",
-    "static/js/main.eeee57eb.js"
+    "static/js/main.651f3804.js"
   ]
 }
