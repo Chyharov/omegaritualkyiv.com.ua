@@ -1,3 +1,4 @@
+import React, { useState, useCallback, useEffect} from 'react';
 import Location from 'images/footer/Location.svg';
 import Phone from 'images/footer/Phone.svg';
 import Clock from 'images/footer/Clock.svg';
@@ -8,7 +9,33 @@ import InstagramIcon from 'images/footer/instagramIcon.png';
 import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
 import s from './footer.module.scss';
 
-const footer = () => {
+const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+
+  const handleKeyDown = useCallback((event) => {
+    if (event.key === 'Escape') {
+      handleCloseModal();
+    }
+  }, []);
+
+  const handleOutsideClick = (event) => {
+    if (event.target === event.currentTarget) {
+      handleCloseModal();
+    }
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isModalOpen, handleKeyDown]);
+
   return (
     <footer className={s.footer}>
       <div className="container">
@@ -160,7 +187,20 @@ const footer = () => {
                   </a>
                 </li>
               </ul>
-              <button className={s.btnCallToAgent}>ВИКЛИКАТИ АГЕНТА</button>
+              <button className={s.btnCallToAgent} onClick={handleOpenModal}>
+                ВИКЛИКАТИ АГЕНТА
+              </button>
+              {isModalOpen && (
+                <div className={s.modalOverlay} onClick={handleOutsideClick}>
+                  <div className={s.modalContent}>
+                    <button className={s.modalClose} onClick={handleCloseModal}>
+                      ×
+                    </button>
+                    <h2>Зв’язатися з агентом</h2>
+                    <p>Заповніть форму або зателефонуйте нам.</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </nav>
@@ -170,4 +210,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
