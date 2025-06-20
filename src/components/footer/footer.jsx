@@ -7,6 +7,7 @@ import WhatsAppIcon from 'images/footer/whatsappIcon.svg';
 import ViberIcon from 'images/footer/viberIcon.svg';
 import InstagramIcon from 'images/footer/instagramIcon.png';
 import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
+import ConsultationModalWindow from 'components/ConsultationModalWindow/ConsultationModalWindow'
 import s from './footer.module.scss';
 
 const Footer = () => {
@@ -20,12 +21,6 @@ const Footer = () => {
       handleCloseModal();
     }
   }, []);
-
-  const handleOutsideClick = (event) => {
-    if (event.target === event.currentTarget) {
-      handleCloseModal();
-    }
-  };
 
   useEffect(() => {
     if (isModalOpen) {
@@ -191,15 +186,7 @@ const Footer = () => {
                 ВИКЛИКАТИ АГЕНТА
               </button>
               {isModalOpen && (
-                <div className={s.modalOverlay} onClick={handleOutsideClick}>
-                  <div className={s.modalContent}>
-                    <button className={s.modalClose} onClick={handleCloseModal}>
-                      ×
-                    </button>
-                    <h2>Зв’язатися з агентом</h2>
-                    <p>Заповніть форму або зателефонуйте нам.</p>
-                  </div>
-                </div>
+                <ConsultationModalWindow isOpen={isModalOpen} onClose={handleCloseModal}/>
               )}
             </div>
           </div>
