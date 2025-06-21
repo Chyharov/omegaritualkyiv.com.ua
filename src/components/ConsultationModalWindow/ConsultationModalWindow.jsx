@@ -42,58 +42,66 @@ const ConsultationModalWindow = ({ isOpen, onClose }) => {
           <FaRegWindowClose className={s.buttonClose} />
         </button>
 
-        <div>
+        <div className={s.contactContainer}>
           <FiPhone className={s.consultationModalWindow__svg} alt="Phone" />
-          <h2>Телефони</h2>
-          <ul>
-            <li>
-              <a href="tel:380442092472">+38 (044) 209-24-72</a>
-            </li>
-            <li>
-              <a href="tel:+380669040707">+38 (066) 904 07 07</a>
-            </li>
-            <li>
-              <a href="tel:+380689040707">+38 (068) 904 07 07</a>
-            </li>
-            <li>
-              <a href="tel:+380939040707">+38 (093) 904 07 07</a>
-            </li>
-          </ul>
+          <div>
+            <h2 className={s.consultationModalWindow__title}>Телефони</h2>
+            <ul className={s.workPhoneNumbersList}>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:380442092472">+38 (044) 209-24-72</a>
+              </li>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380669040707">+38 (066) 904 07 07</a>
+              </li>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380689040707">+38 (068) 904 07 07</a>
+              </li>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380939040707">+38 (093) 904 07 07</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div>
+        <div className={s.contactContainer}>
           <IoMdTime className={s.consultationModalWindow__svg} alt="Clock" />
-          <h2>Режим роботи</h2>
-          <p>Щоденно | Цілодобово</p>
+          <div>
+          <h2 className={s.consultationModalWindow__title}>Режим роботи</h2>
+            <p className={s.workTimeDescription}>Щоденно | Цілодобово</p>
+          </div>
         </div>
 
-        <div>
+        <div className={s.contactContainer}>
           <IoLocationOutline
             className={s.consultationModalWindow__svg}
             alt="Location"
           />
+          <div>
+          <h2 className={s.consultationModalWindow__title}>Адреса</h2>
+            <ul className={s.addressList}>
+              <li className={s.addressList__item}>
+                <a
+                  className={s.addressList__itemLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA"
+                >
+                  м.Київ, вул. Івана Федорова, 33
+                </a>
+              </li>
+              <li className={s.addressList__item}>
+                <a
+                  className={s.addressList__itemLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://maps.app.goo.gl/AwovKjfD7p53WbF56"
+                >
+                  м.Київ, вул. Колоскова 9
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <h2>Адреса</h2>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA"
-            >
-              м.Київ, вул. Івана Федорова, 33
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://maps.app.goo.gl/AwovKjfD7p53WbF56"
-            >
-              м.Київ, вул. Колоскова 9
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   );
