@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect} from 'react';
+import React, { useState } from 'react';
 import Location from 'images/footer/Location.svg';
 import Phone from 'images/footer/Phone.svg';
 import Clock from 'images/footer/Clock.svg';
@@ -12,24 +12,6 @@ import s from './footer.module.scss';
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
-
-  const handleKeyDown = useCallback((event) => {
-    if (event.key === 'Escape') {
-      handleCloseModal();
-    }
-  }, []);
-
-  useEffect(() => {
-    if (isModalOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-    }
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isModalOpen, handleKeyDown]);
 
   return (
     <footer className={s.footer}>
@@ -182,11 +164,14 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <button className={s.btnCallToAgent} onClick={handleOpenModal}>
+              <button className={s.btnCallToAgent} onClick={() => setIsModalOpen(true)}>
                 ВИКЛИКАТИ АГЕНТА
               </button>
               {isModalOpen && (
-                <ConsultationModalWindow isOpen={isModalOpen} onClose={handleCloseModal}/>
+                <ConsultationModalWindow
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+              />
               )}
             </div>
           </div>

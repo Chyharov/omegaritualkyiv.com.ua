@@ -59,13 +59,13 @@
 }
 
 .title__heroSpan {
-  color: #d4b669;
+  color: var(--orangeTextColor);
 }
 
 .btnConsultation {
   font-size: 16px;
   background: #fff;
-  color: #d4b669;
+  color: var(--orangeTextColor);
   margin-bottom: 20px;
   padding: 10px 20px;
   border: none;

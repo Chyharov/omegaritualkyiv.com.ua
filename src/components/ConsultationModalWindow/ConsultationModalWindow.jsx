@@ -1,4 +1,8 @@
 import React, { useEffect, useCallback } from 'react';
+import { FaRegWindowClose } from 'react-icons/fa';
+import { IoLocationOutline } from 'react-icons/io5';
+import { FiPhone } from 'react-icons/fi';
+import { IoMdTime } from 'react-icons/io';
 import s from './ConsultationModalWindow.module.scss';
 
 const ConsultationModalWindow = ({ isOpen, onClose }) => {
@@ -19,9 +23,12 @@ const ConsultationModalWindow = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     if (isOpen) {
+      document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleKeyDown);
     }
+
     return () => {
+      document.body.style.overflow = '';
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isOpen, handleKeyDown]);
@@ -32,27 +39,40 @@ const ConsultationModalWindow = ({ isOpen, onClose }) => {
     <div className={s.modalOverlay} onClick={handleOutsideClick}>
       <div className={s.modalContent}>
         <button className={s.modalClose} onClick={onClose}>
-          ×
+          <FaRegWindowClose className={s.buttonClose} />
         </button>
-        <h2>Телефони</h2>
-        <ul>
-          <li>
-            <a href="tel:380442092472">+38 (044) 209-24-72</a>
-          </li>
-          <li>
-            <a href="tel:+380669040707">+38 (066) 904 07 07</a>
-          </li>
-          <li>
-            <a href="tel:+380689040707">+38 (068) 904 07 07</a>
-          </li>
-          <li>
-            <a href="tel:+380939040707">+38 (093) 904 07 07</a>
-          </li>
-        </ul>
 
-        <h2>Режим роботи</h2>
-        <p>Щоденно | Цілодобово</p>
+        <div>
+          <FiPhone className={s.consultationModalWindow__svg} alt="Phone" />
+          <h2>Телефони</h2>
+          <ul>
+            <li>
+              <a href="tel:380442092472">+38 (044) 209-24-72</a>
+            </li>
+            <li>
+              <a href="tel:+380669040707">+38 (066) 904 07 07</a>
+            </li>
+            <li>
+              <a href="tel:+380689040707">+38 (068) 904 07 07</a>
+            </li>
+            <li>
+              <a href="tel:+380939040707">+38 (093) 904 07 07</a>
+            </li>
+          </ul>
+        </div>
 
+        <div>
+          <IoMdTime className={s.consultationModalWindow__svg} alt="Clock" />
+          <h2>Режим роботи</h2>
+          <p>Щоденно | Цілодобово</p>
+        </div>
+
+        <div>
+          <IoLocationOutline
+            className={s.consultationModalWindow__svg}
+            alt="Location"
+          />
+        </div>
         <h2>Адреса</h2>
         <ul>
           <li>

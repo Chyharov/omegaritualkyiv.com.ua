@@ -30,14 +30,14 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.8px;
-  color: #d4b669;
+  color: var(--orangeTextColor)
 }
 
 .footerTitle__border {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 60px;
-  border-bottom: 2px solid #d4b669;
+  border-bottom: 2px solid var(--orangeTextColor)
 }
 
 .footerNavList {
