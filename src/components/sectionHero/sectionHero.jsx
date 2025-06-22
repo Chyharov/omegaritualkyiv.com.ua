@@ -1,6 +1,10 @@
+import React, { useState } from 'react';
+import ConsultationModalWindow from 'components/ConsultationModalWindow/ConsultationModalWindow';
 import s from './sectionHero.module.scss';
 
-const sectionHero = () => {
+const SectionHero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className={s.sectionHero} id="about">
       <div className={s.hero__container}>
@@ -14,9 +18,15 @@ const sectionHero = () => {
                 проводити поховання або кремацію будь-якого рівня.
               </h1>
 
-              <button className={s.btnConsultation}>
+              <button className={s.btnConsultation} onClick={() => setIsModalOpen(true)}>
                 Безкоштовна консультація
               </button>
+              {isModalOpen && (
+                <ConsultationModalWindow
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+              />
+              )}
             </div>
 
             <div>
@@ -61,4 +71,4 @@ const sectionHero = () => {
   );
 };
 
-export default sectionHero;
+export default SectionHero;

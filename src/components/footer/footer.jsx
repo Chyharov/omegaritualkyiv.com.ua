@@ -7,7 +7,7 @@ import WhatsAppIcon from 'images/footer/whatsappIcon.svg';
 import ViberIcon from 'images/footer/viberIcon.svg';
 import InstagramIcon from 'images/footer/instagramIcon.png';
 import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
-import ConsultationModalWindow from 'components/ConsultationModalWindow/ConsultationModalWindow'
+import ConsultationModalWindow from 'components/ConsultationModalWindow/ConsultationModalWindow';
 import s from './footer.module.scss';
 
 const Footer = () => {
