@@ -90,6 +90,9 @@ const Footer = () => {
                       <a href="tel:+380442090261">+38 (044) 209-02-61</a>
                     </li>
                     <li className={s.phoneList__item}>
+                      <a href="tel:+380669040707">+38 (066) 904-07-07</a>
+                    </li>
+                    <li className={s.phoneList__item}>
                       <a href="tel:+380939040707">+38 (093) 904-07-07</a>
                     </li>
                     <li className={s.phoneList__item}>
