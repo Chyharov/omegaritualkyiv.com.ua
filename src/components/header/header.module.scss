@@ -4,10 +4,10 @@
   left: 50%;
   position: fixed;
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: var(--backgroundColor);
   width: 100%;
   z-index: 9;
-  border-bottom: 1px solid rgb(85, 85, 85);
+  border-bottom: 1px solid var(--secondTextColor);
 }
 
 .header__logo {
