@@ -53,13 +53,13 @@ const SectionHero = () => {
                 </ul>
                 <ul className={s.heroPhonesList}>
                   <li className={s.heroPhonesList__item}>
-                    <a href="tel:+380442090261">+38 (044) 209-02-61</a>
-                  </li>
-                  <li className={s.heroPhonesList__item}>
                     <a href="tel:+380939040707">+38 (093) 904-07-07</a>
                   </li>
                   <li className={s.heroPhonesList__item}>
                     <a href="tel:+380670112160">+38 (067) 011-21-60</a>
+                  </li>
+                  <li className={s.heroPhonesList__item}>
+                    <a href="tel:+380442090261">+38 (044) 209-02-61</a>
                   </li>
                 </ul>
               </address>
