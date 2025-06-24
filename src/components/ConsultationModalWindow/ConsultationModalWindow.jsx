@@ -48,16 +48,13 @@ const ConsultationModalWindow = ({ isOpen, onClose }) => {
             <h2 className={s.consultationModalWindow__title}>Телефони</h2>
             <ul className={s.workPhoneNumbersList}>
               <li className={s.workPhoneNumbersList__item}>
-                <a className={s.workPhoneNumbersList__itemLink} href="tel:380442092472">+38 (044) 209-24-72</a>
-              </li>
-              <li className={s.workPhoneNumbersList__item}>
-                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380669040707">+38 (066) 904-07-07</a>
-              </li>
-              <li className={s.workPhoneNumbersList__item}>
-                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380689040707">+38 (068) 904-07-07</a>
-              </li>
-              <li className={s.workPhoneNumbersList__item}>
                 <a className={s.workPhoneNumbersList__itemLink} href="tel:+380939040707">+38 (093) 904-07-07</a>
+              </li>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380670112160">+38 (067) 011-21-60</a>
+              </li>
+              <li className={s.workPhoneNumbersList__item}>
+                <a className={s.workPhoneNumbersList__itemLink} href="tel:+380442090261">+38 (044) 209-02-61</a>
               </li>
             </ul>
           </div>
