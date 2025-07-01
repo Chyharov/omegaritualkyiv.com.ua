@@ -21,6 +21,11 @@
     border-radius: 8px;
     position: relative;
     width: 100%; 
+
+    @include mq(desk) {
+        width: 50%;
+        border-radius: 20px;
+    }
 }
 
 .buttonClose {
@@ -75,4 +80,12 @@
     font-weight: 400;
     color: var(--secondtitleColor);
     padding: 3px 0px;
+}
+
+.imgDekorationDesktop {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+    }
 }
