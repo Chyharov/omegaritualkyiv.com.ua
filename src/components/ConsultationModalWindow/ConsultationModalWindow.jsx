@@ -43,8 +43,9 @@ const ConsultationModalWindow = ({ isOpen, onClose }) => {
           <FaRegWindowClose className={s.buttonClose} />
         </button>
 
-        <div>
+        <div className={s.imgDekorationDesktopContainer}>
           <img className={s.imgDekorationDesktop} src={imgDekorationDesktop} alt="imgDekorationDesktop" />
+          <div className={s.imgDekorationDesktopOverlay}></div>
         </div>
 
         <div>

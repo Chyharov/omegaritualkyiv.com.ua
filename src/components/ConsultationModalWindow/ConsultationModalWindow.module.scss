@@ -1,91 +1,112 @@
 @import '../../sass/utils/mixin';
 
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    padding-left: 15px;
-    padding-right: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .modalContent {
-    background: var(--backgroundColor);
-    padding: 5%;
-    border-radius: 8px;
-    position: relative;
-    width: 100%; 
+  background: var(--backgroundColor);
+  padding: 5%;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
 
-    @include mq(desk) {
-        width: 50%;
-        border-radius: 20px;
-    }
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    border-radius: 20px;
+  }
 }
 
 .buttonClose {
-    width: 100%;
-    height: 100%;
-    color: var(--orangeTextColor);
+  width: 100%;
+  height: 100%;
+  color: var(--orangeTextColor);
 }
 
 .modalClose {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-        top: 6%;
-        right: 5%;
-        width: 8%;
-        height: 11%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  width: 8%;
+  height: 11%;
 }
 
 .consultationModalWindow__svg {
-    width: 30px;
-    height: 30px;
-    color: var(--orangeTextColor);
-    margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  color: var(--orangeTextColor);
+  margin-right: 15px;
 }
 
 .contactContainer {
-    display: flex;
+  display: flex;
 }
 
 .contactContainer:not(:last-child) {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .consultationModalWindow__title {
-    font-family: Lato, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--titleTextColor);
-    margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--titleTextColor);
+  margin-bottom: 10px;
 }
 
 .addressList__item,
 .workPhoneNumbersList__item {
-    padding: 3px 0px;
+  padding: 3px 0px;
 }
 
 .addressList__itemLink,
 .workTimeDescription,
 .workPhoneNumbersList__itemLink {
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--secondtitleColor);
-    padding: 3px 0px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondtitleColor);
+  padding: 3px 0px;
 }
 
 .imgDekorationDesktop {
-    display: none;
+    position: absolute;
+}
 
+.imgDekorationDesktopContainer {
+  display: none;
+
+  @include mq(desk) {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+
+.imgDekorationDesktopOverlay {
     @include mq(desk) {
-        display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(134, 109, 0, 0.506);
     }
 }
