@@ -108,17 +108,21 @@ const sectionServiceList = () => {
 
         <ul className={s.serviceList}>
           {serviceList.map(photo => (
-            <li key={photo.id} className={s.serviceList__item}>
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                className={s.serviceList__itemImg}
-              />
-              <p className={s.serviceList__itemDesctioption}>{photo.title}</p>
-              <Link className={s.serviceList__itemLink} to={photo.link}>
-                {photo.linkTitle}
-              </Link>
-            </li>
+            <Link to={photo.link}>
+              <li key={photo.id} className={s.serviceList__item}>
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className={s.serviceList__itemImg}
+                />
+                <h3 className={s.serviceList__itemDesctioption}>
+                  {photo.title}
+                </h3>
+                <p className={s.serviceList__itemLink} to={photo.link}>
+                  {photo.linkTitle}
+                </p>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
