@@ -5,12 +5,14 @@ const translations = {
       services: 'Послуги які ми надаємо',
       ritualGoods: 'Ритуальні товари',
       price: 'Ціни',
+      main: 'Головна',
   },
     en: {
       about: 'About Us',
       services: 'Services We Provide',
       ritualGoods: 'Ritual Goods',
       price: 'Prices',
+      main: 'Home',
     },
   },
   hero: {

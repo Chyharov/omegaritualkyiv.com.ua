@@ -10,28 +10,10 @@ const RitualAgentPage = () => {
 
   const navItems = [
     {
-      type: 'scroll',
-      to: 'about',
-      label: t.about,
+      type: 'link',
+      to: '/',
+      label: t.main,
       delay: 0.05,
-    },
-    {
-      type: 'scroll',
-      to: 'services',
-      label: t.services,
-      delay: 0.1,
-    },
-    {
-      type: 'scroll',
-      to: 'ritualGoods',
-      label: t.ritualGoods,
-      delay: 0.2,
-    },
-    {
-      type: 'scroll',
-      to: 'price',
-      label: t.price,
-      delay: 0.3,
     }
   ];
 
