@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import Header from 'components/header/header';
+import SectionRitualAgent from 'components/SectionRitualAgent/SectionRitualAgent';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 
@@ -30,7 +31,7 @@ const RitualAgentPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <h2>ritualAgentPage</h2>
+        <SectionRitualAgent/>
       </main>
       <Footer />
     </>
