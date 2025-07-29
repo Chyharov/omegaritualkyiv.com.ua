@@ -3,9 +3,11 @@ import s from './SectionRitualAgent.module.scss';
 const SectionRitualAgent = () => {
   return (
     <section className={s.sectionRitualAgent}>
-          <div className={`container ${s.header__container}`}>
-        <h2>Ритуальний агент</h2>
-        <h3>Ритуальний агент</h3>
+      <div className={`container ${s.header__container}`}>
+        <div className={s.maintitle__container}>
+        <h2 className={s.maintitle}>Ритуальний агент</h2>
+        </div>
+        <h3 className={s.mainsubtitle}>Ритуальний агент</h3>
         <div>
           <img src="" alt="agent" />
           <p>Ритуальний агент – це той самий помічник, який здатний тверезо оцінити ситуацію, що склалася, включаючи й фінансову, щоб організувати похорон на гідному рівні відповідно до доступного для родичів померлого бюджету.</p>
