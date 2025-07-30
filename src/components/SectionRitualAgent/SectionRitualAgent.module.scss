@@ -42,7 +42,7 @@
 
 .banerRitualAgent__container {
   background-color: #446084;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .banerRitualAgent__description {
@@ -52,4 +52,43 @@
   font-weight: 400;
   color: var(--secondtitleColor);
   padding: 15px;
+}
+
+.ritualAgent__description,
+.ritualAgentList__item {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--primaryTextColor);
+  margin-bottom: 15px;
+}
+
+.ritualAgent__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--secondTextColor);
+  margin-bottom: 15px;
+}
+
+.ritualAgentList {
+  padding-left: 20px;
+}
+
+.ritualAgentList__item {
+  list-style: decimal;
+}
+
+.ritualAgent__descriptionItalic {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--secondtitleColor);
+  padding-left: 15px;
+  padding-right: 15px;
+      border-left: 2px solid #446084;
 }
