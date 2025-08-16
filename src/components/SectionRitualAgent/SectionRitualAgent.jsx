@@ -1,3 +1,4 @@
+import TitleForPage from '../TitleForPage/TitleForPage'
 import banerRitualAgent from 'images/sectionRitualAgent/ritualagent.jpg';
 import s from './SectionRitualAgent.module.scss';
 
@@ -5,10 +6,7 @@ const SectionRitualAgent = () => {
   return (
     <section className={s.sectionRitualAgent}>
       <div className={`container ${s.header__container}`}>
-        <div className={s.maintitle__container}>
-        <h2 className={s.maintitle}>Ритуальний агент</h2>
-        </div>
-        <h3 className={s.mainsubtitle}>Ритуальний агент</h3>
+        <TitleForPage />
         <div>
           <div className={s.banerRitualAgent__container}>
           <img className={s.banerRitualAgent} src={banerRitualAgent} alt="banerRitualAgent" />

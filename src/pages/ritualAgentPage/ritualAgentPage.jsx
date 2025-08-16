@@ -27,11 +27,13 @@ const RitualAgentPage = () => {
     [language]
   );
 
+  const title = 'Ритуальний агент';
+
   return (
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionRitualAgent/>
+        <SectionRitualAgent title={title} />
       </main>
       <Footer />
     </>
