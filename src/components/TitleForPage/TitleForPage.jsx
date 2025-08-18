@@ -1,6 +1,7 @@
 import s from './TitleForPage.module.scss';
 
-const SectionRitualAgent = ( {title} ) => {
+const TitleForPage = ({ title }) => {
+  
   return (
     <>
         <div className={s.maintitle__container}>
@@ -11,4 +12,4 @@ const SectionRitualAgent = ( {title} ) => {
   );
 };
 
-export default SectionRitualAgent;
+export default TitleForPage;
