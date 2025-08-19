@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import Header from 'components/header/header';
+import SectionRitualAgent from 'components/SectionRitualAgent/SectionRitualAgent';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 
@@ -26,11 +27,13 @@ const FuneralOrganisationPage = () => {
     [language]
   );
 
+  const title = 'Організатор похорону';
+
   return (
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <h2>FuneralOrganisationPage</h2>
+        <SectionRitualAgent title={title} />
       </main>
       <Footer />
     </>
