@@ -1,2 +1,31 @@
 @import '../../sass/utils/mixin';
 
+.banerRitualAgent__container {
+    background-color: #446084;
+    margin-bottom: 15px;
+
+    @include mq(desk) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+.banerRitualAgent {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banerRitualAgent__description {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--secondtitleColor);
+    padding: 15px;
+
+    @include mq(desk) {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
