@@ -2,12 +2,12 @@ import TitleForPage from '../TitleForPage/TitleForPage'
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionRitualAgent.module.scss';
 
-const SectionRitualAgent = ({ title }) => {
+const SectionRitualAgent = ({ title, imgBaner, imgBannerDescription }) => {
   return (
     <section className={s.sectionRitualAgent}>
       <div className={`container ${s.header__container}`}>
         <TitleForPage title={title} />
-        <BanerForSection />
+        <BanerForSection imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
         <p className={s.ritualAgent__description}>Похоронний дім «Омега» надасть вам першу <b>безкоштовну консультацію ритуального агента</b>, який негайно приїде до вас у будь-який час доби. Довірте важкий клопіт з транспортування покійного в морг, його підготовки до похорону та організації всієї церемонії прощання досвідченим фахівцям у цій делікатній справі, щоб не упустити нічого важливого і гідно провести в останній шлях своєї померлої близької людини без зайвих і необдуманих емоційних витрат.</p>
         <h3 className={s.ritualAgent__title}>Навіщо потрібний похоронний агент?</h3>
         <p className={s.ritualAgent__description}>Смерть близької людини – це не просто горе для членів його сім’ї та близьких родичів, а й колосальний стрес, який заважає раціонально і виважено мислити, а часто буквально паралізує свідомість. У такому стані вкрай складно, а іноді й просто неможливо самостійно організувати похорон, врахувати всі обрядові тонкощі, подбати про поминальний обід та підготовку покійного до церемонії прощання. Що входить до послуг ритуального агента?</p>

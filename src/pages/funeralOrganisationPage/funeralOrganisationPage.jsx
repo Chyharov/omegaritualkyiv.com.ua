@@ -3,6 +3,7 @@ import Header from 'components/header/header';
 import SectionRitualAgent from 'components/SectionRitualAgent/SectionRitualAgent';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
+import imgBaner from 'images/sectionRitualAgent/ritualagent.jpg';
 
 const FuneralOrganisationPage = () => {
   const [language, setLanguage] = useState('ua');
@@ -28,12 +29,11 @@ const FuneralOrganisationPage = () => {
   );
 
   const title = 'Організатор похорону';
-
   return (
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionRitualAgent title={title} />
+        <SectionRitualAgent title={title} imgBaner={imgBaner} />
       </main>
       <Footer />
     </>
