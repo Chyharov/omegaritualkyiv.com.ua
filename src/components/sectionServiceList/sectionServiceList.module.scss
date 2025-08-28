@@ -56,8 +56,8 @@
   text-align: left;
   font-size: 27px;
   font-weight: 400;
-  margin-top: 40px;
-  margin-left: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
   color: var(--titleTextColor);
   @include mq(desk) {
     padding: 20px 10px;
