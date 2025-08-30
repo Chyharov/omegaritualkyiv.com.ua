@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 const MainPage = lazy(() => import('pages/mainPage/mainPage'));
 const RitualAgentPage = lazy(() => import('pages/ritualAgentPage/ritualAgentPage'));
 const FuneralOrganisation = lazy(() => import('pages/funeralOrganisationPage/funeralOrganisationPage'));
+const CremationServicesPage = lazy(() => import('pages/cremationServicesPage/cremationServicesPage'));
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
           <Route path="/" element={<MainPage />} />
           <Route path="/ritualagent" element={<RitualAgentPage />} />
           <Route path="/funeralorganisation" element={<FuneralOrganisation />} />
+          <Route path="/cremationservices" element={<CremationServicesPage />} />
         </Routes>
       </Suspense>
     </>
