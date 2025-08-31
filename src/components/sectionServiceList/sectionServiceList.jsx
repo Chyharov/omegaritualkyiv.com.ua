@@ -31,7 +31,7 @@ const serviceList = [
     src: require('../../images/servicesList/04.png'),
     alt: 'Зображення 4',
     title: 'Ритуальний транспорт',
-    link: '/ritualagent',
+    link: '/ritualtransport',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
