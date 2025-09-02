@@ -47,7 +47,7 @@ const serviceList = [
     src: require('../../images/servicesList/06.png'),
     alt: 'Зображення 6',
     title: 'Вантаж 200',
-    link: '/ritualagent',
+    link: '/transportationofthedeceased',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
