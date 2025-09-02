@@ -1,23 +1,23 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualTransport {
-    padding-top: 100px;
-    padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 
-    @include mq(desk) {
-        padding-top: 130px;
-        padding-bottom: 50px;
-        background-color: var(--backgroundColor);
-    }
+  @include mq(desk) {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: var(--backgroundColor);
+  }
 }
 
 .ritualTransport__list {
-    display: flex;
-        justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .ritualTransport__img {
-    @include mq(desk) {
-        width: 600px;
-    }
+  @include mq(desk) {
+    width: 600px;
+  }
 }
