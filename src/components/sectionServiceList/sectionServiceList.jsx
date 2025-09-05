@@ -71,7 +71,7 @@ const serviceList = [
     src: require('../../images/servicesList/09.png'),
     alt: 'Зображення 9',
     title: 'Оформлення документів',
-    link: '/ritualagent',
+    link: '/processingdocumentspage',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
