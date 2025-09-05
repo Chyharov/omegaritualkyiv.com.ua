@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import Header from 'components/header/header';
-import SectionMemorialDinners from 'components/SectionMemorialDinners/SectionMemorialDinners';
+import SectionProcessingDocuments from 'components/SectionProcessingDocuments/SectionProcessingDocuments';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/processingDocumentsPage/processingDocumentsPage.jpg';
@@ -35,7 +35,7 @@ const ProcessingDocumentsPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionMemorialDinners title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionProcessingDocuments title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
       </main>
       <Footer />
     </>
