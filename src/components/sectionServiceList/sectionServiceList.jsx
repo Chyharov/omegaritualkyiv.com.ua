@@ -95,7 +95,7 @@ const serviceList = [
     src: require('../../images/servicesList/12.png'),
     alt: 'Зображення 12',
     title: 'Супровід медперсоналом',
-    link: '/ritualagent',
+    link: '/medicalsupportonfuneral',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
 ];
