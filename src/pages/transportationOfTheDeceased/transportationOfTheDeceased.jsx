@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionTransportationOfTheDeceased from 'components/SectionTransportationOfTheDeceased/SectionTransportationOfTheDeceased';
 import Footer from 'components/footer/footer';
@@ -6,6 +6,10 @@ import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/transportationOfTheDeceased/transportationOfTheDeceased.jpg';
 
 const TransportationOfTheDeceased = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, []);
+  
   const [language, setLanguage] = useState('ua');
 
   const t = translations.navlink[language];

@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionProcessingDocuments from 'components/SectionProcessingDocuments/SectionProcessingDocuments';
 import Footer from 'components/footer/footer';
@@ -6,6 +6,10 @@ import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/processingDocumentsPage/processingDocumentsPage.jpg';
 
 const ProcessingDocumentsPage = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+  }, []);
+  
   const [language, setLanguage] = useState('ua');
 
   const t = translations.navlink[language];

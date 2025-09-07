@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionHero from 'components/sectionHero/sectionHero'
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
@@ -11,6 +11,10 @@ import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 
 const MainPage = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, []);
+  
   const [language, setLanguage] = useState('ua');
 
   const t = translations.navlink[language];
