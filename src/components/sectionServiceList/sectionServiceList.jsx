@@ -55,7 +55,7 @@ const serviceList = [
     src: require('../../images/servicesList/07.png'),
     alt: 'Зображення 7',
     title: 'Послуги моргу',
-    link: '/mortuaryservicespage',
+    link: '/mortuaryservices',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
@@ -63,7 +63,7 @@ const serviceList = [
     src: require('../../images/servicesList/08.png'),
     alt: 'Зображення 8',
     title: 'Поминальні обіди',
-    link: '/memorialdinnerspage',
+    link: '/memorialdinners',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
@@ -71,7 +71,7 @@ const serviceList = [
     src: require('../../images/servicesList/09.png'),
     alt: 'Зображення 9',
     title: 'Оформлення документів',
-    link: '/processingdocumentspage',
+    link: '/processingdocuments',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
@@ -79,7 +79,7 @@ const serviceList = [
     src: require('../../images/servicesList/10.png'),
     alt: 'Зображення 10',
     title: 'Ритуальна зала',
-    link: '/ritualagent',
+    link: '/ritualhall',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
