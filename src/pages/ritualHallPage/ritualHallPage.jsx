@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionTransportationOfTheDeceased from 'components/SectionTransportationOfTheDeceased/SectionTransportationOfTheDeceased';
+import SectionRitualHall from 'components/SectionRitualHall/SectionRitualHall';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/ritualHallPage/ritualHallPage.png';
@@ -39,7 +39,7 @@ const RitualHallPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionTransportationOfTheDeceased title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionRitualHall title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
       </main>
       <Footer />
     </>
