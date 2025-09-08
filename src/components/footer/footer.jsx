@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Location from 'images/footer/Location.svg';
 import Phone from 'images/footer/Phone.svg';
 import Clock from 'images/footer/Clock.svg';
@@ -21,7 +22,9 @@ const Footer = () => {
             <h2 className={s.footerTitle}>ІНФОРМАЦІЯ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavList}>
-              <li className={s.footerNavList__item}>Про компанію</li>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Про компанію</li>
+              </Link>
               <li className={s.footerNavList__item}>Ціни</li>
               <li className={s.footerNavList__item}>Контакти</li>
             </ul>
