@@ -25,29 +25,63 @@ const Footer = () => {
               <Link to="*">
                 <li className={s.footerNavList__item}>Про компанію</li>
               </Link>
-              <li className={s.footerNavList__item}>Ціни</li>
-              <li className={s.footerNavList__item}>Контакти</li>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Ціни</li>
+              </Link>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Контакти</li>
+              </Link>
             </ul>
           </div>
           <div className={s.footerMenuContainer}>
             <h2 className={s.footerTitle}>ПОСЛУГИ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavListMenu}>
+              <Link to="/ritualagent">
               <li className={s.footerNavList__item}>Ритуальний агент</li>
-              <li className={s.footerNavList__item}>Організація похорон</li>
-              <li className={s.footerNavList__item}>Послуги кремації</li>
-              <li className={s.footerNavList__item}>Ритуальний транспорт</li>
-              <li className={s.footerNavList__item}>Відспівування померлого</li>
-              <li className={s.footerNavList__item}>Перевезення померлих</li>
-              <li className={s.footerNavList__item}>Послуги моргу</li>
-              <li className={s.footerNavList__item}>Поминальні обіди</li>
-              <li className={s.footerNavList__item}>Оформлення документів</li>
-              <li className={s.footerNavList__item}>Музичний супровід</li>
-              <li className={s.footerNavList__item}>Ритуальна зала</li>
-              <li className={s.footerNavList__item}>Медичний супровід</li>
-              <li className={s.footerNavList__item}>Ведучий на похорон</li>
-              <li className={s.footerNavList__item}>Носії труни</li>
-              <li className={s.footerNavList__item}>Дезобробка</li>
+              </Link>
+              <Link to="/funeralorganisation">
+                <li className={s.footerNavList__item}>Організація похорону</li>
+              </Link>
+              <Link to="/cremationservices">
+                <li className={s.footerNavList__item}>Послуги кремації</li>
+              </Link>
+              <Link to="/ritualtransport">
+                <li className={s.footerNavList__item}>Ритуальний транспорт</li>
+              </Link>
+              <Link to="/funeralofthedeceased">
+                <li className={s.footerNavList__item}>Відспівування померлого</li>
+              </Link>
+              <Link to="/transportationofthedeceased">
+                <li className={s.footerNavList__item}>Перевезення померлих</li>
+              </Link>
+              <Link to="/mortuaryservices">
+                <li className={s.footerNavList__item}>Послуги моргу</li>
+              </Link>
+              <Link to="/memorialdinners">
+                <li className={s.footerNavList__item}>Поминальні обіди</li>
+              </Link>
+              <Link to="/processingdocuments">
+                <li className={s.footerNavList__item}>Оформлення документів для похорону</li>
+              </Link>
+              <Link to="/funeralmusic">
+                <li className={s.footerNavList__item}>Музичний супровід похорону</li>
+              </Link>
+              <Link to="/ritualhall">
+                <li className={s.footerNavList__item}>Ритуальна зала</li>
+              </Link>
+              <Link to="/medicalsupportonfuneral">
+                <li className={s.footerNavList__item}>Медичний супровід похорону</li>
+              </Link>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Ведучий на похорон</li>
+              </Link>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Носії труни</li>
+              </Link>
+              <Link to="*">
+                <li className={s.footerNavList__item}>Дезобробка</li>
+              </Link>
             </ul>
           </div>
           <div className={s.footerContactContainer}>
