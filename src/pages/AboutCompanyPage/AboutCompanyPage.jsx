@@ -1,9 +1,10 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionAboutCompany from 'components/SectionAboutCompany/SectionAboutCompany';
+import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/aboutCompanyPage/aboutCompanyPage.jpeg';
+import imgBaner from 'images/aboutCompanyPage/aboutCompanyPage.jpg';
 
 const AboutCompanyPage = () => {
   useEffect(() => {
@@ -39,7 +40,8 @@ const AboutCompanyPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionAboutCompany title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+              <SectionAboutCompany title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+              <SectionNeedHelp />
       </main>
       <Footer />
     </>
