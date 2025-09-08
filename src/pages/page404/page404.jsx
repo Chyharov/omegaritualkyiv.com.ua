@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionCremationServices from 'components/SectionCremationServices/SectionCremationServices';
+import SectionPage404 from 'components/SectionPage404/SectionPage404';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/page404/page404.jpeg';
@@ -39,7 +39,7 @@ const Page404 = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionCremationServices title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionPage404 title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
       </main>
       <Footer />
     </>
