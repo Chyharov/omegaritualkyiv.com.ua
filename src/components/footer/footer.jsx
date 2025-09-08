@@ -22,7 +22,7 @@ const Footer = () => {
             <h2 className={s.footerTitle}>ІНФОРМАЦІЯ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavList}>
-              <Link to="*">
+              <Link to="/aboutcompany">
                 <li className={s.footerNavList__item}>Про компанію</li>
               </Link>
               <Link to="*">
