@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionPage404 from 'components/SectionPage404/SectionPage404';
+import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/page404/page404.jpeg';
@@ -40,6 +41,7 @@ const Page404 = () => {
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
         <SectionPage404 title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionNeedHelp />
       </main>
       <Footer />
     </>

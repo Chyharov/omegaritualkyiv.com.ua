@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionFuneralOfTheDeceased from 'components/SectionFuneralOfTheDeceased/SectionFuneralOfTheDeceased';
+import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/funeralOfTheDeceased/funeralOfTheDeceased.jpg';
@@ -41,6 +42,7 @@ const FuneralOfTheDeceased = () => {
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
         <SectionFuneralOfTheDeceased title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionNeedHelp />
       </main>
       <Footer />
     </>

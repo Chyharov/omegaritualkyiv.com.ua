@@ -12,7 +12,7 @@
   @include mq(desk) {
     display: flex;
     justify-content: space-between;
-    width: 1080px;
+    width: 1280px;
     margin: 0 auto;
   }
 }
@@ -84,7 +84,7 @@
 .footerContactContainer {
   @include mq(desk) {
     padding: 15px;
-    width: 270px;
+    width: 370px;
   }
 }
 

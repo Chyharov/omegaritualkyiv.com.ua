@@ -10,7 +10,7 @@ const AboutCompanyPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const [language, setLanguage] = useState('ua');
 
   const t = translations.navlink[language];
@@ -21,7 +21,7 @@ const AboutCompanyPage = () => {
       to: '/',
       label: t.main,
       delay: 0.05,
-    }
+    },
   ];
 
   const handleLanguageChange = useCallback(
@@ -34,14 +34,23 @@ const AboutCompanyPage = () => {
   );
 
   const title = 'Про компанію';
-  const imgBannerDescription = 'Похоронний дім «Омега» – це повний комплекс ритуальних послуг, що надаються на всій території Києва та Київської області. Допомога в організації прощання з покійним та ціла підтримка близьких померлого – наша головна стратегія. Організувати похорон під ключ може лише велике ритуальне бюро, що має власну матеріально-технічну базу та відпрацьовані алгоритми дій.';
+  const imgBannerDescription =
+    'Похоронний дім «Омега» – це повний комплекс ритуальних послуг, що надаються на всій території Києва та Київської області. Допомога в організації прощання з покійним та ціла підтримка близьких померлого – наша головна стратегія. Організувати похорон під ключ може лише велике ритуальне бюро, що має власну матеріально-технічну базу та відпрацьовані алгоритми дій.';
 
   return (
     <>
-      <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
+      <Header
+        navItems={navItems}
+        handleLanguageChange={handleLanguageChange}
+        language={language}
+      />
       <main>
-              <SectionAboutCompany title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
-              <SectionNeedHelp />
+        <SectionAboutCompany
+          title={title}
+          imgBaner={imgBaner}
+          imgBannerDescription={imgBannerDescription}
+        />
+        <SectionNeedHelp />
       </main>
       <Footer />
     </>
