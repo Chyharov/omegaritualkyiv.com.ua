@@ -1,8 +1,8 @@
 import s from './BanerForSection.module.scss';
 
-const BanerForSection = ({ imgBaner, imgBannerDescription }) => {
+const BanerForSection = ({ imgBaner, imgBannerDescription, style }) => {
   return (
-    <div className={s.banerRitualAgent__container}>
+    <div className={s.banerRitualAgent__container} style={style}>
       <img
         className={s.banerRitualAgent}
         src={imgBaner}

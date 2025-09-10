@@ -25,7 +25,7 @@ const Footer = () => {
               <Link to="/aboutcompany">
                 <li className={s.footerNavList__item}>Про компанію</li>
               </Link>
-              <Link to="*">
+              <Link to="/price">
                 <li className={s.footerNavList__item}>Ціни</li>
               </Link>
               <Link to="*">
