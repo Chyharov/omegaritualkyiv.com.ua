@@ -1,7 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionContacts from 'components/SectionContacts/SectionContacts';
-import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 import imgBaner from 'images/page404/page404.jpeg';
@@ -49,7 +48,6 @@ const ContactsPage = () => {
           imgBaner={imgBaner}
           imgBannerDescription={imgBannerDescription}
         />
-        <SectionNeedHelp />
       </main>
       <Footer />
     </>
