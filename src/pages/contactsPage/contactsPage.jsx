@@ -3,7 +3,6 @@ import Header from 'components/header/header';
 import SectionContacts from 'components/SectionContacts/SectionContacts';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/page404/page404.jpeg';
 
 const ContactsPage = () => {
   useEffect(() => {
@@ -33,7 +32,6 @@ const ContactsPage = () => {
   );
 
   const title = 'Контакти';
-  const imgBannerDescription = '';
 
   return (
     <>
@@ -45,8 +43,6 @@ const ContactsPage = () => {
       <main>
         <SectionContacts
           title={title}
-          imgBaner={imgBaner}
-          imgBannerDescription={imgBannerDescription}
         />
       </main>
       <Footer />

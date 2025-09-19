@@ -1,0 +1,13 @@
+@import '../../sass/utils/mixin';
+
+.mapContainer {
+  width: 94.445%;
+  height: 352px;
+  border-radius: 16px;
+  margin: 0 auto 8px auto;
+
+  @include mq(desk) {
+    width: 676px;
+    height: 420px;
+  }
+}

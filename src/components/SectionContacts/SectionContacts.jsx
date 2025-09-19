@@ -1,4 +1,5 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
+import MapComponent from 'components/MapComponent/MapComponent'
 import { FaSquareWhatsapp } from 'react-icons/fa6';
 import { FaTelegram } from 'react-icons/fa6';
 import { FaViber } from 'react-icons/fa6';
@@ -98,6 +99,7 @@ const SectionContacts = ({ title }) => {
               </a>
             </li>
           </ul>
+        <MapComponent />
         </div>
       </div>
     </section>
