@@ -11,7 +11,17 @@
   }
 }
 
+.contacts__container {
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contactsIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
   @include mq(desk) {
     width: 30px;
     height: 30px;
@@ -20,10 +30,11 @@
 }
 
 .address__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
   @include mq(desk) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     margin-bottom: 30px;
   }
 }
@@ -34,55 +45,57 @@
   }
 }
 
+.addressList {
+  margin-bottom: 15px;
+  @include mq(desk) {
+    margin-bottom: 0px;
+  }
+}
+
 .addressList__itemLink,
 .workTimeContacts,
 .addressList__itemLinkTelegram,
 .addressList__itemLinkWhatsApp,
 .addressList__itemLinkViber {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
   @include mq(desk) {
-    font-family: Lato, sans-serif;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
   }
 }
 
 .addressList__item {
+  margin-bottom: 5px;
   @include mq(desk) {
     margin-bottom: 10px;
   }
 }
 
 .addressList__item:last-child {
-  @include mq(desk) {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 0px;
 }
 
 .addressList__itemLinkTelegram,
 .addressList__itemLinkWhatsApp,
 .addressList__itemLinkViber {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
   @include mq(desk) {
-    display: flex;
-    align-items: center;
     font-size: 25px;
   }
 }
 
 .addressList__itemLinkTelegram {
-    @include mq(desk) {
-        color: #0088cc;
-    }
+  color: #0088cc;
 }
 
 .addressList__itemLinkWhatsApp {
-    @include mq(desk) {
-        color: #25D366;
-    }
+  color: #25d366;
 }
 
 .addressList__itemLinkViber {
-    @include mq(desk) {
-        color: #665CAC;
-    }
+  color: #665cac;
 }
