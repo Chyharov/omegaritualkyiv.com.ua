@@ -17,6 +17,7 @@ const MedicalSupportOnFuneral = lazy(() => import('pages/medicalSupportOnFuneral
 const AboutCompanyPage = lazy(() => import('pages/AboutCompanyPage/AboutCompanyPage'));
 const PricePage = lazy(() => import('pages/PricePage/PricePage'));
 const ContactsPage = lazy(() => import('pages/contactsPage/contactsPage'));
+const FuneralHostPage = lazy(() => import('pages/funeralHostPage/funeralHostPage'));
 
 const Page404 = lazy(() => import('pages/page404/page404'));
 
@@ -41,6 +42,7 @@ export const App = () => {
           <Route path="/aboutcompany" element={<AboutCompanyPage />} />
           <Route path="/price" element={<PricePage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/funeralhost" element={<FuneralHostPage />} />
           
           <Route path="*" element={<Page404 />} />
         </Routes>
