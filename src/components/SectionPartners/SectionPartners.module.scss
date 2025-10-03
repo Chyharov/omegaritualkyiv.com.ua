@@ -1,0 +1,24 @@
+@import '../../sass/utils/mixin';
+
+.sectionPartners {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--backgroundColor);
+
+    @include mq(desk) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.partnersLogo {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+
+    @include mq(desk) {
+        max-width: 500px;
+        font-size: 26px;
+    }
+}

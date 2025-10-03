@@ -4,6 +4,7 @@ import SectionHero from 'components/sectionHero/sectionHero'
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
 import SectionRitualGoods from 'components/sectionRitualGoods/sectionRitualGoods'
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
+import SectionPartners from 'components/SectionPartners/SectionPartners';
 import SectionFeneralPrice from 'components/sectionFeneralPrice/sectionFeneralPrice';
 import SectionOrganizationFuneral from 'components/sectionOrganizationFuneral/sectionOrganizationFuneral';
 import SectionRitualGoodsDescription from 'components/sectionRitualGoodsDescription/sectionRitualGoodsDescription';
@@ -63,6 +64,7 @@ const MainPage = () => {
         <SectionServiceList />
         <SectionRitualGoods />
         <SectionNeedHelp />
+        <SectionPartners />
         <SectionFeneralPrice />
         <SectionOrganizationFuneral />
         <SectionRitualGoodsDescription />
