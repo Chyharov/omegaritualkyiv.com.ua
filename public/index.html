@@ -10,9 +10,15 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Ритуальні послуги в Києві | OMEGA - похороний будинок</title>
 
+    <script>
+      function initMap() {
+        console.log('Google Maps loaded');
+      }
+    </script>
     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXj-AStZjPnU7wXm82txO2pj_QGR-KOio&callback=initMap&libraries=maps,marker&v=beta"
       async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXj-AStZjPnU7wXm82txO2pj_QGR-KOio&callback=console.debug&libraries=maps,marker&v=beta"
+      defer
     ></script>
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
