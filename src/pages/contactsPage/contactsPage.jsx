@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
 import SectionContacts from 'components/SectionContacts/SectionContacts';
+import SectionComments from 'components/SectionComments/SectionComments';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
 
@@ -44,6 +45,7 @@ const ContactsPage = () => {
         <SectionContacts
           title={title}
         />
+        <SectionComments />
       </main>
       <Footer />
     </>
