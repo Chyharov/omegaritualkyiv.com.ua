@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import s from './SectionComments.module.scss';
 
 const SectionComments = () => {
   const [reviews, setReviews] = useState([]);
@@ -10,6 +11,7 @@ const SectionComments = () => {
       const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
       const proxy = 'https://corsproxy.io/?';
       const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&language=uk&key=${apiKey}`;
+
       try {
         const response = await fetch(proxy + encodeURIComponent(url));
         if (!response.ok) throw new Error('Помилка запиту');
@@ -22,10 +24,9 @@ const SectionComments = () => {
             author_name: 'Твій клієнт',
             rating: 5,
             text: 'Дуже задоволений співпрацею! 👍 Рекомендую!',
-            time: Math.floor(Date.now() / 1000),
+            time: 1743112343,
           };
-
-          setReviews([...googleReviews, myReview]);
+          setReviews([myReview, ...googleReviews]);
         } else {
           setError('Відгуки не знайдені або API не повертає їх.');
         }
@@ -39,35 +40,74 @@ const SectionComments = () => {
   }, []);
 
   return (
-    <section style={{ padding: '1.5rem', maxWidth: 600, margin: '0 auto' }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Відгуки</h2>
+    <section className={s.sectionComments}>
+      <div className={`container ${s.comments__container}`}>
+        <h2 className={s.title}>Відгуки</h2>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p className={s.error}>{error}</p>}
 
-      {reviews.length === 0 && !error ? (
-        <p>Наразі немає відгуків.</p>
-      ) : (
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          {reviews.map((r, i) => (
-            <li
-              key={i}
-              style={{
-                background: '#f9f9f9',
-                borderRadius: '12px',
-                padding: '1rem',
-                marginBottom: '1rem',
-                boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-              }}
-            >
-              <strong>{r.author_name}</strong> ({r.rating}★)
-              <p style={{ marginTop: '0.5rem' }}>{r.text}</p>
-              <small style={{ color: '#555' }}>
-                {new Date(r.time * 1000).toLocaleDateString()}
-              </small>
-            </li>
-          ))}
-        </ul>
-      )}
+        {reviews.length === 0 && !error ? (
+          <p className={s.noReviews}>Наразі немає відгуків.</p>
+        ) : (
+          <ul className={s.reviewList}>
+            {reviews.map(r => (
+              <li
+                key={`${r.author_name}-${r.time}`}
+                className={s.reviewList__item}
+              >
+                <div className={s.nameAndPhotoContainer}>
+                  <img
+                    className={s.reviewList__itemPhoto}
+                    src={
+                      r.profile_photo_url &&
+                      !r.profile_photo_url.startsWith(
+                        'https://lh3.googleusercontent.com/'
+                      )
+                        ? r.profile_photo_url
+                        : `https://placehold.co/40x40?text=${encodeURIComponent(
+                            r.author_name[0].toUpperCase()
+                          )}`
+                    }
+                    alt={`Фото профілю користувача ${r.author_name}`}
+                  />
+                  <strong>{r.author_name}</strong>
+                </div>
+
+                <div className={s.stars} aria-label={`Рейтинг ${r.rating} з 5`}>
+                  {'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}
+                </div>
+
+                <p className={s.reviewText}>{r.text}</p>
+                <small className={s.reviewDate}>
+                  {(() => {
+                    const d = new Date(r.time * 1000);
+                    const day = String(d.getDate()).padStart(2, '0');
+                    const monthNames = [
+                      'січня',
+                      'лютого',
+                      'березня',
+                      'квітня',
+                      'травня',
+                      'червня',
+                      'липня',
+                      'серпня',
+                      'вересня',
+                      'жовтня',
+                      'листопада',
+                      'грудня',
+                    ];
+                    const month = monthNames[d.getMonth()];
+                    const year = d.getFullYear();
+                    const hours = String(d.getHours()).padStart(2, '0');
+                    const minutes = String(d.getMinutes()).padStart(2, '0');
+                    return `${day} ${month} ${year}, ${hours}:${minutes}`;
+                  })()}
+                </small>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </section>
   );
 };

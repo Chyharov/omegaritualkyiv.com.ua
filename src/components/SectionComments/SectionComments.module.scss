@@ -1,0 +1,44 @@
+@import '../../sass/utils/mixin';
+
+.sectionComments {
+    padding-top: 0px;
+    padding-bottom: 30px;
+
+    @include mq(desk) {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        background-color: var(--backgroundColor);
+    }
+}
+
+.comments__container {
+    @include mq(desk) {
+        width: 700px;
+    }
+}
+
+.reviewList {
+    list-style: none;
+    padding: 0;
+}
+
+.reviewList__item {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nameAndPhotoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewList__itemPhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
