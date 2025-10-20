@@ -37,8 +37,37 @@
 }
 
 .reviewList__itemPhoto {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.nameAndRating {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+}
+
+.stars {
+    color: #fbbc04;
+}
+
+.authorName {
+    font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 700;
+        color: var(--titleTextColor);
+        margin-bottom: 5px;
+}
+
+.reviewText {
+    font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 400;
+        color: var(--titleTextColor);
+        margin-bottom: 10px;
 }

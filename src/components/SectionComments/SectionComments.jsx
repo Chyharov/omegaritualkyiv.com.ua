@@ -42,7 +42,7 @@ const SectionComments = () => {
   return (
     <section className={s.sectionComments}>
       <div className={`container ${s.comments__container}`}>
-        <h2 className={s.title}>Відгуки</h2>
+        <h2 className='title'>Відгуки</h2>
 
         {error && <p className={s.error}>{error}</p>}
 
@@ -70,15 +70,19 @@ const SectionComments = () => {
                     }
                     alt={`Фото профілю користувача ${r.author_name}`}
                   />
-                  <strong>{r.author_name}</strong>
-                </div>
-
-                <div className={s.stars} aria-label={`Рейтинг ${r.rating} з 5`}>
-                  {'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}
+                  <div className={s.nameAndRating}>
+                    <strong className={s.authorName}>{r.author_name}</strong>
+                    <div
+                      className={s.stars}
+                      aria-label={`Рейтинг ${r.rating} з 5`}
+                    >
+                      {'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}
+                    </div>
+                  </div>
                 </div>
 
                 <p className={s.reviewText}>{r.text}</p>
-                <small className={s.reviewDate}>
+                <small className='description'>
                   {(() => {
                     const d = new Date(r.time * 1000);
                     const day = String(d.getDate()).padStart(2, '0');
