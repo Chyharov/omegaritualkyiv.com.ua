@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import QrCode from 'images/comments/qr-code.svg';
 import s from './SectionComments.module.scss';
 
 const SectionComments = () => {
@@ -41,7 +42,12 @@ const SectionComments = () => {
 
   return (
     <section className={s.sectionComments}>
-      <div className={`container ${s.comments__container}`}>
+      <div className={`container ${s.sectionComments__container}`}>
+        <div className={s.qrCode__container}>
+          <h2 className='title' style={{textAlign: 'center'}}>Натисніть або відскануйте QR-код, для написання відгуку</h2>
+      <img className={s.qrCode} src={QrCode} alt="QR Code" />
+        </div>
+        <div className={s.comments__container}>
         <h2 className='title'>Відгуки</h2>
 
         {error && <p className={s.error}>{error}</p>}
@@ -110,7 +116,8 @@ const SectionComments = () => {
               </li>
             ))}
           </ul>
-        )}
+          )}
+          </div>
       </div>
     </section>
   );

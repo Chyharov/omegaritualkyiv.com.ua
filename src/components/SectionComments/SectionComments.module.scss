@@ -11,6 +11,11 @@
     }
 }
 
+.sectionComments__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .comments__container {
     @include mq(desk) {
         width: 700px;
@@ -70,4 +75,18 @@
         font-weight: 400;
         color: var(--titleTextColor);
         margin-bottom: 10px;
+}
+
+.qrCode__container {
+    width: 555px;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+.qrCode {
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--titleTextColor);
+    border-radius: 8px;
 }
