@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import QrCode from 'images/comments/qr-code.svg';
+import { ImArrowDown } from "react-icons/im";
 import s from './SectionComments.module.scss';
 
 const SectionComments = () => {
@@ -44,80 +45,85 @@ const SectionComments = () => {
     <section className={s.sectionComments}>
       <div className={`container ${s.sectionComments__container}`}>
         <div className={s.qrCode__container}>
-          <h2 className='title' style={{textAlign: 'center'}}>Натисніть або відскануйте QR-код, для написання відгуку</h2>
-      <img className={s.qrCode} src={QrCode} alt="QR Code" />
+          <h2 className={s.qrCode__title} style={{ textAlign: 'center' }}>
+            Натисніть або відскануйте QR-код, для написання відгуку
+          </h2>
+          <ImArrowDown className={s.qrCode__arrow} />
+          <a href="https://g.page/r/CZPKcPVX5fZBEBM/review" target="_blank" rel="noopener noreferrer">
+          <img className={s.qrCode} src={QrCode} alt="QR Code" />
+          </a>
         </div>
         <div className={s.comments__container}>
-        <h2 className='title'>Відгуки</h2>
+          <h2 className="title">Відгуки</h2>
 
-        {error && <p className={s.error}>{error}</p>}
+          {error && <p className={s.error}>{error}</p>}
 
-        {reviews.length === 0 && !error ? (
-          <p className={s.noReviews}>Наразі немає відгуків.</p>
-        ) : (
-          <ul className={s.reviewList}>
-            {reviews.map(r => (
-              <li
-                key={`${r.author_name}-${r.time}`}
-                className={s.reviewList__item}
-              >
-                <div className={s.nameAndPhotoContainer}>
-                  <img
-                    className={s.reviewList__itemPhoto}
-                    src={
-                      r.profile_photo_url &&
-                      !r.profile_photo_url.startsWith(
-                        'https://lh3.googleusercontent.com/'
-                      )
-                        ? r.profile_photo_url
-                        : `https://placehold.co/40x40?text=${encodeURIComponent(
-                            r.author_name[0].toUpperCase()
-                          )}`
-                    }
-                    alt={`Фото профілю користувача ${r.author_name}`}
-                  />
-                  <div className={s.nameAndRating}>
-                    <strong className={s.authorName}>{r.author_name}</strong>
-                    <div
-                      className={s.stars}
-                      aria-label={`Рейтинг ${r.rating} з 5`}
-                    >
-                      {'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}
+          {reviews.length === 0 && !error ? (
+            <p className={s.noReviews}>Наразі немає відгуків.</p>
+          ) : (
+            <ul className={s.reviewList}>
+              {reviews.map(r => (
+                <li
+                  key={`${r.author_name}-${r.time}`}
+                  className={s.reviewList__item}
+                >
+                  <div className={s.nameAndPhotoContainer}>
+                    <img
+                      className={s.reviewList__itemPhoto}
+                      src={
+                        r.profile_photo_url &&
+                        !r.profile_photo_url.startsWith(
+                          'https://lh3.googleusercontent.com/'
+                        )
+                          ? r.profile_photo_url
+                          : `https://placehold.co/40x40?text=${encodeURIComponent(
+                              r.author_name[0].toUpperCase()
+                            )}`
+                      }
+                      alt={`Фото профілю користувача ${r.author_name}`}
+                    />
+                    <div className={s.nameAndRating}>
+                      <strong className={s.authorName}>{r.author_name}</strong>
+                      <div
+                        className={s.stars}
+                        aria-label={`Рейтинг ${r.rating} з 5`}
+                      >
+                        {'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <p className={s.reviewText}>{r.text}</p>
-                <small className='description'>
-                  {(() => {
-                    const d = new Date(r.time * 1000);
-                    const day = String(d.getDate()).padStart(2, '0');
-                    const monthNames = [
-                      'січня',
-                      'лютого',
-                      'березня',
-                      'квітня',
-                      'травня',
-                      'червня',
-                      'липня',
-                      'серпня',
-                      'вересня',
-                      'жовтня',
-                      'листопада',
-                      'грудня',
-                    ];
-                    const month = monthNames[d.getMonth()];
-                    const year = d.getFullYear();
-                    const hours = String(d.getHours()).padStart(2, '0');
-                    const minutes = String(d.getMinutes()).padStart(2, '0');
-                    return `${day} ${month} ${year}, ${hours}:${minutes}`;
-                  })()}
-                </small>
-              </li>
-            ))}
-          </ul>
+                  <p className={s.reviewText}>{r.text}</p>
+                  <small className="description">
+                    {(() => {
+                      const d = new Date(r.time * 1000);
+                      const day = String(d.getDate()).padStart(2, '0');
+                      const monthNames = [
+                        'січня',
+                        'лютого',
+                        'березня',
+                        'квітня',
+                        'травня',
+                        'червня',
+                        'липня',
+                        'серпня',
+                        'вересня',
+                        'жовтня',
+                        'листопада',
+                        'грудня',
+                      ];
+                      const month = monthNames[d.getMonth()];
+                      const year = d.getFullYear();
+                      const hours = String(d.getHours()).padStart(2, '0');
+                      const minutes = String(d.getMinutes()).padStart(2, '0');
+                      return `${day} ${month} ${year}, ${hours}:${minutes}`;
+                    })()}
+                  </small>
+                </li>
+              ))}
+            </ul>
           )}
-          </div>
+        </div>
       </div>
     </section>
   );
