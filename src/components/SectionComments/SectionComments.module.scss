@@ -13,7 +13,13 @@
 
 .sectionComments__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .comments__container {
@@ -86,10 +92,14 @@
 }
 
 .qrCode {
-  width: 250px;
-  height: 250px;
+  width: 100%;
   border: 3px solid var(--titleTextColor);
   border-radius: 8px;
+
+  @include mq(desk) {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .qrCode__title {
@@ -103,8 +113,8 @@
 }
 
 .qrCode__arrow {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
   color: var(--titleTextColor);
   margin-bottom: 15px;
 }
