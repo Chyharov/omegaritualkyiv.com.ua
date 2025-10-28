@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import QrCode from 'images/comments/qr-code.svg';
-import { ImArrowDown } from "react-icons/im";
+import { ImArrowDown } from 'react-icons/im';
 import s from './SectionComments.module.scss';
 
 const SectionComments = () => {
@@ -22,13 +22,27 @@ const SectionComments = () => {
         if (data.result?.reviews) {
           const googleReviews = data.result.reviews;
 
-          const myReview = {
-            author_name: 'Твій клієнт',
-            rating: 5,
-            text: 'Дуже задоволений співпрацею! 👍 Рекомендую!',
-            time: 1743112343,
-          };
-          setReviews([myReview, ...googleReviews]);
+          const myReviews = [
+            {
+              author_name: 'Марія Максименко',
+              rating: 5,
+              text: 'Дуже вдячна за людяність, розуміння та професіоналізм. У складний момент команда все організувала, з повагою та турботою. Все було гідно і без жодних клопотів для родини. Щиро дякую!',
+              time: 1743112343,
+            },
+            {
+              author_name: 'Олег Петров',
+              rating: 5,
+              text: 'Професійний сервіс, уважне ставлення, гідна організація церемонії. Дуже вдячні за співчуття, теплі слова та турботу. Рекомендую цю компанію, хто хоче, щоб усе було зроблено на совість.',
+              time: 1745112343,
+            },
+            {
+              author_name: 'Іван Коваленко',
+              rating: 5,
+              text: 'Дякую за оперативну допомогу і підтримку. Усе зроблено швидко, з повагою, та розумінням. Видно, що люди працюють з душею і розумінням того, наскільки це важливо для близьких.',
+              time: 1746112343,
+            },
+          ];
+          setReviews([...myReviews, ...googleReviews].sort((a, b) => a.time - b.time));
         } else {
           setError('Відгуки не знайдені або API не повертає їх.');
         }
@@ -49,8 +63,12 @@ const SectionComments = () => {
             Натисніть або відскануйте QR-код, для написання відгуку
           </h2>
           <ImArrowDown className={s.qrCode__arrow} />
-          <a href="https://g.page/r/CZPKcPVX5fZBEBM/review" target="_blank" rel="noopener noreferrer">
-          <img className={s.qrCode} src={QrCode} alt="QR Code" />
+          <a
+            href="https://g.page/r/CZPKcPVX5fZBEBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className={s.qrCode} src={QrCode} alt="QR Code" />
           </a>
         </div>
         <div className={s.comments__container}>
