@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionPallbearers from 'components/SectionPallbearers/SectionPallbearers';
+import SectionDisinfection from 'components/SectionDisinfection/SectionDisinfection';
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
@@ -40,7 +40,7 @@ const DisinfectionPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionPallbearers title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionDisinfection title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
         <SectionNeedHelp />
       </main>
       <Footer />
