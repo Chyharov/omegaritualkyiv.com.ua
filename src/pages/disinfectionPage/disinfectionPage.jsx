@@ -4,7 +4,7 @@ import SectionPallbearers from 'components/SectionPallbearers/SectionPallbearers
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/pallbearersPage/pallbearersPage.jpg';
+import imgBaner from 'images/disinfectionPage/disinfectionPage.jpg';
 
 const DisinfectionPage = () => {
   useEffect(() => {
