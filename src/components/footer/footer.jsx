@@ -165,7 +165,7 @@ const Footer = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="whatsapp://send?phone=+380939040707"
+                    href="whatsapp://send?phone=+380978860758"
                   >
                     <img
                       className={s.footerSocialList__itemIcon}
@@ -178,7 +178,7 @@ const Footer = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="viber://chat?number=+380939040707"
+                    href="viber://chat?number=+380978860758"
                   >
                     <img
                       className={s.footerSocialList__itemIcon}

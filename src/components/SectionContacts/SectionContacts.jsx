@@ -95,7 +95,7 @@ const SectionContacts = ({ title }) => {
               <li className={s.addressList__item}>
                 <a
                   className={s.addressList__itemLinkWhatsApp}
-                  href="whatsapp://send?phone=+380939040707"
+                  href="whatsapp://send?phone=+380978860758"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,7 +106,7 @@ const SectionContacts = ({ title }) => {
               <li className={s.addressList__item}>
                 <a
                   className={s.addressList__itemLinkViber}
-                  href="viber://chat?number=+380939040707"
+                  href="viber://chat?number=+380978860758"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
