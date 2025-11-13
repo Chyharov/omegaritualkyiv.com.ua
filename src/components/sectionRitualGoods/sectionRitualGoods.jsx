@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import s from './sectionRitualGoods.module.scss';
 
 const ritualGoodsList = [
@@ -6,6 +7,7 @@ const ritualGoodsList = [
     src: require('../../images/ritualGoods/Group-46.png'),
     alt: 'Зображення 1',
     title: 'Вінки',
+    link: '/wreaths',
   },
   {
     id: 2,
@@ -35,7 +37,7 @@ const sectionRitualGoods = () => {
 
         <ul className={s.ritualGoodsList}>
           {ritualGoodsList.map(photo => (
-            <a className={s.ritualGoodsList__itemLink} href="/">
+            <Link className={s.ritualGoodsList__itemLink} to={photo.link}>
               <li key={photo.id} className={s.ritualGoodsList__item}>
                 <img
                   src={photo.src}
@@ -46,7 +48,7 @@ const sectionRitualGoods = () => {
                   {photo.title}
                 </p>
               </li>
-            </a>
+            </Link>
           ))}
         </ul>
       </div>
