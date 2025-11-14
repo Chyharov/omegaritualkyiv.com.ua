@@ -4,7 +4,7 @@ import SectionDisinfection from 'components/SectionDisinfection/SectionDisinfect
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/disinfectionPage/disinfectionPage.jpg';
+import imgBaner from 'images/wreathsPage/wreathsPage.jpg';
 
 const WreathsPage = () => {
   useEffect(() => {
@@ -33,8 +33,8 @@ const WreathsPage = () => {
     [language]
   );
 
-  const title = 'Дезобробка';
-  const imgBannerDescription = 'Дезінфекція приміщень після смерті в ньому людини – це звичайна практика, яка дозволяє усунути не тільки неприємний трупний запах, але і біологічну небезпеку від бактерій, вірусів і грибків, що розвиваються в тілі небіжчика. Це особливо важливо, якщо покійний помер від гострого інфекційного захворювання.';
+  const title = 'Вінки на похорон';
+  const imgBannerDescription = 'Традиція використання на похороні квіткових композицій йде глибоко в давнину, коли похоронні вінки клали померлим на голову перед похованням, як символ чистоти душі при переході у вічне життя на небесах. Пізніше такі ритуальні вінки стали класти зверху на труну, наче монарший вінець на похороні вінценосних осіб. Ця традиція в наші дні трансформувалася у підношення квітів на церемонії прощання, як вираження любові та пошани покійному.';
 
   return (
     <>
