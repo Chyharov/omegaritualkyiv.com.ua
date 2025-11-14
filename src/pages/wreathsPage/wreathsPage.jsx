@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionDisinfection from 'components/SectionDisinfection/SectionDisinfection';
+import SectionWreaths from 'components/SectionWreaths/SectionWreaths';
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
@@ -40,7 +40,7 @@ const WreathsPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionDisinfection title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionWreaths title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
         <SectionNeedHelp />
       </main>
       <Footer />
