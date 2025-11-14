@@ -51,7 +51,7 @@ const SectionWreaths = ({ title, imgBaner, imgBannerDescription }) => {
         </p>
 
         <ul className={s.wreathsList}>
-          <Link to='/freshwreaths' className={s.wreathsListLink}>
+          <Link to="/freshwreaths" className={s.wreathsListLink}>
             <li className={s.wreathsListItem}>
               <img
                 className={s.wreathsListItemImg}
@@ -61,7 +61,7 @@ const SectionWreaths = ({ title, imgBaner, imgBannerDescription }) => {
               <h3 className={s.wreathsListItemTitle}>Вінок із живих квітів</h3>
             </li>
           </Link>
-          <Link to='/artificialwreaths' className={s.wreathsListLink}>
+          <Link to="/artificialwreaths" className={s.wreathsListLink}>
             <li className={s.wreathsListItem}>
               <img
                 className={s.wreathsListItemImg}
