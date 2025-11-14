@@ -10,3 +10,56 @@
     background-color: var(--backgroundColor);
   }
 }
+
+.wreathsList {
+  margin-bottom: 15px;
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+}
+
+.wreathsListItem {
+  padding: 15px;
+  background-color: #eaeaea;
+}
+
+.wreathsListLink {
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        -webkit-transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        -webkit-box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.wreathsListLink:hover,
+.wreathsListLink:focus {
+    transform: scale(1.04);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    filter: brightness(1.04);
+}
+
+.wreathsListItemImg {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 16px auto;
+
+  @include mq(desk) {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+.wreathsListItemTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primaryTextColor);
+  margin-bottom: 30px;
+}

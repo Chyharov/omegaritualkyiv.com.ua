@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
+import WreathFresh from 'images/ritualGoods/Group-46.png';
+import ArtificialWreaths from 'images/artificialWreaths/artificialWreaths.png';
 import s from './SectionWreaths.module.scss';
 
 const SectionWreaths = ({ title, imgBaner, imgBannerDescription }) => {
@@ -47,9 +50,27 @@ const SectionWreaths = ({ title, imgBaner, imgBannerDescription }) => {
           <b>Ціни на вінки:</b> від 300 грн
         </p>
 
-        <ul>
-          <li>Вінок із живих квітів</li>
-          <li>Штучні вінки</li>
+        <ul className={s.wreathsList}>
+          <Link to='/freshwreaths' className={s.wreathsListLink}>
+            <li className={s.wreathsListItem}>
+              <img
+                className={s.wreathsListItemImg}
+                src={WreathFresh}
+                alt="Вінок із живих квітів"
+              />
+              <h3 className={s.wreathsListItemTitle}>Вінок із живих квітів</h3>
+            </li>
+          </Link>
+          <Link to='/artificialwreaths' className={s.wreathsListLink}>
+            <li className={s.wreathsListItem}>
+              <img
+                className={s.wreathsListItemImg}
+                src={ArtificialWreaths}
+                alt="Штучні вінки"
+              />
+              <h3 className={s.wreathsListItemTitle}>Штучні вінки</h3>
+            </li>
+          </Link>
         </ul>
 
         <h2 className="title">Які квіти найкращі для похоронного вінка?</h2>
