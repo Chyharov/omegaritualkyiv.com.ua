@@ -1,6 +1,11 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionArtificialWreaths.module.scss';
+import SectionArtificialWreathsImg from 'images/artificialWreaths/SectionArtificialWreathsImg.jpg';
+import SectionArtificialWreathsImg2 from 'images/artificialWreaths/SectionArtificialWreathsImg2.jpg';
+import SectionArtificialWreathsImg3 from 'images/artificialWreaths/SectionArtificialWreathsImg3.jpg';
+import SectionArtificialWreathsImg4 from 'images/artificialWreaths/SectionArtificialWreathsImg4.jpg';
+import SectionArtificialWreathsImg5 from 'images/artificialWreaths/SectionArtificialWreathsImg5.jpg';
 
 const SectionArtificialWreaths = ({
   title,
@@ -113,6 +118,25 @@ const SectionArtificialWreaths = ({
           повагу до померлої близької людини, християнські сподівання набуття
           Царства Небесного та вічного життя на небесах.
         </p>
+
+        <ul className={s.artificialWreathsImgList}>
+          <li className={s.artificialWreathsImgListItem}>
+            <img className={s.artificialWreathsImg} src={SectionArtificialWreathsImg} alt="SectionArtificialWreathsImg" />
+          </li>
+          <li className={s.artificialWreathsImgListItem}>
+            <img className={s.artificialWreathsImg} src={SectionArtificialWreathsImg2} alt="SectionArtificialWreathsImg2" />
+          </li>
+          <li className={s.artificialWreathsImgListItem}>
+            <img className={s.artificialWreathsImg} src={SectionArtificialWreathsImg3} alt="SectionArtificialWreathsImg3" />
+          </li>
+          <li className={s.artificialWreathsImgListItem}>
+            <img className={s.artificialWreathsImg} src={SectionArtificialWreathsImg4} alt="SectionArtificialWreathsImg4" />
+          </li>
+          <li className={s.artificialWreathsImgListItem}>
+            <img className={s.artificialWreathsImg} src={SectionArtificialWreathsImg5} alt="SectionArtificialWreathsImg5" />
+          </li>
+        </ul>
+
       </div>
     </section>
   );

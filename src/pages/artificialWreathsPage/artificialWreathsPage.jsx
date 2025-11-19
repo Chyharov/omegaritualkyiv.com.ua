@@ -4,7 +4,7 @@ import SectionArtificialWreaths from 'components/SectionArtificialWreaths/Sectio
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/freshWreathsPage/freshWreathsPage.jpg';
+import imgBaner from 'images/artificialWreathsPage/artificialWreathsPage.jpg';
 
 const ArtificialWreathsPage = () => {
   useEffect(() => {

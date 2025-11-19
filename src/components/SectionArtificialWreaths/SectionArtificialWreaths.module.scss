@@ -10,3 +10,13 @@
         background-color: var(--backgroundColor);
     }
 }
+
+.artificialWreathsImgList {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+    @include mq(desk) {
+        gap: 20px;
+    }
+}
