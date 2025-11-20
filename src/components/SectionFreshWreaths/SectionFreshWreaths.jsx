@@ -1,5 +1,11 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
+import SectionSectionFreshWreathsImg from 'images/artificialWreathsPage/SectionSectionFreshWreathsImg.jpg';
+import SectionSectionFreshWreathsImg2 from 'images/artificialWreathsPage/SectionSectionFreshWreathsImg2.jpg';
+import SectionSectionFreshWreathsImg3 from 'images/artificialWreathsPage/SectionSectionFreshWreathsImg3.jpg';
+import SectionSectionFreshWreathsImg4 from 'images/artificialWreathsPage/SectionSectionFreshWreathsImg4.jpg';
+import SectionSectionFreshWreathsImg5 from 'images/artificialWreathsPage/SectionSectionFreshWreathsImg5.jpg';
+
 import s from './SectionFreshWreaths.module.scss';
 
 const SectionFreshWreaths = ({ title, imgBaner, imgBannerDescription }) => {
@@ -117,6 +123,44 @@ const SectionFreshWreaths = ({ title, imgBaner, imgBannerDescription }) => {
           близької людини або замовити комплексне флористичне оформлення
           церемонії прощання.
         </p>
+
+        <ul className={s.sectionSectionFreshWreathsImgList}>
+          <li className={s.sectionSectionFreshWreathsImgListItem}>
+            <img
+              className={s.sectionSectionFreshWreathsImg}
+              src={SectionSectionFreshWreathsImg}
+              alt="SectionSectionFreshWreathsImg"
+            />
+          </li>
+          <li className={s.sectionSectionFreshWreathsImgListItem}>
+            <img
+              className={s.sectionSectionFreshWreathsImg}
+              src={SectionSectionFreshWreathsImg2}
+              alt="SectionSectionFreshWreathsImg2"
+            />
+          </li>
+          <li className={s.sectionSectionFreshWreathsImgListItem}>
+            <img
+              className={s.sectionSectionFreshWreathsImg}
+              src={SectionSectionFreshWreathsImg3}
+              alt="SectionSectionFreshWreathsImg3"
+            />
+          </li>
+          <li className={s.sectionSectionFreshWreathsImgListItem}>
+            <img
+              className={s.sectionSectionFreshWreathsImg}
+              src={SectionSectionFreshWreathsImg4}
+              alt="SectionSectionFreshWreathsImg4"
+            />
+          </li>
+          <li className={s.sectionSectionFreshWreathsImgListItem}>
+            <img
+              className={s.sectionSectionFreshWreathsImg}
+              src={SectionSectionFreshWreathsImg5}
+              alt="SectionSectionFreshWreathsImg5"
+            />
+          </li>
+        </ul>
       </div>
     </section>
   );
