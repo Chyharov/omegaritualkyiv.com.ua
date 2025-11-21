@@ -14,6 +14,7 @@ const ritualGoodsList = [
     src: require('../../images/ritualGoods/Group-47.png'),
     alt: 'Зображення 2',
     title: 'Труни',
+    link: '/coffins',
   },
   {
     id: 3,

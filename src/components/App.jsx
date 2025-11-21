@@ -23,6 +23,7 @@ const DisinfectionPage = lazy(() => import('pages/disinfectionPage/disinfectionP
 const WreathsPage = lazy(() => import('pages/wreathsPage/wreathsPage'));
 const FreshWreathsPage = lazy(() => import('pages/freshWreathsPage/freshWreathsPage'));
 const ArtificialWreathsPage = lazy(() => import('pages/artificialWreathsPage/artificialWreathsPage'));
+const CoffinsPage = lazy(() => import('pages/coffinsPage/coffinsPage'));
 
 const Page404 = lazy(() => import('pages/page404/page404'));
 
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/wreaths" element={<WreathsPage />} />
           <Route path="/freshwreaths" element={<FreshWreathsPage />} />
           <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
+          <Route path="/coffins" element={<CoffinsPage />} />
       
           <Route path="*" element={<Page404 />} />
         </Routes>
