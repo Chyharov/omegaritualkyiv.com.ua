@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionRitualHall from 'components/SectionRitualHall/SectionRitualHall';
+import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
@@ -40,7 +40,7 @@ const CoffinsPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionRitualHall title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionCoffins title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
         <SectionNeedHelp />
       </main>
       <Footer />
