@@ -4,7 +4,7 @@ import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
-import imgBaner from 'images/ritualHallPage/ritualHallPage.png';
+import imgBaner from 'images/sectionCoffins/sectionCoffins.png';
 
 const CoffinsPage = () => {
   useEffect(() => {
