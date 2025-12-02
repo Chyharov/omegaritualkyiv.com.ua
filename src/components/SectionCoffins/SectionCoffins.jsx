@@ -2,6 +2,29 @@ import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionCoffins.module.scss';
 
+export const eliteCoffinsList = [
+  {
+    id: 1,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg.jpg'),
+    alt: 'Elite Coffin 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg2.jpg'),
+    alt: 'Elite Coffin 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg3.jpg'),
+    alt: 'Elite Coffin 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg4.jpg'),
+    alt: 'Elite Coffin 4',
+  },
+];
+
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
   return (
     <section className={s.sectionCoffins}>
@@ -12,9 +35,11 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           imgBannerDescription={imgBannerDescription}
         />
 
-        <h2 className='title'>Від економ-класу до елітних саркофагів із дорогих порід дерева.</h2>
+        <h2 className="title">
+          Від економ-класу до елітних саркофагів із дорогих порід дерева.
+        </h2>
 
-        <p className='description'>
+        <p className="description">
           Труна – це обов’язковий ритуальний атрибут поховання в більшості
           культур та релігій світу. На відміну від ісламу, де прийнято надавати
           тіло землі в тканинах та багатих килимах, або індуїзму, де покійного
@@ -25,9 +50,9 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           покійному в його останньому шляху.
         </p>
 
-        <h2 className='title'>Елітні дерев’яні труни та саркофаги</h2>
+        <h2 className="title">Елітні дерев’яні труни та саркофаги</h2>
 
-        <p className='description'>
+        <p className="description">
           Спосіб життя та навколишні людини предмети демонструють його статус і
           становище у суспільстві. Елітні автомобілі та нерухомість, дорогі
           предмети гардеробу та аксесуари – все це характерні атрибути високої
@@ -36,7 +61,7 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           відповідно до її прижиттєвого статусу.
         </p>
 
-        <p className='description'>
+        <p className="description">
           Елітна труна з цінних порід дерева ручної роботи з ідеальним
           опрацюванням найдрібніших деталей декору та фурнітури, бездоганним
           поліруванням та лакуванням – це демонстрація не просто статусності
@@ -44,7 +69,7 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           колег.
         </p>
 
-        <p className='description'>
+        <p className="description">
           <b>Похоронний дім «Омега»</b> – це понад 25 видів елітних дерев’яних
           трун власного виробництва. Завдяки відсутності посередників та власної
           майстерні ми пропонуємо ціни від виробника без зайвих націнок. Це може
@@ -54,33 +79,49 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           частину прихованої тіла.
         </p>
 
-        <p className='description'>
+        <p className="description">
           Ціна елітної лакованої дерев’яної труни або двокришкового саркофага
           залежить від породи дерева, глибини ручного опрацювання декору, якості
           лакофарбових матеріалів, оббивних тканин та фурнітури.
         </p>
 
-        <ul className='list'>
-          <li className='listItem'>
+        <ul className="list">
+          <li className="listItem">
             Для елітної внутрішньої оббивки та зовнішнього текстильного декору
             ми використовуємо Італійські тканини найвищої якості.
           </li>
-          <li className='listItem'>
+          <li className="listItem">
             Тільки високоміцна престижна фурнітура, включаючи ручки та замки з
             дорогих металів.
           </li>
-          <li className='listItem'>
+          <li className="listItem">
             Покриття дерева тільки найкращим лаком у кілька шарів, що робить
             поверхню ідеально рівною та з багатим блиском.
           </li>
         </ul>
 
-        <p className='description'>
+        <p className="description">
           Кожна така труна робиться майстрами кілька днів, через що її вартість
           виходить порівняно високою. При цьому ми не женемося за надприбутком і
           пропонуємо чесні ціни, які повністю відображають всю повноту копіткої
           багатоденної праці майстрів і елітних матеріалів, що використовуються.
         </p>
+
+        <h2>Елітні труни</h2>
+        <h3>
+          <span>Ціна:</span> від 9 800 грн
+        </h3>
+        <h3>
+          <span>Матеріал:</span> дерев’яна заготовка покрита лаком
+        </h3>
+
+        <ul>
+          {eliteCoffinsList.map(({ id, src, alt }) => (
+            <li key={id}>
+              <img src={src} alt={alt} />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
