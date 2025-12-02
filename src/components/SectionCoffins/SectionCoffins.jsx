@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import ModalGallery from 'components/ModalGallery/ModalGallery';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionCoffins.module.scss';
@@ -146,6 +148,16 @@ export const eliteCoffinsList = [
 ];
 
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalIndex, setModalIndex] = useState(0);
+
+  const openModal = index => {
+    setModalIndex(index);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => setModalOpen(false);
+
   return (
     <section className={s.sectionCoffins}>
       <div className={`container ${s.coffins__container}`}>
@@ -236,12 +248,28 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
         </h3>
 
         <ul className={s.eliteCoffins__list}>
-          {eliteCoffinsList.map(({ id, src, alt }) => (
-            <li className={s.eliteCoffins__listItem} key={id}>
-              <img className={s.eliteCoffins__listItemImage} src={src} alt={alt} />
+          {eliteCoffinsList.map(({ id, src, alt }, index) => (
+            <li
+              className={s.eliteCoffins__listItem}
+              key={id}
+              onClick={() => openModal(index)}
+            >
+              <img
+                className={s.eliteCoffins__listItemImage}
+                src={src}
+                alt={alt}
+              />
             </li>
           ))}
         </ul>
+
+        {modalOpen && (
+          <ModalGallery
+            images={eliteCoffinsList}
+            initialIndex={modalIndex}
+            onClose={closeModal}
+          />
+        )}
       </div>
     </section>
   );
