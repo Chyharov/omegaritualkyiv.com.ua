@@ -10,3 +10,52 @@
         background-color: var(--backgroundColor);
     }
 }
+
+.eliteCoffins__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 40px 0;
+    list-style: none;
+
+    .eliteCoffins__listItem {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        background: #fff;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+                .eliteCoffins__listItemImage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
+
+.coffinsTitle {
+        font-family: "Lato", sans-serif;
+    font-size: 30px;
+        font-weight: 700;
+    color: var(--secondTextColor);
+    margin-bottom: 15px;
+}
+
+.coffinsSubtitle {
+        font-family: "Lato", sans-serif;
+    font-size: 18px;
+        font-weight: 400;
+    color: var(--secondTextColor);
+    margin-bottom: 10px;
+
+        span {
+        font-weight: 700;
+    }
+}

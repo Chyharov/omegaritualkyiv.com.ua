@@ -23,6 +23,126 @@ export const eliteCoffinsList = [
     src: require('../../images/eliteCoffins/EliteCoffinsImg4.jpg'),
     alt: 'Elite Coffin 4',
   },
+  {
+    id: 5,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg5.jpg'),
+    alt: 'Elite Coffin 5',
+  },
+  {
+    id: 6,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg6.jpg'),
+    alt: 'Elite Coffin 6',
+  },
+  {
+    id: 7,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg7.jpg'),
+    alt: 'Elite Coffin 7',
+  },
+  {
+    id: 8,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg8.jpg'),
+    alt: 'Elite Coffin 8',
+  },
+  {
+    id: 9,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg9.jpg'),
+    alt: 'Elite Coffin 9',
+  },
+  {
+    id: 10,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg10.jpg'),
+    alt: 'Elite Coffin 10',
+  },
+  {
+    id: 11,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg11.jpg'),
+    alt: 'Elite Coffin 11',
+  },
+  {
+    id: 12,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg12.jpg'),
+    alt: 'Elite Coffin 12',
+  },
+  {
+    id: 13,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg13.jpg'),
+    alt: 'Elite Coffin 13',
+  },
+  {
+    id: 14,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg14.jpg'),
+    alt: 'Elite Coffin 14',
+  },
+  {
+    id: 15,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg15.jpg'),
+    alt: 'Elite Coffin 15',
+  },
+  {
+    id: 16,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg16.jpg'),
+    alt: 'Elite Coffin 16',
+  },
+  {
+    id: 17,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg17.jpg'),
+    alt: 'Elite Coffin 17',
+  },
+  {
+    id: 18,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg18.jpg'),
+    alt: 'Elite Coffin 18',
+  },
+  {
+    id: 19,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg19.jpg'),
+    alt: 'Elite Coffin 19',
+  },
+  {
+    id: 20,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg20.jpg'),
+    alt: 'Elite Coffin 20',
+  },
+  {
+    id: 21,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg21.jpg'),
+    alt: 'Elite Coffin 21',
+  },
+  {
+    id: 22,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg22.jpg'),
+    alt: 'Elite Coffin 22',
+  },
+  {
+    id: 23,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg23.jpg'),
+    alt: 'Elite Coffin 23',
+  },
+  {
+    id: 24,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg24.jpg'),
+    alt: 'Elite Coffin 24',
+  },
+  {
+    id: 25,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg25.jpg'),
+    alt: 'Elite Coffin 25',
+  },
+  {
+    id: 26,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg26.jpg'),
+    alt: 'Elite Coffin 26',
+  },
+  {
+    id: 27,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg27.jpg'),
+    alt: 'Elite Coffin 27',
+  },
+  {
+    id: 28,
+    src: require('../../images/eliteCoffins/EliteCoffinsImg28.jpg'),
+    alt: 'Elite Coffin 28',
+  },
 ];
 
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
@@ -107,18 +227,18 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           багатоденної праці майстрів і елітних матеріалів, що використовуються.
         </p>
 
-        <h2>Елітні труни</h2>
-        <h3>
+        <h2 className={s.coffinsTitle}>Елітні труни</h2>
+        <h3 className={s.coffinsSubtitle}>
           <span>Ціна:</span> від 9 800 грн
         </h3>
-        <h3>
+        <h3 className={s.coffinsSubtitle}>
           <span>Матеріал:</span> дерев’яна заготовка покрита лаком
         </h3>
 
-        <ul>
+        <ul className={s.eliteCoffins__list}>
           {eliteCoffinsList.map(({ id, src, alt }) => (
-            <li key={id}>
-              <img src={src} alt={alt} />
+            <li className={s.eliteCoffins__listItem} key={id}>
+              <img className={s.eliteCoffins__listItemImage} src={src} alt={alt} />
             </li>
           ))}
         </ul>
