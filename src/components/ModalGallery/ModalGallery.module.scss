@@ -22,7 +22,7 @@
 }
 
 .modalContent img {
-    width: 100%;
+    min-width: 1000px;
     height: auto;
     border-radius: 8px;
 }
@@ -56,11 +56,11 @@
 }
 
 .prev {
-    left: -70px;
+    left: -170px;
 }
 
 .next {
-    right: -70px;
+    right: -170px;
 }
 
 @keyframes fadeIn {

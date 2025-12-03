@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import s from './ModalGallery.module.scss';
 
 const ModalGallery = ({ images, initialIndex = 0, onClose }) => {
@@ -13,6 +13,20 @@ const ModalGallery = ({ images, initialIndex = 0, onClose }) => {
     e.stopPropagation();
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, [onClose]);
 
   return (
     <div className={s.modal} onClick={onClose}>
