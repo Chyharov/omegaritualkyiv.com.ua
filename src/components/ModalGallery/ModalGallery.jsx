@@ -1,46 +1,42 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import s from './ModalGallery.module.scss';
 
 const ModalGallery = ({ images, initialIndex = 0, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
-  const prevImage = (e) => {
-    e.stopPropagation();
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
+  const prevImage = useCallback(() => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  }, [images.length]);
 
-  const nextImage = (e) => {
-    e.stopPropagation();
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+  const nextImage = useCallback(() => {
+    setCurrentIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+  }, [images.length]);
 
   useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
     };
 
-    window.addEventListener('keydown', handleEsc);
-
-    return () => {
-      window.removeEventListener('keydown', handleEsc);
-    };
-  }, [onClose]);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose, prevImage, nextImage]);
 
   return (
     <div className={s.modal} onClick={onClose}>
       <div className={s.modalContent} onClick={(e) => e.stopPropagation()}>
-        <img src={images[currentIndex].src} alt={images[currentIndex].alt} />
-        <button className={s.closeBtn} onClick={onClose}>
-          ×
-        </button>
-        <button className={`${s.navBtn} ${s.prev}`} onClick={prevImage}>
-          ‹
-        </button>
-        <button className={`${s.navBtn} ${s.next}`} onClick={nextImage}>
-          ›
-        </button>
+        <img
+          src={images[currentIndex].src}
+          alt={images[currentIndex].alt}
+        />
+        <button className={s.closeBtn} onClick={onClose}>×</button>
+        <button className={`${s.navBtn} ${s.prev}`} onClick={prevImage}>‹</button>
+        <button className={`${s.navBtn} ${s.next}`} onClick={nextImage}>›</button>
       </div>
     </div>
   );
