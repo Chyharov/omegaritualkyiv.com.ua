@@ -147,6 +147,69 @@ export const eliteCoffinsList = [
   },
 ];
 
+export const standardCoffinsList = [
+  {
+    id: 1,
+    src: require('../../images/standardCoffins/standardCoffinsImg1.jpg'),
+    alt: 'Standard Coffin 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/standardCoffins/standardCoffinsImg2.jpg'),
+    alt: 'Standard Coffin 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/standardCoffins/standardCoffinsImg3.jpg'),
+    alt: 'Standard Coffin 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/standardCoffins/standardCoffinsImg4.jpg'),
+    alt: 'Standard Coffin 4',
+  },
+  {
+    id: 5,
+    src: require('../../images/standardCoffins/standardCoffinsImg5.jpg'),
+    alt: 'Standard Coffin 5',
+  },
+  {
+    id: 6,
+    src: require('../../images/standardCoffins/standardCoffinsImg6.jpg'),
+    alt: 'Standard Coffin 6',
+  },
+  {
+    id: 7,
+    src: require('../../images/standardCoffins/standardCoffinsImg7.jpg'),
+    alt: 'Standard Coffin 7',
+  },
+  {
+    id: 8,
+    src: require('../../images/standardCoffins/standardCoffinsImg8.jpg'),
+    alt: 'Standard Coffin 8',
+  },
+  {
+    id: 9,
+    src: require('../../images/standardCoffins/standardCoffinsImg9.jpg'),
+    alt: 'Standard Coffin 9',
+  },
+  {
+    id: 10,
+    src: require('../../images/standardCoffins/standardCoffinsImg10.jpg'),
+    alt: 'Standard Coffin 10',
+  },
+  {
+    id: 11,
+    src: require('../../images/standardCoffins/standardCoffinsImg11.jpg'),
+    alt: 'Standard Coffin 11',
+  },
+  {
+    id: 12,
+    src: require('../../images/standardCoffins/standardCoffinsImg12.jpg'),
+    alt: 'Standard Coffin 12',
+  }
+];
+
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
@@ -274,6 +337,22 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
         <h3 className={s.coffinsSubtitle}>
           <span>Матеріал:</span> дерев’яна заготовка, з елементами дерева, покритого лаком
         </h3>
+
+        <ul className={s.eliteCoffins__list}>
+          {standardCoffinsList.map(({ id, src, alt }, index) => (
+            <li
+              className={s.eliteCoffins__listItem}
+              key={id}
+              onClick={() => openModal(index)}
+            >
+              <img
+                className={s.eliteCoffins__listItemImage}
+                src={src}
+                alt={alt}
+              />
+            </li>
+          ))}
+        </ul>
 
         {modalOpen && (
           <ModalGallery
