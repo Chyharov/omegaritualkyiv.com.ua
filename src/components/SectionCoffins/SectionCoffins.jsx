@@ -207,14 +207,16 @@ export const standardCoffinsList = [
     id: 12,
     src: require('../../images/standardCoffins/standardCoffinsImg12.jpg'),
     alt: 'Standard Coffin 12',
-  }
+  },
 ];
 
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
+  const [modalImages, setModalImages] = useState([]);
 
-  const openModal = index => {
+  const openModal = (images, index) => {
+    setModalImages(images);
     setModalIndex(index);
     setModalOpen(true);
   };
@@ -313,50 +315,54 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
         <ul className={s.eliteCoffins__list}>
           {eliteCoffinsList.map(({ id, src, alt }, index) => (
             <li
-              className={s.eliteCoffins__listItem}
               key={id}
-              onClick={() => openModal(index)}
+              className={s.eliteCoffins__listItem}
+              onClick={() => openModal(eliteCoffinsList, index)}
             >
-              <img
-                className={s.eliteCoffins__listItemImage}
-                src={src}
-                alt={alt}
-              />
+              <img src={src} alt={alt} />
             </li>
           ))}
         </ul>
 
-        <h2 className={s.coffinsTitle}>Стандартні та недорогі бюджетні труни</h2>
+        <h2 className={s.coffinsTitle}>
+          Стандартні та недорогі бюджетні труни
+        </h2>
 
-        <p className='description'>Вартість стандартної дерев’яної ритуальної труни середнього цінового рівня в нашому похоронному бюро також є однією з найдоступніших у Києві завдяки чесному відношенню до виробництва та ціноутворення. У виробництві недорогих стандартних моделей середньоцінового рівня ми використовуємо недорогу, але міцну деревину, яка після ретельної обробки набуває урочистого вигляду, що відповідає траурному заходу. Внутрішня оббивка виконується за допомогою недорогого, але якісного та приємного на вигляд текстилю.</p>
+        <p className="description">
+          Вартість стандартної дерев’яної ритуальної труни середнього цінового
+          рівня в нашому похоронному бюро також є однією з найдоступніших у
+          Києві завдяки чесному відношенню до виробництва та ціноутворення. У
+          виробництві недорогих стандартних моделей середньоцінового рівня ми
+          використовуємо недорогу, але міцну деревину, яка після ретельної
+          обробки набуває урочистого вигляду, що відповідає траурному заходу.
+          Внутрішня оббивка виконується за допомогою недорогого, але якісного та
+          приємного на вигляд текстилю.
+        </p>
 
         <h3 className={s.coffinsSubtitle}>
           <span>Ціна:</span> від 6 000 грн
         </h3>
 
         <h3 className={s.coffinsSubtitle}>
-          <span>Матеріал:</span> дерев’яна заготовка, з елементами дерева, покритого лаком
+          <span>Матеріал:</span> дерев’яна заготовка, з елементами дерева,
+          покритого лаком
         </h3>
 
         <ul className={s.eliteCoffins__list}>
           {standardCoffinsList.map(({ id, src, alt }, index) => (
             <li
-              className={s.eliteCoffins__listItem}
               key={id}
-              onClick={() => openModal(index)}
+              className={s.eliteCoffins__listItem}
+              onClick={() => openModal(standardCoffinsList, index)}
             >
-              <img
-                className={s.eliteCoffins__listItemImage}
-                src={src}
-                alt={alt}
-              />
+              <img src={src} alt={alt} />
             </li>
           ))}
         </ul>
 
         {modalOpen && (
           <ModalGallery
-            images={eliteCoffinsList}
+            images={modalImages}
             initialIndex={modalIndex}
             onClose={closeModal}
           />
