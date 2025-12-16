@@ -210,6 +210,89 @@ export const standardCoffinsList = [
   },
 ];
 
+export const economyCoffinsList = [
+  {
+    id: 1,
+    src: require('../../images/economyCoffins/economyCoffinsImg1.jpg'),
+    alt: 'Economy Coffin 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/economyCoffins/economyCoffinsImg2.jpg'),
+    alt: 'Economy Coffin 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/economyCoffins/economyCoffinsImg3.jpg'),
+    alt: 'Economy Coffin 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/economyCoffins/economyCoffinsImg4.jpg'),
+    alt: 'Economy Coffin 4',
+  },
+  {
+    id: 5,
+    src: require('../../images/economyCoffins/economyCoffinsImg5.jpg'),
+    alt: 'Economy Coffin 5',
+  },
+  {
+    id: 6,
+    src: require('../../images/economyCoffins/economyCoffinsImg6.jpg'),
+    alt: 'Economy Coffin 6',
+  },
+  {
+    id: 7,
+    src: require('../../images/economyCoffins/economyCoffinsImg7.jpg'),
+    alt: 'Economy Coffin 7',
+  },
+  {
+    id: 8,
+    src: require('../../images/economyCoffins/economyCoffinsImg8.jpg'),
+    alt: 'Economy Coffin 8',
+  },
+  {
+    id: 9,
+    src: require('../../images/economyCoffins/economyCoffinsImg9.jpg'),
+    alt: 'Economy Coffin 9',
+  },
+  {
+    id: 10,
+    src: require('../../images/economyCoffins/economyCoffinsImg10.jpg'),
+    alt: 'Economy Coffin 10',
+  },
+  {
+    id: 11,
+    src: require('../../images/economyCoffins/economyCoffinsImg11.jpg'),
+    alt: 'Economy Coffin 11',
+  },
+  {
+    id: 12,
+    src: require('../../images/economyCoffins/economyCoffinsImg12.jpg'),
+    alt: 'Economy Coffin 12',
+  },
+  {
+    id: 13,
+    src: require('../../images/economyCoffins/economyCoffinsImg13.jpg'),
+    alt: 'Economy Coffin 13',
+  },
+  {
+    id: 14,
+    src: require('../../images/economyCoffins/economyCoffinsImg14.jpg'),
+    alt: 'Economy Coffin 14',
+  },
+  {
+    id: 15,
+    src: require('../../images/economyCoffins/economyCoffinsImg15.jpg'),
+    alt: 'Economy Coffin 15',
+  },
+  {
+    id: 16,
+    src: require('../../images/economyCoffins/economyCoffinsImg16.jpg'),
+    alt: 'Economy Coffin 16',
+  },
+];
+
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
@@ -354,6 +437,38 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
               key={id}
               className={s.eliteCoffins__listItem}
               onClick={() => openModal(standardCoffinsList, index)}
+            >
+              <img src={src} alt={alt} />
+            </li>
+          ))}
+        </ul>
+
+        <h2 className={s.coffinsTitle}>Економ труни</h2>
+
+        <p className="description">
+          Труна не обов’язково повинна бути елітною з цінних порід дерева з
+          багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і
+          зовсім недорога труна, купити яку можна менше, ніж за 1000 грн. При
+          цьому його скромне, але урочисте оформлення недорогими тканинами, що
+          відповідають жалобній церемонії, підкреслить всю повноту поваги до
+          покійного.
+        </p>
+
+        <h3 className={s.coffinsSubtitle}>
+          <span>Ціна:</span> від 2 800 грн
+        </h3>
+
+        <h3 className={s.coffinsSubtitle}>
+          <span>Матеріал:</span> дерев’яна заготівля, оббита тканиною (шовк,
+          атлас, велюр, парча)
+        </h3>
+
+        <ul className={s.eliteCoffins__list}>
+          {economyCoffinsList.map(({ id, src, alt }, index) => (
+            <li
+              key={id}
+              className={s.eliteCoffins__listItem}
+              onClick={() => openModal(economyCoffinsList, index)}
             >
               <img src={src} alt={alt} />
             </li>
