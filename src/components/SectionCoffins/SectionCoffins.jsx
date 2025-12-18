@@ -297,10 +297,20 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
   const [modalImages, setModalImages] = useState([]);
+  const [modalWidth, setModalWidth] = useState('100%');
 
   const openModal = (images, index) => {
     setModalImages(images);
     setModalIndex(index);
+
+    if (window.innerWidth >= 1360 && images === economyCoffinsList) {
+      setModalWidth('430px');
+    } else if (window.innerWidth >= 1360) {
+      setModalWidth('900px');
+    } else {
+      setModalWidth('100%');
+    }
+
     setModalOpen(true);
   };
 
@@ -479,6 +489,7 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
           <ModalGallery
             images={modalImages}
             initialIndex={modalIndex}
+            modalWidth={modalWidth}
             onClose={closeModal}
           />
         )}
