@@ -13,11 +13,16 @@
 
 .eliteCoffins__list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 0;
-  margin: 70px 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0px;
   list-style: none;
+  padding: 0;
+  @include mq(desk) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 70px 0px;
+  }
 
   .eliteCoffins__listItem {
     overflow: hidden;
