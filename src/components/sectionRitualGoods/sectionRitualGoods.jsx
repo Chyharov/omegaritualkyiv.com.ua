@@ -21,6 +21,7 @@ const ritualGoodsList = [
     src: require('../../images/ritualGoods/Group-48.png'),
     alt: 'Зображення 3',
     title: 'Хрести',
+    link: '/crosses',
   },
   {
     id: 4,
