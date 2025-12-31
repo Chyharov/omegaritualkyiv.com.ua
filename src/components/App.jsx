@@ -61,6 +61,7 @@ const ArtificialWreathsPage = lazy(() =>
 );
 const CoffinsPage = lazy(() => import('pages/coffinsPage/coffinsPage'));
 const CrossesPage = lazy(() => import('pages/crossesPage/crossesPage'));
+const MonumentsPage = lazy(() => import('pages/monumentsPage/monumentsPage'));
 
 const Page404 = lazy(() => import('pages/page404/page404'));
 
@@ -100,6 +101,7 @@ const App = () => (
       <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
       <Route path="/coffins" element={<CoffinsPage />} />
       <Route path="/crosses" element={<CrossesPage />} />
+      <Route path="/monuments" element={<MonumentsPage />} />
 
       <Route path="*" element={<Page404 />} />
     </Routes>

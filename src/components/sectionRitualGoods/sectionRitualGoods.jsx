@@ -28,6 +28,7 @@ const ritualGoodsList = [
     src: require('../../images/ritualGoods/Group-49.png'),
     alt: 'Зображення 4',
     title: 'Пам`ятники',
+    link: '/monuments',
   },
 ];
 
