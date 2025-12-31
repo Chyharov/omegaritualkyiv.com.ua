@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import ModalGallery from 'components/ModalGallery/ModalGallery';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
+import { useGalleryModal } from 'hooks/useGalleryModal';
+import GalleryModalRoot from 'components/GalleryModalRoot/GalleryModalRoot';
 import s from './SectionCrosses.module.scss';
 
 export const crossesList = [
@@ -33,24 +33,16 @@ export const crossesList = [
 ];
 
 const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-    const [modalIndex, setModalIndex] = useState(0);
-    const [modalImages, setModalImages] = useState([]);
-    const [modalWidth, setModalWidth] = useState('100%');
-  
-    const openModal = (images, index) => {
-      setModalImages(images);
-      setModalIndex(index);
-  
-      if (window.innerWidth >= 1360 && images === crossesList) {
-        setModalWidth('800px');
-      }
-  
-      setModalOpen(true);
-    };
-  
-  const closeModal = () => setModalOpen(false);
-  
+  const gallery = useGalleryModal();
+
+  const handleImageClick = index => {
+    gallery.openGallery({
+      images: crossesList,
+      index,
+      width: window.innerWidth >= 1360 ? '800px' : '100%',
+    });
+  };
+
   return (
     <section className={s.sectionCrosses}>
       <div className={`container ${s.sectionCrosses__container}`}>
@@ -90,7 +82,9 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
           спокій православного покійного та позначатиме місце його могили.
         </p>
 
-        <h2 className='title'>Який ритуальний хрест краще встановлювати на могилу?</h2>
+        <h2 className="title">
+          Який ритуальний хрест краще встановлювати на могилу?
+        </h2>
 
         <p className="description">
           У цьому питанні потрібно керуватися виключно особистими уподобаннями
@@ -98,26 +92,26 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
           аспектами.
         </p>
 
-        <ul className='list'>
-          <li className='listItem'>
+        <ul className="list">
+          <li className="listItem">
             Православ’я загалом не пред’являє жодних особливих суворих правил і
             церковних канонів, крім того, що ритуальний могильний хрест має бути
             православним, якщо покійний належить саме до цієї конфесії
             християнства.
           </li>
-          <li className='listItem'>
+          <li className="listItem">
             Висвітлення ритуального хреста, як і обряд відспівування покійного,
             можна провести у день похорону. Це робить священик, який приїде на
             церемонію прощання або безпосередньо до церкви, якщо покійного
             відспівують у храмі.
           </li>
-          <li className='listItem'>
+          <li className="listItem">
             З погляду практичності краще вибирати довговічні матеріали чи
             вироби, покриті гарним захистом від руйнівних атмосферних чинників.
             Це особливо важливо, якщо сім’я покійного не планує встановлювати
             пам’ятник найближчими роками з фінансових чи інших причин.
           </li>
-          <li className='listItem'>
+          <li className="listItem">
             Зовнішній вигляд ритуального хреста може бути будь-яким, але не
             порушуючим релігійні почуття інших православних людей – суворим,
             стриманим і без зайвого декору.
@@ -129,14 +123,14 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
             <li
               key={id}
               className={s.crossesImages__listItem}
-              onClick={() => openModal(crossesList, index)}
+              onClick={() => handleImageClick(index)}
             >
-              <img className={s.crossesImages__listItemImage} src={src} alt={alt} />
+              <img src={src} alt={alt} />
             </li>
           ))}
         </ul>
 
-        <h2 className='title'>Як замовити ритуальний хрест у Києві?</h2>
+        <h2 className="title">Як замовити ритуальний хрест у Києві?</h2>
 
         <p className="description">
           Похоронне бюро «Омега» має власні виробничі потужності, які дозволяють
@@ -160,14 +154,7 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
           хрест зберігає свій вигляд протягом декількох років в умовах суворих
           зим та спекотного літа.
         </p>
-        {modalOpen && (
-          <ModalGallery
-            images={modalImages}
-            initialIndex={modalIndex}
-            modalWidth={modalWidth}
-            onClose={closeModal}
-          />
-        )}
+        <GalleryModalRoot {...gallery} />
       </div>
     </section>
   );
