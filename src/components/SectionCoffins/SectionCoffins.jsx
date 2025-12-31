@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import ModalGallery from 'components/ModalGallery/ModalGallery';
+import { useGalleryModal } from 'hooks/useGalleryModal';
+import GalleryModalRoot from 'components/GalleryModalRoot/GalleryModalRoot';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionCoffins.module.scss';
@@ -294,27 +294,17 @@ export const economyCoffinsList = [
 ];
 
 const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalIndex, setModalIndex] = useState(0);
-  const [modalImages, setModalImages] = useState([]);
-  const [modalWidth, setModalWidth] = useState('100%');
+  const gallery = useGalleryModal();
 
-  const openModal = (images, index) => {
-    setModalImages(images);
-    setModalIndex(index);
+  const openCoffinsGallery = (images, index, type) => {
+    let width = '100%';
 
-    if (window.innerWidth >= 1360 && images === economyCoffinsList) {
-      setModalWidth('430px');
-    } else if (window.innerWidth >= 1360) {
-      setModalWidth('900px');
-    } else {
-      setModalWidth('100%');
+    if (window.innerWidth >= 1360) {
+      width = type === 'economy' ? '430px' : '900px';
     }
 
-    setModalOpen(true);
+    gallery.openGallery({ images, index, width });
   };
-
-  const closeModal = () => setModalOpen(false);
 
   return (
     <section className={s.sectionCoffins}>
@@ -410,7 +400,9 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
             <li
               key={id}
               className={s.eliteCoffins__listItem}
-              onClick={() => openModal(eliteCoffinsList, index)}
+              onClick={() =>
+                openCoffinsGallery(eliteCoffinsList, index, 'elite')
+              }
             >
               <img src={src} alt={alt} />
             </li>
@@ -446,7 +438,9 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
             <li
               key={id}
               className={s.eliteCoffins__listItem}
-              onClick={() => openModal(standardCoffinsList, index)}
+              onClick={() =>
+                openCoffinsGallery(standardCoffinsList, index, 'standard')
+              }
             >
               <img src={src} alt={alt} />
             </li>
@@ -478,21 +472,16 @@ const SectionCoffins = ({ title, imgBaner, imgBannerDescription }) => {
             <li
               key={id}
               className={s.eliteCoffins__listItem}
-              onClick={() => openModal(economyCoffinsList, index)}
+              onClick={() =>
+                openCoffinsGallery(economyCoffinsList, index, 'economy')
+              }
             >
               <img src={src} alt={alt} />
             </li>
           ))}
         </ul>
 
-        {modalOpen && (
-          <ModalGallery
-            images={modalImages}
-            initialIndex={modalIndex}
-            modalWidth={modalWidth}
-            onClose={closeModal}
-          />
-        )}
+        <GalleryModalRoot {...gallery} />
       </div>
     </section>
   );
