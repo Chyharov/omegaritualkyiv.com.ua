@@ -1,8 +1,56 @@
+import { useState } from 'react';
+import ModalGallery from 'components/ModalGallery/ModalGallery';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionCrosses.module.scss';
 
+export const crossesList = [
+  {
+    id: 1,
+    src: require('../../images/sectionCrosses/sectionCrossesImg1.jpg'),
+    alt: 'Elite Coffin 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/sectionCrosses/sectionCrossesImg2.jpg'),
+    alt: 'Elite Coffin 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/sectionCrosses/sectionCrossesImg3.jpg'),
+    alt: 'Elite Coffin 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/sectionCrosses/sectionCrossesImg4.jpg'),
+    alt: 'Elite Coffin 4',
+  },
+  {
+    id: 5,
+    src: require('../../images/sectionCrosses/sectionCrossesImg5.jpg'),
+    alt: 'Elite Coffin 5',
+  },
+];
+
 const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+    const [modalIndex, setModalIndex] = useState(0);
+    const [modalImages, setModalImages] = useState([]);
+    const [modalWidth, setModalWidth] = useState('100%');
+  
+    const openModal = (images, index) => {
+      setModalImages(images);
+      setModalIndex(index);
+  
+      if (window.innerWidth >= 1360 && images === crossesList) {
+        setModalWidth('800px');
+      }
+  
+      setModalOpen(true);
+    };
+  
+  const closeModal = () => setModalOpen(false);
+  
   return (
     <section className={s.sectionCrosses}>
       <div className={`container ${s.sectionCrosses__container}`}>
@@ -76,12 +124,16 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
           </li>
         </ul>
 
-        <ul>
-          <li>img1</li>
-          <li>img2</li>
-          <li>img3</li>
-          <li>img4</li>
-          <li>img5</li>
+        <ul className={s.crossesImages__list}>
+          {crossesList.map(({ id, src, alt }, index) => (
+            <li
+              key={id}
+              className={s.crossesImages__listItem}
+              onClick={() => openModal(crossesList, index)}
+            >
+              <img className={s.crossesImages__listItemImage} src={src} alt={alt} />
+            </li>
+          ))}
         </ul>
 
         <h2 className='title'>Як замовити ритуальний хрест у Києві?</h2>
@@ -108,6 +160,14 @@ const SectionCrosses = ({ title, imgBaner, imgBannerDescription }) => {
           хрест зберігає свій вигляд протягом декількох років в умовах суворих
           зим та спекотного літа.
         </p>
+        {modalOpen && (
+          <ModalGallery
+            images={modalImages}
+            initialIndex={modalIndex}
+            modalWidth={modalWidth}
+            onClose={closeModal}
+          />
+        )}
       </div>
     </section>
   );
