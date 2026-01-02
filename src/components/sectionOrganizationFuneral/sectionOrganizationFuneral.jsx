@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import OrganizationFuneralImage from 'images/organizationFuneral/5.jpg';
 import s from './sectionOrganizationFuneral.module.scss';
 
@@ -48,7 +49,7 @@ const sectionOrganizationFuneral = () => {
                 <b>«Омега-Ритуал»</b> – це надійність, досвід і підтримка у
                 найважчі моменти життя.
               </p>
-            <button className={s.buttonOrganizationFuneral}>ДОКЛАДНІШЕ</button>
+            <Link to="/organizationfuneralservices" className={s.buttonOrganizationFuneral}>ДОКЛАДНІШЕ</Link>
           </div>
         </div>
       </div>
