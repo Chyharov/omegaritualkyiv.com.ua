@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/omegaritualkyiv.com.ua/static/css/main.f83c08c3.css",
-    "main.js": "/omegaritualkyiv.com.ua/static/js/main.d04378d8.js",
+    "main.js": "/omegaritualkyiv.com.ua/static/js/main.c1d8831e.js",
     "static/css/893.8d9b0d89.chunk.css": "/omegaritualkyiv.com.ua/static/css/893.8d9b0d89.chunk.css",
     "static/js/893.413de494.chunk.js": "/omegaritualkyiv.com.ua/static/js/893.413de494.chunk.js",
     "static/css/782.d6a7dca4.chunk.css": "/omegaritualkyiv.com.ua/static/css/782.d6a7dca4.chunk.css",
@@ -52,6 +52,8 @@
     "static/js/596.7ba6cef3.chunk.js": "/omegaritualkyiv.com.ua/static/js/596.7ba6cef3.chunk.js",
     "static/css/154.e3b88be4.chunk.css": "/omegaritualkyiv.com.ua/static/css/154.e3b88be4.chunk.css",
     "static/js/154.6d8de9ea.chunk.js": "/omegaritualkyiv.com.ua/static/js/154.6d8de9ea.chunk.js",
+    "static/css/844.8f02b674.chunk.css": "/omegaritualkyiv.com.ua/static/css/844.8f02b674.chunk.css",
+    "static/js/844.a00929f2.chunk.js": "/omegaritualkyiv.com.ua/static/js/844.a00929f2.chunk.js",
     "static/css/235.43236e29.chunk.css": "/omegaritualkyiv.com.ua/static/css/235.43236e29.chunk.css",
     "static/js/235.def51ef6.chunk.js": "/omegaritualkyiv.com.ua/static/js/235.def51ef6.chunk.js",
     "static/js/183.9413d818.chunk.js": "/omegaritualkyiv.com.ua/static/js/183.9413d818.chunk.js",
@@ -184,7 +186,7 @@
     "static/media/burgerMenuClose.svg": "/omegaritualkyiv.com.ua/static/media/burgerMenuClose.a4ca55899d89e648e17a5e85032ae584.svg",
     "static/media/burgerMenu.svg": "/omegaritualkyiv.com.ua/static/media/burgerMenu.a0126a8fc4403527ad28731f97366787.svg",
     "main.f83c08c3.css.map": "/omegaritualkyiv.com.ua/static/css/main.f83c08c3.css.map",
-    "main.d04378d8.js.map": "/omegaritualkyiv.com.ua/static/js/main.d04378d8.js.map",
+    "main.c1d8831e.js.map": "/omegaritualkyiv.com.ua/static/js/main.c1d8831e.js.map",
     "893.8d9b0d89.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/893.8d9b0d89.chunk.css.map",
     "893.413de494.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/893.413de494.chunk.js.map",
     "782.d6a7dca4.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/782.d6a7dca4.chunk.css.map",
@@ -235,6 +237,8 @@
     "596.7ba6cef3.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/596.7ba6cef3.chunk.js.map",
     "154.e3b88be4.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/154.e3b88be4.chunk.css.map",
     "154.6d8de9ea.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/154.6d8de9ea.chunk.js.map",
+    "844.8f02b674.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/844.8f02b674.chunk.css.map",
+    "844.a00929f2.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/844.a00929f2.chunk.js.map",
     "235.43236e29.chunk.css.map": "/omegaritualkyiv.com.ua/static/css/235.43236e29.chunk.css.map",
     "235.def51ef6.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/235.def51ef6.chunk.js.map",
     "183.9413d818.chunk.js.map": "/omegaritualkyiv.com.ua/static/js/183.9413d818.chunk.js.map",
@@ -244,6 +248,6 @@
   },
   "entrypoints": [
     "static/css/main.f83c08c3.css",
-    "static/js/main.d04378d8.js"
+    "static/js/main.c1d8831e.js"
   ]
 }
