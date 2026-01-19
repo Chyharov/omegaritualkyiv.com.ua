@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import RitualGoodsDescriptionImage from 'images/ritualGoodsDescription/5.png';
 import s from './sectionRitualGoodsDescription.module.scss';
 
@@ -40,7 +41,7 @@ const sectionRitualGoodsDescription = () => {
               <b>«Омега-Ритуал»</b> – повний спектр ритуальних товарів за чесною
               вартістю.
             </p>
-            <button className={s.buttonRitualGoods}>ДОКЛАДНІШЕ</button>
+            <Link to='/ritualgoods' className={s.buttonRitualGoods}>ДОКЛАДНІШЕ</Link>
           </div>
         </div>
       </div>
