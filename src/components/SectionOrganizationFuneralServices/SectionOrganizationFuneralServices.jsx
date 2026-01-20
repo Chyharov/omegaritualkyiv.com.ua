@@ -2,7 +2,7 @@ import TitleForPage from '../TitleForPage/TitleForPage';
 import SectionServiceList from '../sectionServiceList/sectionServiceList.jsx';
 import s from './SectionOrganizationFuneralServices.module.scss';
 
-const SectionOrganizationFuneralServices = ({ title }) => {
+const SectionOrganizationFuneralServices = ({ title, serviceList }) => {
   return (
     <section className={s.sectionOrganizationFuneralServices}>
       <div
@@ -10,7 +10,7 @@ const SectionOrganizationFuneralServices = ({ title }) => {
       >
         <TitleForPage title={title} />
 
-        <SectionServiceList />
+        <SectionServiceList serviceList={serviceList} />
       </div>
     </section>
   );
