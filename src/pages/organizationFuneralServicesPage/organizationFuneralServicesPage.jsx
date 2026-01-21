@@ -129,6 +129,30 @@ const serviceList = [
     link: '/medicalsupportonfuneral',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
+  {
+    id: 13,
+    src: require('../../images/servicesList/13.png'),
+    alt: 'Зображення 13',
+    title: 'Носії труни',
+    link: '/medicalsupportonfuneral',
+    linkTitle: 'ДЕТАЛЬНІШЕ',
+  },
+  {
+    id: 14,
+    src: require('../../images/servicesList/14.png'),
+    alt: 'Зображення 14',
+    title: 'Ведучий на похорон',
+    link: '/medicalsupportonfuneral',
+    linkTitle: 'ДЕТАЛЬНІШЕ',
+  },
+  {
+    id: 15,
+    src: require('../../images/servicesList/15.png'),
+    alt: 'Зображення 15',
+    title: 'Дезінфекція приміщення',
+    link: '/medicalsupportonfuneral',
+    linkTitle: 'ДЕТАЛЬНІШЕ',
+  },
 ];
 
   const title = 'Ритуальні послуги';
