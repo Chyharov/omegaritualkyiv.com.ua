@@ -134,7 +134,7 @@ const serviceList = [
     src: require('../../images/servicesList/13.png'),
     alt: 'Зображення 13',
     title: 'Носії труни',
-    link: '/medicalsupportonfuneral',
+    link: '/pallbearers',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
@@ -142,15 +142,15 @@ const serviceList = [
     src: require('../../images/servicesList/14.png'),
     alt: 'Зображення 14',
     title: 'Ведучий на похорон',
-    link: '/medicalsupportonfuneral',
+    link: '/funeralhost',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
     id: 15,
     src: require('../../images/servicesList/15.png'),
     alt: 'Зображення 15',
-    title: 'Дезінфекція приміщення',
-    link: '/medicalsupportonfuneral',
+    title: 'Дезобробка',
+    link: '/disinfection',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
 ];
