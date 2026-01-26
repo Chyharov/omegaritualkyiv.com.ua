@@ -1,12 +1,55 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualGoodsPage {
-    padding-top: 100px;
-    padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 
-    @include mq(desk) {
-        padding-top: 130px;
-        padding-bottom: 50px;
-        background-color: var(--backgroundColor);
-    }
+  @include mq(desk) {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: var(--backgroundColor);
+  }
+}
+
+.ritualGoods__list {
+  @include mq(desk) {
+    max-width: 1020px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}
+
+.ritualGoods__listItem {
+  @include mq(desk) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 310px;
+    padding: 5%;
+    background-color: #eaeaea;
+  }
+}
+
+.ritualGoods__listItemImg {
+  @include mq(desk) {
+    width: 200px;
+    height: 190px;
+    margin-bottom: 15px;
+  }
+}
+
+.ritualGoods__listItemTitle {
+  @include mq(desk) {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--primaryTextColor);
+  }
 }

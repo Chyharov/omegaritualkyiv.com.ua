@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import TitleForPage from '../TitleForPage/TitleForPage';
+import WreathFresh from 'images/ritualGoods/Group-46.png';
+import ArtificialWreaths from 'images/artificialWreaths/artificialWreaths.png';
 import s from './SectionRitualGoodsPage.module.scss';
 
 const SectionRitualGoodsPage = ({ title }) => {
@@ -7,7 +10,7 @@ const SectionRitualGoodsPage = ({ title }) => {
       <div className={`container ${s.sectionRitualGoodsPage__container}`}>
         <TitleForPage title={title} />
 
-        <p className="description">
+        <p className="description" style={{ marginBottom: '25px' }}>
           Організація церемонії прощання з покійним вимагає від рідних та
           близьких членів сім'ї покійного серйозної концентрації сил для
           правильного планування всіх процедур, включаючи ритуальні та релігійні
@@ -17,6 +20,29 @@ const SectionRitualGoodsPage = ({ title }) => {
           будинок "Омега" бере на себе всі організаційні турботи, включаючи
           придбання необхідних для похорону ритуальних товарів.
         </p>
+
+        <ul className={s.ritualGoods__list}>
+          <Link to="/freshwreaths">
+            <li className={s.ritualGoods__listItem}>
+              <img
+                className={s.ritualGoods__listItemImg}
+                src={WreathFresh}
+                alt="Вінок із живих квітів"
+              />
+              <h3 className={s.ritualGoods__listItemTitle}>
+                Вінок із живих квітів
+              </h3>
+            </li>
+          </Link>
+          <li className={s.ritualGoods__listItem}>
+            <img
+              className={s.ritualGoods__listItemImg}
+              src={ArtificialWreaths}
+              alt="Штучні вінки"
+            />
+            <h3 className={s.ritualGoods__listItemTitle}>Штучні вінки</h3>
+          </li>
+        </ul>
 
         <h2 className="title">Що потрібно купити для похорону?</h2>
 
@@ -87,7 +113,7 @@ const SectionRitualGoodsPage = ({ title }) => {
           </p>
         </ul>
 
-        <h3 className='title'>Де купити ритуальні похоронні товари?</h3>
+        <h3 className="title">Де купити ритуальні похоронні товари?</h3>
 
         <p className="description">
           Ритуальне бюро «Омега» має власне виробництво необхідних товарів для
