@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import WreathFresh from 'images/ritualGoods/Group-46.png';
 import ArtificialWreaths from 'images/artificialWreaths/artificialWreaths.png';
+import Сoffins from 'images/ritualGoods/Group-47.png';
+import Сrosses from 'images/ritualGoods/Group-48.png';
+import Monuments from 'images/ritualGoods/Group-49.png';
 import s from './SectionRitualGoodsPage.module.scss';
 
 const SectionRitualGoodsPage = ({ title }) => {
@@ -41,6 +44,30 @@ const SectionRitualGoodsPage = ({ title }) => {
               alt="Штучні вінки"
             />
             <h3 className={s.ritualGoods__listItemTitle}>Штучні вінки</h3>
+          </li>
+          <li className={s.ritualGoods__listItem}>
+            <img
+              className={s.ritualGoods__listItemImg}
+              src={Сoffins}
+              alt="Труни"
+            />
+            <h3 className={s.ritualGoods__listItemTitle}>Труни</h3>
+          </li>
+          <li className={s.ritualGoods__listItem}>
+            <img
+              className={s.ritualGoods__listItemImg}
+              src={Сrosses}
+              alt="Хрести"
+            />
+            <h3 className={s.ritualGoods__listItemTitle}>Хрести</h3>
+          </li>
+          <li className={s.ritualGoods__listItem}>
+            <img
+              className={s.ritualGoods__listItemImg}
+              src={Monuments}
+              alt="Пам`ятники"
+            />
+            <h3 className={s.ritualGoods__listItemTitle}>Пам`ятники</h3>
           </li>
         </ul>
 
