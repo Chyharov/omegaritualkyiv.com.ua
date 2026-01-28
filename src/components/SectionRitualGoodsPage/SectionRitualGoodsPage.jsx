@@ -1,11 +1,44 @@
 import { Link } from 'react-router-dom';
 import TitleForPage from '../TitleForPage/TitleForPage';
-import WreathFresh from 'images/ritualGoods/Group-46.png';
-import ArtificialWreaths from 'images/artificialWreaths/artificialWreaths.png';
-import Сoffins from 'images/ritualGoods/Group-47.png';
-import Сrosses from 'images/ritualGoods/Group-48.png';
-import Monuments from 'images/ritualGoods/Group-49.png';
 import s from './SectionRitualGoodsPage.module.scss';
+
+const ritualGoodsList = [
+  {
+    id: 1,
+    src: require('../../images/ritualGoods/Group-46.png'),
+    alt: 'Зображення 1',
+    title: 'Вінок із живих квітів',
+    link: '/freshwreaths',
+  },
+  {
+    id: 2,
+    src: require('../../images/artificialWreaths/artificialWreaths.png'),
+    alt: 'Штучні вінки',
+    title: 'Штучні вінки',
+    link: '/artificialwreaths',
+  },
+  {
+    id: 3,
+    src: require('../../images/ritualGoods/Group-47.png'),
+    alt: 'Зображення 2',
+    title: 'Труни',
+    link: '/coffins',
+  },
+  {
+    id: 4,
+    src: require('../../images/ritualGoods/Group-48.png'),
+    alt: 'Зображення 3',
+    title: 'Хрести',
+    link: '/crosses',
+  },
+  {
+    id: 5,
+    src: require('../../images/ritualGoods/Group-49.png'),
+    alt: 'Зображення 4',
+    title: 'Пам`ятники',
+    link: '/monuments',
+  },
+];
 
 const SectionRitualGoodsPage = ({ title }) => {
   return (
@@ -25,50 +58,20 @@ const SectionRitualGoodsPage = ({ title }) => {
         </p>
 
         <ul className={s.ritualGoods__list}>
-          <Link to="/freshwreaths">
-            <li className={s.ritualGoods__listItem}>
-              <img
-                className={s.ritualGoods__listItemImg}
-                src={WreathFresh}
-                alt="Вінок із живих квітів"
-              />
-              <h3 className={s.ritualGoods__listItemTitle}>
-                Вінок із живих квітів
-              </h3>
+          {ritualGoodsList.map(photo => (
+            <li key={photo.id} className={s.ritualGoods__listItem}>
+              <Link to={photo.link} className={s.ritualGoods__link}>
+                <img
+                  className={s.ritualGoods__listItemImg}
+                  src={photo.src}
+                  alt={photo.alt}
+                />
+                <h3 className={s.ritualGoods__listItemTitle}>
+                  {photo.title}
+                </h3>
+              </Link>
             </li>
-          </Link>
-          <li className={s.ritualGoods__listItem}>
-            <img
-              className={s.ritualGoods__listItemImg}
-              src={ArtificialWreaths}
-              alt="Штучні вінки"
-            />
-            <h3 className={s.ritualGoods__listItemTitle}>Штучні вінки</h3>
-          </li>
-          <li className={s.ritualGoods__listItem}>
-            <img
-              className={s.ritualGoods__listItemImg}
-              src={Сoffins}
-              alt="Труни"
-            />
-            <h3 className={s.ritualGoods__listItemTitle}>Труни</h3>
-          </li>
-          <li className={s.ritualGoods__listItem}>
-            <img
-              className={s.ritualGoods__listItemImg}
-              src={Сrosses}
-              alt="Хрести"
-            />
-            <h3 className={s.ritualGoods__listItemTitle}>Хрести</h3>
-          </li>
-          <li className={s.ritualGoods__listItem}>
-            <img
-              className={s.ritualGoods__listItemImg}
-              src={Monuments}
-              alt="Пам`ятники"
-            />
-            <h3 className={s.ritualGoods__listItemTitle}>Пам`ятники</h3>
-          </li>
+          ))}
         </ul>
 
         <h2 className="title">Що потрібно купити для похорону?</h2>
