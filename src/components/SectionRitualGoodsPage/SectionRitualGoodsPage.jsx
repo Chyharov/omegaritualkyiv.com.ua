@@ -6,7 +6,7 @@ const ritualGoodsList = [
   {
     id: 1,
     src: require('../../images/ritualGoods/Group-46.png'),
-    alt: 'Зображення 1',
+    alt: 'Вінок із живих квітів',
     title: 'Вінок із живих квітів',
     link: '/freshwreaths',
   },
@@ -20,23 +20,44 @@ const ritualGoodsList = [
   {
     id: 3,
     src: require('../../images/ritualGoods/Group-47.png'),
-    alt: 'Зображення 2',
+    alt: 'Труни',
     title: 'Труни',
     link: '/coffins',
   },
   {
     id: 4,
     src: require('../../images/ritualGoods/Group-48.png'),
-    alt: 'Зображення 3',
+    alt: 'Хрести',
     title: 'Хрести',
     link: '/crosses',
   },
   {
     id: 5,
     src: require('../../images/ritualGoods/Group-49.png'),
-    alt: 'Зображення 4',
+    alt: 'Пам`ятники',
     title: 'Пам`ятники',
     link: '/monuments',
+  },
+  {
+    id: 6,
+    src: require('../../images/ritualGoods/Group-55.png'),
+    alt: 'Похоронний набір',
+    title: 'Похоронний набір',
+    link: '/funeralset',
+  },
+  {
+    id: 7,
+    src: require('../../images/ritualGoods/Group-57.png'),
+    alt: 'Портрет на похорон',
+    title: 'Портрет на похорон',
+    link: '/funeralportrait',
+  },
+  {
+    id: 8,
+    src: require('../../images/ritualGoods/k5.png'),
+    alt: 'Урни для праху',
+    title: 'Урни для праху',
+    link: '/urnsforashes',
   },
 ];
 

@@ -14,7 +14,9 @@
 .ritualGoods__list {
   @include mq(desk) {
     max-width: 1020px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 40px;
     gap: 25px;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +24,7 @@
   }
 }
 
-.ritualGoods__listItem {
+.ritualGoods__link {
   @include mq(desk) {
     display: flex;
     flex-direction: column;
