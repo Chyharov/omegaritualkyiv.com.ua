@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
-import WreathFresh from 'images/ritualGoods/Group-46.png';
+import WreathFresh from 'images/ritualGoods/freshWreaths.png';
 import ArtificialWreaths from 'images/artificialWreaths/artificialWreaths.png';
 import s from './SectionWreaths.module.scss';
 

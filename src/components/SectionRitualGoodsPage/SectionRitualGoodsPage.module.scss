@@ -13,10 +13,9 @@
 
 .ritualGoods__list {
   @include mq(desk) {
-    max-width: 1020px;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr); 
     gap: 25px;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +29,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 225px;
-    height: 310px;
     padding: 5%;
     background-color: #eaeaea;
   }

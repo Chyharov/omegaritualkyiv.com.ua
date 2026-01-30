@@ -4,28 +4,28 @@ import s from './sectionRitualGoods.module.scss';
 const ritualGoodsList = [
   {
     id: 1,
-    src: require('../../images/ritualGoods/Group-46.png'),
+    src: require('../../images/ritualGoods/freshWreaths.png'),
     alt: 'Зображення 1',
     title: 'Вінки',
     link: '/wreaths',
   },
   {
     id: 2,
-    src: require('../../images/ritualGoods/Group-47.png'),
+    src: require('../../images/ritualGoods/coffins.png'),
     alt: 'Зображення 2',
     title: 'Труни',
     link: '/coffins',
   },
   {
     id: 3,
-    src: require('../../images/ritualGoods/Group-48.png'),
+    src: require('../../images/ritualGoods/crosses.png'),
     alt: 'Зображення 3',
     title: 'Хрести',
     link: '/crosses',
   },
   {
     id: 4,
-    src: require('../../images/ritualGoods/Group-49.png'),
+    src: require('../../images/ritualGoods/monuments.png'),
     alt: 'Зображення 4',
     title: 'Пам`ятники',
     link: '/monuments',
