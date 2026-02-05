@@ -3,6 +3,59 @@ import SectionServiceList from 'components/sectionServiceList/sectionServiceList
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionFuneralSet.module.scss';
 
+const funeralSetList = [
+  {
+    id: 1,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg.jpg'),
+    alt: 'Зображення 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg2.jpg'),
+    alt: 'Зображення 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg3.jpg'),
+    alt: 'Зображення 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg4.jpg'),
+    alt: 'Зображення 4',
+  },
+  {
+    id: 5,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg5.jpg'),
+    alt: 'Зображення 5',
+  },
+  {
+    id: 6,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg6.jpg'),
+    alt: 'Зображення 6',
+  },
+  {
+    id: 7,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg7.jpg'),
+    alt: 'Зображення 7',
+  },
+  {
+    id: 8,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg8.jpg'),
+    alt: 'Зображення 8',
+  },
+  {
+    id: 9,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg9.jpg'),
+    alt: 'Зображення 9',
+  },
+  {
+    id: 10,
+    src: require('../../images/funeralSetPage/funeralSetPageListImg10.jpg'),
+    alt: 'Зображення 10',
+  }
+];
+
 const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList }) => {
   return (
     <section className={s.sectionFuneralSet}>
@@ -70,7 +123,11 @@ const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList 
         </p>
 
         <ul>
-          <li>img</li>
+          {funeralSetList.map(photo => (
+            <li key={photo.id}>
+              <img src={photo.src} alt={photo.alt} />
+            </li>
+          ))}
         </ul>
 
         <h2 className="title">
