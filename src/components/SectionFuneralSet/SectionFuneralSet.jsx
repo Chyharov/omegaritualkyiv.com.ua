@@ -122,10 +122,10 @@ const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList 
           на горі та релігійних почуттях рідних покійного.
         </p>
 
-        <ul>
+        <ul className={s.funeralSet__list}>
           {funeralSetList.map(photo => (
-            <li key={photo.id}>
-              <img src={photo.src} alt={photo.alt} />
+            <li key={photo.id} className={s.funeralSet__listItem}>
+              <img src={photo.src} alt={photo.alt} className={s.funeralSet__listItemImage}/>
             </li>
           ))}
         </ul>
