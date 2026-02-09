@@ -1,5 +1,7 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
+import { useGalleryModal } from 'hooks/useGalleryModal';
+import GalleryModalRoot from 'components/GalleryModalRoot/GalleryModalRoot';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import s from './SectionFuneralSet.module.scss';
 
@@ -53,10 +55,25 @@ const funeralSetList = [
     id: 10,
     src: require('../../images/funeralSetPage/funeralSetPageListImg10.jpg'),
     alt: 'Зображення 10',
-  }
+  },
 ];
 
-const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList }) => {
+const SectionFuneralSet = ({
+  title,
+  imgBaner,
+  imgBannerDescription,
+  serviceList,
+}) => {
+  const gallery = useGalleryModal();
+
+  const handleImageClick = index => {
+    gallery.openGallery({
+      images: funeralSetList,
+      index,
+      width: window.innerWidth >= 1360 ? '480px' : '100%',
+    });
+  };
+
   return (
     <section className={s.sectionFuneralSet}>
       <div className={`container ${s.funeralSet__container}`}>
@@ -123,9 +140,17 @@ const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList 
         </p>
 
         <ul className={s.funeralSet__list}>
-          {funeralSetList.map(photo => (
-            <li key={photo.id} className={s.funeralSet__listItem}>
-              <img src={photo.src} alt={photo.alt} className={s.funeralSet__listItemImage}/>
+          {funeralSetList.map(({ id, src, alt }, index) => (
+            <li
+              key={id}
+              onClick={() => handleImageClick(index)}
+              className={s.funeralSet__listItem}
+            >
+              <img
+                src={src}
+                alt={alt}
+                className={s.funeralSet__listItemImage}
+              />
             </li>
           ))}
         </ul>
@@ -153,10 +178,11 @@ const SectionFuneralSet = ({ title, imgBaner, imgBannerDescription, serviceList 
           традиції, а не сакральним атрибутом церковного обряду. Ми готові взяти
           на себе турботи та турботи про дотримання обрядових традицій
           відспівування покійного з усією необхідною ритуальною атрибутикою.
-              </p>
-              
-              
+        </p>
+
         <SectionServiceList serviceList={serviceList} />
+
+        <GalleryModalRoot {...gallery} />
       </div>
     </section>
   );
