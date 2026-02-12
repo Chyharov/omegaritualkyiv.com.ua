@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Header from 'components/header/header';
-import SectionFuneralOrganisation from 'components/SectionFuneralOrganisation/SectionFuneralOrganisation';
+import SectionFuneralPortrait from 'components/SectionFuneralPortrait/SectionFuneralPortrait';
 import SectionNeedHelp from 'components/sectionNeedHelp/sectionNeedHelp';
 import Footer from 'components/footer/footer';
 import translations from 'components/LanguageSelect/translations';
@@ -40,7 +40,7 @@ const FuneralPortraitPage = () => {
     <>
       <Header navItems={navItems} handleLanguageChange={handleLanguageChange} language={language} />
       <main>
-        <SectionFuneralOrganisation title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
+        <SectionFuneralPortrait title={title} imgBaner={imgBaner} imgBannerDescription={imgBannerDescription} />
         <SectionNeedHelp />
       </main>
       <Footer />
