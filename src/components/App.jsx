@@ -29,6 +29,7 @@ const MonumentsPage = lazy(() => import('pages/monumentsPage/monumentsPage'));
 const OrganizationFuneralServicesPage = lazy(() => import('pages/organizationFuneralServicesPage/organizationFuneralServicesPage'));
 const RitualGoodsPage = lazy(() => import('pages/RitualGoodsPage/RitualGoodsPage'));
 const FuneralSetPage = lazy(() => import('pages/funeralSetPage/funeralSetPage'));
+const FuneralPortraitPage = lazy(() => import('pages/FuneralPortraitPage/FuneralPortraitPage'));
 
 const Page404 = lazy(() => import('pages/page404/page404'));
 
@@ -63,6 +64,7 @@ const App = () => (
       <Route path="/organizationfuneralservices" element={<OrganizationFuneralServicesPage />} />
       <Route path="/ritualgoods" element={<RitualGoodsPage />} />
       <Route path="/funeralset" element={<FuneralSetPage />} />
+      <Route path="/funeralportrait" element={<FuneralPortraitPage />} />
 
       <Route path="*" element={<Page404 />} />
     </Routes>
