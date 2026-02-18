@@ -1,12 +1,18 @@
 @import '../../sass/utils/mixin';
 
 .sectionUrnForAshesPage {
-    padding-top: 100px;
-    padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 
-    @include mq(desk) {
-        padding-top: 130px;
-        padding-bottom: 50px;
-        background-color: var(--backgroundColor);
-    }
+  @include mq(desk) {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: var(--backgroundColor);
+  }
+}
+
+.sectionUrnForAshesList {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
 }

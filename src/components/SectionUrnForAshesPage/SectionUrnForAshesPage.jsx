@@ -126,6 +126,59 @@ const serviceList = [
   },
 ];
 
+const sectionUrnForAshesList = [
+  {
+    id: 1,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg.jpg'),
+    alt: 'Зображення 1',
+  },
+  {
+    id: 2,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg2.jpg'),
+    alt: 'Зображення 2',
+  },
+  {
+    id: 3,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg3.jpg'),
+    alt: 'Зображення 3',
+  },
+  {
+    id: 4,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg4.jpg'),
+    alt: 'Зображення 4',
+  },
+  {
+    id: 5,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg5.jpg'),
+    alt: 'Зображення 5',
+  },
+  {
+    id: 6,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg6.jpg'),
+    alt: 'Зображення 6',
+  },
+  {
+    id: 7,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg7.jpg'),
+    alt: 'Зображення 7',
+  },
+  {
+    id: 8,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg8.jpg'),
+    alt: 'Зображення 8',
+  },
+  {
+    id: 9,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg9.jpg'),
+    alt: 'Зображення 9',
+  },
+  {
+    id: 10,
+    src: require('../../images/urnForAshesPage/urnForAshesListItemImg10.jpg'),
+    alt: 'Зображення 10',
+  },
+];
+
 const SectionUrnForAshesPage = ({ title, imgBaner, imgBannerDescription }) => {
   return (
     <section className={s.sectionUrnForAshesPage}>
@@ -166,10 +219,16 @@ const SectionUrnForAshesPage = ({ title, imgBaner, imgBannerDescription }) => {
           вашими партнерами у цій важливій задачі.
         </p>
 
-        <ul>
-          <li>
-            <img alt="img" />
-          </li>
+        <ul className={s.sectionUrnForAshesList}>
+          {sectionUrnForAshesList.map(photo => (
+            <li key={photo.id} className={s.sectionUrnForAshesListItem}>
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className={s.sectionUrnForAshesListItemImg}
+              />
+            </li>
+          ))}
         </ul>
 
         <SectionServiceList serviceList={serviceList} />
