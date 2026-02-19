@@ -1,6 +1,7 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
+import GalleryModalRoot from 'components/GalleryModalRoot/GalleryModalRoot';
 import s from './SectionUrnForAshesPage.module.scss';
 
 const serviceList = [
@@ -232,6 +233,8 @@ const SectionUrnForAshesPage = ({ title, imgBaner, imgBannerDescription }) => {
         </ul>
 
         <SectionServiceList serviceList={serviceList} />
+
+        <GalleryModalRoot {...gallery} />
       </div>
     </section>
   );
