@@ -1,6 +1,7 @@
 import TitleForPage from '../TitleForPage/TitleForPage';
 import BanerForSection from 'components/BanerForSection/BanerForSection';
 import SectionServiceList from 'components/sectionServiceList/sectionServiceList';
+import { useGalleryModal } from 'hooks/useGalleryModal';
 import GalleryModalRoot from 'components/GalleryModalRoot/GalleryModalRoot';
 import s from './SectionUrnForAshesPage.module.scss';
 
@@ -181,6 +182,15 @@ const sectionUrnForAshesList = [
 ];
 
 const SectionUrnForAshesPage = ({ title, imgBaner, imgBannerDescription }) => {
+  const gallery = useGalleryModal();
+  
+    const handleImageClick = index => {
+      gallery.openGallery({
+        images: sectionUrnForAshesList,
+        index,
+        width: window.innerWidth >= 1360 ? '800px' : '100%',
+      });
+    };
   return (
     <section className={s.sectionUrnForAshesPage}>
       <div className={`container ${s.urnForAshesPage__container}`}>
@@ -221,12 +231,13 @@ const SectionUrnForAshesPage = ({ title, imgBaner, imgBannerDescription }) => {
         </p>
 
         <ul className={s.sectionUrnForAshesList}>
-          {sectionUrnForAshesList.map(photo => (
-            <li key={photo.id} className={s.sectionUrnForAshesListItem}>
+          {sectionUrnForAshesList.map(({ id, src, alt }, index) => (
+            <li key={id} className={s.sectionUrnForAshesListItem}>
               <img
-                src={photo.src}
-                alt={photo.alt}
+                src={src}
+                alt={alt}
                 className={s.sectionUrnForAshesListItemImg}
+                onClick={() => handleImageClick(index)}
               />
             </li>
           ))}
