@@ -1,29 +1,39 @@
 import { Link } from 'react-router-dom';
 import s from './sectionServiceList.module.scss';
 
-const sectionServiceList = ({ serviceList }) => {
+const SectionServiceList = ({ serviceList }) => {
   return (
-    <section className={s.sectionServiceList} id="services">
-      <div className={'container ' + s.serviceListContainer}>
-        <h1 className={s.serviceList__title}>Послуги, які ми надаємо</h1>
+    <section
+      className={s.sectionServiceList}
+      id="services"
+      aria-labelledby="services-title"
+    >
+      <div className={`container ${s.serviceListContainer}`}>
+        <h2 id="services-title" className={s.serviceList__title}>
+          Послуги, які ми надаємо
+        </h2>
 
         <ul className={s.serviceList}>
-          {serviceList.map(photo => (
-            <Link to={photo.link}>
-              <li key={photo.id} className={s.serviceList__item}>
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className={s.serviceList__itemImg}
-                />
-                <h3 className={s.serviceList__itemDesctioption}>
-                  {photo.title}
-                </h3>
-                <p className={s.serviceList__itemLink} to={photo.link}>
-                  {photo.linkTitle}
-                </p>
-              </li>
-            </Link>
+          {serviceList.map(service => (
+            <li key={service.id} className={s.serviceList__item}>
+              <article>
+                <Link to={service.link} className={s.serviceList__card}>
+                  <img
+                    src={service.src}
+                    alt={service.alt}
+                    className={s.serviceList__itemImg}
+                  />
+
+                  <h3 className={s.serviceList__itemDescription}>
+                    {service.title}
+                  </h3>
+
+                  <span className={s.serviceList__itemLink}>
+                    {service.linkTitle}
+                  </span>
+                </Link>
+              </article>
+            </li>
           ))}
         </ul>
       </div>
@@ -31,4 +41,4 @@ const sectionServiceList = ({ serviceList }) => {
   );
 };
 
-export default sectionServiceList;
+export default SectionServiceList;
