@@ -2,51 +2,76 @@ import { Link } from 'react-router-dom';
 import RitualGoodsDescriptionImage from 'images/ritualGoodsDescription/5.png';
 import s from './sectionRitualGoodsDescription.module.scss';
 
-const sectionRitualGoodsDescription = () => {
+const SectionRitualGoodsDescription = () => {
   return (
     <section className={s.sectionRitualGoodsDescription}>
+      
+      {/* mobile image */}
       <img
         loading="lazy"
         className={s.ritualGoodsDescriptionImageMobile}
         src={RitualGoodsDescriptionImage}
-        alt="ritualGoodsDescriptionImageMobile"
+        alt="Ритуальні товари"
       />
+
       <div className="container">
         <div className={s.ritualGoodsContainer}>
+
+          {/* desktop image */}
           <img
             loading="lazy"
             className={s.ritualGoodsDescriptionImage}
             src={RitualGoodsDescriptionImage}
-            alt="RitualGoodsDescriptionImage"
+            alt="Ритуальні товари"
           />
+
           <div className={s.ritualGoodsDescription}>
-            <h1 className={s.titleRitualGoods}>Ритуальні товари</h1>
+            <h1 className={s.titleRitualGoods}>
+              Ритуальні товари
+            </h1>
+
             <p className={s.descriptionRitualGoods}>
               Компанія «Омега-Ритуал» понад 15 років займається продажем
-              ритуальних товарів та приладдя. У нашому асортименті – більше 100
-              найменувань, які завжди доступні за найнижчими цінами у місті
-              Київ.
+              ритуальних товарів та приладдя. У нашому асортименті –
+              більше 100 найменувань.
             </p>
+
             <p className={s.descriptionRitualGoods}>
-              Ви можете ознайомитися з усім ритуальним приладдям у нашому офісі
-              за адресою: м. Київ, вул. Івана Федорова, 33.
+              Ви можете ознайомитися з продукцією у нашому офісі в Києві.
             </p>
-            <h3 className={s.ourBenefitsTitle}>Ми пропонуємо вигідні умови для клієнтів:</h3>
+
+            <h3 className={s.ourBenefitsTitle}>
+              Ми пропонуємо вигідні умови:
+            </h3>
+
             <ul className={s.ourBenefits__list}>
-              <li className={s.ourBenefits__listItem}>широкий вибір трун, вінків та інших необхідних товарів;</li>
-              <li className={s.ourBenefits__listItem}>великі знижки при купівлі ритуальної труни або вінків;</li>
-              <li className={s.ourBenefits__listItem}>гарантію якості та доступні ціни.</li>
+              <li className={s.ourBenefits__listItem}>
+                широкий вибір товарів
+              </li>
+              <li className={s.ourBenefits__listItem}>
+                вигідні знижки
+              </li>
+              <li className={s.ourBenefits__listItem}>
+                гарантія якості
+              </li>
             </ul>
-             <p className={s.descriptionRitualGoods}>
-              <b>«Омега-Ритуал»</b> – повний спектр ритуальних товарів за чесною
-              вартістю.
+
+            <p className={s.descriptionRitualGoods}>
+              <b>«Омега-Ритуал»</b> – повний спектр ритуальних товарів.
             </p>
-            <Link to='/ritualgoods' className={s.buttonRitualGoods}>ДОКЛАДНІШЕ</Link>
+
+            <Link
+              to="/ritualgoods"
+              className={s.buttonRitualGoods}
+            >
+              ДОКЛАДНІШЕ
+            </Link>
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default sectionRitualGoodsDescription;
+export default SectionRitualGoodsDescription;
