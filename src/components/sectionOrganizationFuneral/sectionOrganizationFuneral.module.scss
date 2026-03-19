@@ -3,6 +3,9 @@
 .sectionOrganizationFuneral {
   background-color: rgba(212, 182, 105, 0.7);
   padding: 40px 0;
+  @include mq(desk) {
+    margin-bottom: 60px;
+  }
 }
 
 .organizationFuneralContainer {

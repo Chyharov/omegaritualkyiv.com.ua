@@ -5,22 +5,12 @@ import s from './sectionRitualGoodsDescription.module.scss';
 const SectionRitualGoodsDescription = () => {
   return (
     <section className={s.sectionRitualGoodsDescription}>
-      
-      {/* mobile image */}
-      <img
-        loading="lazy"
-        className={s.ritualGoodsDescriptionImageMobile}
-        src={RitualGoodsDescriptionImage}
-        alt="Ритуальні товари"
-      />
-
       <div className="container">
         <div className={s.ritualGoodsContainer}>
 
-          {/* desktop image */}
           <img
             loading="lazy"
-            className={s.ritualGoodsDescriptionImage}
+            className={s.image}
             src={RitualGoodsDescriptionImage}
             alt="Ритуальні товари"
           />
@@ -44,16 +34,10 @@ const SectionRitualGoodsDescription = () => {
               Ми пропонуємо вигідні умови:
             </h3>
 
-            <ul className={s.ourBenefits__list}>
-              <li className={s.ourBenefits__listItem}>
-                широкий вибір товарів
-              </li>
-              <li className={s.ourBenefits__listItem}>
-                вигідні знижки
-              </li>
-              <li className={s.ourBenefits__listItem}>
-                гарантія якості
-              </li>
+            <ul className={s.ourBenefitsList}>
+              <li>широкий вибір товарів</li>
+              <li>вигідні знижки</li>
+              <li>гарантія якості</li>
             </ul>
 
             <p className={s.descriptionRitualGoods}>
