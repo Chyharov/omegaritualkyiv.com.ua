@@ -21,7 +21,7 @@
 
 .ritualGoodsList {
   display: grid;
-  gap: 24px;
+  gap: 15px;
   grid-template-columns: repeat(2, 1fr);
 
   @include mq(tab) {
