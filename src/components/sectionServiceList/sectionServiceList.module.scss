@@ -24,11 +24,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: grid;
-  gap: 20px;
-
-  /* mobile */
+  gap: 15px;
   grid-template-columns: 1fr;
 
   @include mq(tab) {
