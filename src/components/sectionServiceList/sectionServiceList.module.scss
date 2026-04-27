@@ -12,11 +12,12 @@
   font-size: 20px;
   text-align: center;
   color: var(--secondTextColor);
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   @include mq(desk) {
     font-size: 26px;
     line-height: 1.3;
+    margin-bottom: 30px;
   }
 }
 
