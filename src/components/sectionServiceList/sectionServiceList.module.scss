@@ -1,10 +1,10 @@
 @import '../../sass/utils/mixin';
 
 .sectionServiceList {
-  padding: 30px 0;
+  margin-bottom: 30px;
 
   @include mq(desk) {
-    padding: 50px 0;
+    margin-bottom: 50px 0;
   }
 }
 
