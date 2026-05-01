@@ -1,8 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionPartners {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     background-color: var(--backgroundColor);
 
     @include mq(desk) {
