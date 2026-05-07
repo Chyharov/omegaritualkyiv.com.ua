@@ -1,7 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionFeneralPrice {
-  padding: 40px 0;
+  margin-bottom: 30px;
 
   @include mq(desk) {
     padding: 60px 0;
