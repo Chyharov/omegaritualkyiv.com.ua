@@ -1,8 +1,8 @@
 import s from './sectionFeneralPrice.module.scss';
 
-const sectionFeneralPrice = ({style}) => {
+const sectionFeneralPrice = () => {
   return (
-    <section className={s.sectionFeneralPrice} id='price' style={style}>
+    <section className={s.sectionFeneralPrice} id='price'>
       <div className="container">
         <div className={s.feneralPriceTitleContainer}>
           <svg

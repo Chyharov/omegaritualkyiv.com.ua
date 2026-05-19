@@ -14,7 +14,7 @@ const SectionPrice = ({ title, imgBaner, imgBannerDescription }) => {
           style={{ display: 'none' }}
         />
 
-        <SectionFeneralPrice style={{ paddingTop: '0px' }} />
+        <SectionFeneralPrice />
       </div>
     </section>
   );
