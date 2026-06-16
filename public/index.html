@@ -1,48 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site for search events" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Ритуальні послуги в Києві | OMEGA - похороний будинок</title>
 
-    <script>
-      function initMap() {
-        console.log('Google Maps loaded');
+    <title>Ритуальні послуги Київ 24/7 | OMEGA - похоронне бюро</title>
+
+    <meta
+      name="description"
+      content="Ритуальні послуги в Києві 24/7. Організація похорону, кремація, ритуальний транспорт, перевезення померлих, оформлення документів. OMEGA."
+    />
+
+    <meta
+      name="keywords"
+      content="ритуальні послуги київ, похорон київ, кремація київ, похоронне бюро київ, ритуальний транспорт київ, перевезення померлих"
+    />
+
+    <link rel="canonical" href="https://omega.com.ua/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ритуальні послуги Київ 24/7 | OMEGA" />
+    <meta
+      property="og:description"
+      content="Організація похорону, кремація та ритуальні послуги в Києві 24/7."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://omega.com.ua/" />
+    <meta property="og:image" content="https://omega.com.ua/og-image.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ритуальні послуги Київ | OMEGA" />
+    <meta
+      name="twitter:description"
+      content="Ритуальні послуги, кремація, перевезення померлих у Києві 24/7."
+    />
+    <meta name="twitter:image" content="https://omega.com.ua/og-image.jpg" />
+
+    <!-- Schema.org Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FuneralHome",
+        "name": "OMEGA",
+        "url": "https://omega.com.ua",
+        "image": "https://omega.com.ua/og-image.jpg",
+        "telephone": "+380XXXXXXXXX",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Київ",
+          "addressCountry": "UA"
+        },
+        "areaServed": "Kyiv"
       }
     </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXj-AStZjPnU7wXm82txO2pj_QGR-KOio&callback=initMap&libraries=maps,marker&v=beta"
-      async
-      defer
-    ></script>
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      (function (l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search
-            .slice(1)
-            .split('&')
-            .map(function (s) {
-              return s.replace(/~and~/g, '&');
-            })
-            .join('?');
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      })(window.location);
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
+
+    <!-- Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript> Для роботи сайту потрібно увімкнути JavaScript. </noscript>
+
     <div id="root"></div>
   </body>
 </html>
