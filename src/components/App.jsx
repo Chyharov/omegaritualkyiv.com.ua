@@ -36,7 +36,7 @@ const Page404 = lazy(() => import('pages/page404/page404'));
 
 const App = () => (
   <Suspense fallback={<div>Loading...</div>}>
-<Routes>
+    <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/ritualagent" element={<RitualAgentPage />} />
       <Route path="/funeralorganisation" element={<FuneralOrganisation />} />
