@@ -37,109 +37,39 @@ const Page404 = lazy(() => import('pages/page404/page404'));
 const App = () => (
   <Suspense fallback={<div>Loading...</div>}>
 <Routes>
-  {/* Main */}
-  <Route path="/" element={<MainPage />} />
+      <Route path="/" element={<MainPage />} />
+      <Route path="/ritualagent" element={<RitualAgentPage />} />
+      <Route path="/funeralorganisation" element={<FuneralOrganisation />} />
+      <Route path="/cremationservices" element={<CremationServicesPage />} />
+      <Route path="/ritualtransport" element={<RitualTransportPage />} />
+      <Route path="/funeralofthedeceased" element={<FuneralOfTheDeceased />} />
+      <Route path="/transportationofthedeceased" element={<TransportationOfTheDeceased />} />
+      <Route path="/mortuaryservices" element={<MortuaryServicesPage />} />
+      <Route path="/memorialdinners" element={<MemorialDinnersPage />} />
+      <Route path="/processingdocuments" element={<ProcessingDocumentsPage />} />
+      <Route path="/ritualhall" element={<RitualHallPage />} />
+      <Route path="/funeralmusic" element={<FuneralMusicPage />} />
+      <Route path="/medicalsupportonfuneral" element={<MedicalSupportOnFuneral />} />
+      <Route path="/aboutcompany" element={<AboutCompanyPage />} />
+      <Route path="/price" element={<PricePage />} />
+      <Route path="/contacts" element={<ContactsPage />} />
+      <Route path="/funeralhost" element={<FuneralHostPage />} />
+      <Route path="/pallbearers" element={<PallbearersPage />} />
+      <Route path="/disinfection" element={<DisinfectionPage />} />
+      <Route path="/wreaths" element={<WreathsPage />} />
+      <Route path="/freshwreaths" element={<FreshWreathsPage />} />
+      <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
+      <Route path="/coffins" element={<CoffinsPage />} />
+      <Route path="/crosses" element={<CrossesPage />} />
+      <Route path="/monuments" element={<MonumentsPage />} />
+      <Route path="/organizationfuneralservices" element={<OrganizationFuneralServicesPage />} />
+      <Route path="/ritualgoods" element={<RitualGoodsPage />} />
+      <Route path="/funeralset" element={<FuneralSetPage />} />
+      <Route path="/funeralportrait" element={<FuneralPortraitPage />} />
+      <Route path="/urnsforashes" element={<UrnForAshesPage />} />
 
-  {/* SERVICES */}
-  <Route
-    path="/services/ritualni-poslugy-kyiv"
-    element={<FuneralOrganisation />}
-  />
-
-  <Route
-    path="/services/ritualnyi-agent-kyiv"
-    element={<RitualAgentPage />}
-  />
-
-  <Route
-    path="/services/krematsiia-kyiv"
-    element={<CremationServicesPage />}
-  />
-
-  <Route
-    path="/services/rytualnyi-transport-kyiv"
-    element={<RitualTransportPage />}
-  />
-
-  <Route
-    path="/services/pokhovannia-kyiv"
-    element={<FuneralOfTheDeceased />}
-  />
-
-  <Route
-    path="/services/perevezennia-pomerlykh-kyiv"
-    element={<TransportationOfTheDeceased />}
-  />
-
-  <Route
-    path="/services/morg-poslugy-kyiv"
-    element={<MortuaryServicesPage />}
-  />
-
-  <Route
-    path="/services/pomynalni-obidy-kyiv"
-    element={<MemorialDinnersPage />}
-  />
-
-  <Route
-    path="/services/oformlennia-dokumentiv"
-    element={<ProcessingDocumentsPage />}
-  />
-
-  <Route
-    path="/services/rytualna-zala-kyiv"
-    element={<RitualHallPage />}
-  />
-
-  <Route
-    path="/services/orkestr-na-pokhoron"
-    element={<FuneralMusicPage />}
-  />
-
-  <Route
-    path="/services/medychnyi-suprovid"
-    element={<MedicalSupportOnFuneral />}
-  />
-
-  <Route
-    path="/services/veduchyi-pokhoronu"
-    element={<FuneralHostPage />}
-  />
-
-  <Route
-    path="/services/nosii-truny"
-    element={<PallbearersPage />}
-  />
-
-  <Route
-    path="/services/dezynfektsiia-prymishchen"
-    element={<DisinfectionPage />}
-      />
-      
-      <Route
-  path="/services/orhanizatsiia-rytualnykh-posluh-kyiv"
-  element={<OrganizationFuneralServicesPage />}
-/>
-
-  {/* PRODUCTS */}
-  <Route path="/products/rytualni-vinky" element={<WreathsPage />} />
-  <Route path="/products/zhyvi-vinky" element={<FreshWreathsPage />} />
-  <Route path="/products/shtuchni-vinky" element={<ArtificialWreathsPage />} />
-  <Route path="/products/truny" element={<CoffinsPage />} />
-  <Route path="/products/khresty" element={<CrossesPage />} />
-  <Route path="/products/pamiatnyky" element={<MonumentsPage />} />
-  <Route path="/products/rytualni-tovary" element={<RitualGoodsPage />} />
-  <Route path="/products/pokhoronnyi-nabir" element={<FuneralSetPage />} />
-  <Route path="/products/pokhoronnyi-portret" element={<FuneralPortraitPage />} />
-  <Route path="/products/urny-dlia-prakhu" element={<UrnForAshesPage />} />
-
-  {/* COMPANY */}
-  <Route path="/about" element={<AboutCompanyPage />} />
-  <Route path="/prices" element={<PricePage />} />
-  <Route path="/contacts" element={<ContactsPage />} />
-
-  <Route path="*" element={<Page404 />} />
-</Routes>
+      <Route path="*" element={<Page404 />} />
+    </Routes>
   </Suspense>
 );
 
