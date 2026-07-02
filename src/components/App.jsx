@@ -38,7 +38,7 @@ const App = () => (
   <Suspense fallback={<div>Loading...</div>}>
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/ritualagent" element={<RitualAgentPage />} />
+      <Route path="/ritualnyi-agent-kyiv" element={<RitualAgentPage />} />
       <Route path="/funeralorganisation" element={<FuneralOrganisation />} />
       <Route path="/cremationservices" element={<CremationServicesPage />} />
       <Route path="/ritualtransport" element={<RitualTransportPage />} />

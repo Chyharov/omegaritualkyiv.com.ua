@@ -37,7 +37,7 @@ const Footer = () => {
             <h2 className={s.footerTitle}>ПОСЛУГИ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavListMenu}>
-              <Link to="/ritualagent">
+              <Link to="/ritualnyi-agent-kyiv">
               <li className={s.footerNavList__item}>Ритуальний агент</li>
               </Link>
               <Link to="/funeralorganisation">

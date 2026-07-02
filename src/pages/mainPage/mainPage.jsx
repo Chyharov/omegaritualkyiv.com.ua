@@ -62,7 +62,7 @@ const MainPage = () => {
     src: require('../../images/servicesList/01.png'),
     alt: 'Зображення 1',
     title: 'Ритуальний агент',
-    link: '/ritualagent',
+    link: '/ritualnyi-agent-kyiv',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
