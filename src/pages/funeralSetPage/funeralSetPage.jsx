@@ -47,7 +47,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/02.png'),
       alt: 'Зображення 2',
       title: 'Організація похорон',
-      link: '/funeralorganisation',
+      link: '/ritualni-poslugy-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
