@@ -55,7 +55,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/03.png'),
       alt: 'Зображення 3',
       title: 'Кремація',
-      link: '/cremationservices',
+      link: '/krematsiia-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {

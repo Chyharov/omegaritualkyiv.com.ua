@@ -43,7 +43,7 @@ const Footer = () => {
               <Link to="/ritualni-poslugy-kyiv">
                 <li className={s.footerNavList__item}>Організація похорону</li>
               </Link>
-              <Link to="/cremationservices">
+              <Link to="/krematsiia-kyiv">
                 <li className={s.footerNavList__item}>Послуги кремації</li>
               </Link>
               <Link to="/ritualtransport">
