@@ -62,7 +62,7 @@ const serviceList = [
     src: require('../../images/servicesList/04.png'),
     alt: 'Зображення 4',
     title: 'Ритуальний транспорт',
-    link: '/ritualtransport',
+    link: '/rytualnyi-transport-kyiv',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {

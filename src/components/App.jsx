@@ -41,7 +41,7 @@ const App = () => (
       <Route path="/ritualnyi-agent-kyiv" element={<RitualAgentPage />} />
       <Route path="/ritualni-poslugy-kyiv" element={<FuneralOrganisation />} />
       <Route path="/krematsiia-kyiv" element={<CremationServicesPage />} />
-      <Route path="/ritualtransport" element={<RitualTransportPage />} />
+      <Route path="/rytualnyi-transport-kyiv" element={<RitualTransportPage />} />
       <Route path="/funeralofthedeceased" element={<FuneralOfTheDeceased />} />
       <Route path="/transportationofthedeceased" element={<TransportationOfTheDeceased />} />
       <Route path="/mortuaryservices" element={<MortuaryServicesPage />} />
