@@ -43,7 +43,7 @@ const serviceList = [
     src: require('../../images/servicesList/05.png'),
     alt: 'Зображення 5',
     title: 'Відспівування померлого',
-    link: '/funeralofthedeceased',
+    link: '/pokhovannia-kyiv',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {
