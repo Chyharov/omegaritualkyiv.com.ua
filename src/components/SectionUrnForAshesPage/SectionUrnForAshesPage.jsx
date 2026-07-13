@@ -59,7 +59,7 @@ const serviceList = [
     src: require('../../images/servicesList/07.png'),
     alt: 'Зображення 7',
     title: 'Послуги моргу',
-    link: '/mortuaryservices',
+    link: '/morg-poslugy-kyiv',
     linkTitle: 'ДЕТАЛЬНІШЕ',
   },
   {

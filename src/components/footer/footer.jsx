@@ -55,7 +55,7 @@ const Footer = () => {
               <Link to="/perevezennia-pomerlykh-kyiv">
                 <li className={s.footerNavList__item}>Перевезення померлих</li>
               </Link>
-              <Link to="/mortuaryservices">
+              <Link to="/morg-poslugy-kyiv">
                 <li className={s.footerNavList__item}>Послуги моргу</li>
               </Link>
               <Link to="/memorialdinners">
