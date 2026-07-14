@@ -22,7 +22,7 @@ const Footer = () => {
             <h2 className={s.footerTitle}>ІНФОРМАЦІЯ</h2>
             <div className={s.footerTitle__border}></div>
             <ul className={s.footerNavList}>
-              <Link to="/aboutcompany">
+              <Link to="/pro-kompaniiu">
                 <li className={s.footerNavList__item}>Про компанію</li>
               </Link>
               <Link to="/price">
@@ -40,7 +40,7 @@ const Footer = () => {
               <Link to="/ritualnyi-agent-kyiv">
               <li className={s.footerNavList__item}>Ритуальний агент</li>
               </Link>
-              <Link to="/ritualni-poslugy-kyiv">
+              <Link to="/ritualni-poslugy-v-kyievi">
                 <li className={s.footerNavList__item}>Організація похорону</li>
               </Link>
               <Link to="/krematsiia-kyiv">
@@ -58,28 +58,28 @@ const Footer = () => {
               <Link to="/morg-poslugy-kyiv">
                 <li className={s.footerNavList__item}>Послуги моргу</li>
               </Link>
-              <Link to="/memorialdinners">
+              <Link to="/pomynalni-obidy-kyiv">
                 <li className={s.footerNavList__item}>Поминальні обіди</li>
               </Link>
-              <Link to="/processingdocuments">
+              <Link to="/oformlennia-dokumentiv-kyiv">
                 <li className={s.footerNavList__item}>Оформлення документів для похорону</li>
               </Link>
-              <Link to="/funeralmusic">
+              <Link to="/orkestr-na-pokhoron-kyiv">
                 <li className={s.footerNavList__item}>Музичний супровід похорону</li>
               </Link>
-              <Link to="/ritualhall">
+              <Link to="/rytualna-zala-kyiv">
                 <li className={s.footerNavList__item}>Ритуальна зала</li>
               </Link>
-              <Link to="/medicalsupportonfuneral">
+              <Link to="/medychnyi-suprovid-kyiv">
                 <li className={s.footerNavList__item}>Медичний супровід похорону</li>
               </Link>
-              <Link to="/funeralhost">
+              <Link to="/veduchyi-pokhoronu-kyiv">
                 <li className={s.footerNavList__item}>Ведучий на похорон</li>
               </Link>
-              <Link to="/pallbearers">
+              <Link to="/nosii-truny-kyiv">
                 <li className={s.footerNavList__item}>Носії труни</li>
               </Link>
-              <Link to="/disinfection">
+              <Link to="/dezynfektsiia-prymishchen-kyiv">
                 <li className={s.footerNavList__item}>Дезобробка</li>
               </Link>
             </ul>

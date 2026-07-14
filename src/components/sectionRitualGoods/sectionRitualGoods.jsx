@@ -7,28 +7,28 @@ const ritualGoodsList = [
     src: require('../../images/ritualGoods/freshWreaths.png'),
     alt: 'Вінки',
     title: 'Вінки',
-    link: '/wreaths',
+    link: '/rytualni-vinky-kyiv',
   },
   {
     id: 2,
     src: require('../../images/ritualGoods/coffins.png'),
     alt: 'Труни',
     title: 'Труни',
-    link: '/coffins',
+    link: '/truny-kyiv',
   },
   {
     id: 3,
     src: require('../../images/ritualGoods/crosses.png'),
     alt: 'Хрести',
     title: 'Хрести',
-    link: '/crosses',
+    link: '/rytualni-khresty-kyiv',
   },
   {
     id: 4,
     src: require('../../images/ritualGoods/monuments.png'),
     alt: 'Памʼятники',
     title: 'Памʼятники',
-    link: '/monuments',
+    link: '/pamiatnyky-kyiv',
   },
 ];
 

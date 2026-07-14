@@ -45,7 +45,7 @@ const SectionRitualGoodsDescription = () => {
             </p>
 
             <Link
-              to="/ritualgoods"
+              to="/rytualni-tovary-kyiv"
               className={s.buttonRitualGoods}
             >
               ДОКЛАДНІШЕ

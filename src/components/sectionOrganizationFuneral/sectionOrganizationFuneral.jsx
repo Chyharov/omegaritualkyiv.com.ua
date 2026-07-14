@@ -54,7 +54,7 @@ const SectionOrganizationFuneral = () => {
             </p>
 
             <Link
-              to="/organizationfuneralservices"
+              to="/orhanizatsiia-rytualnykh-posluh-kyiv"
               className={s.buttonOrganizationFuneral}
             >
               ДОКЛАДНІШЕ

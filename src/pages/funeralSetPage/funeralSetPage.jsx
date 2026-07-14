@@ -47,7 +47,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/02.png'),
       alt: 'Зображення 2',
       title: 'Організація похорон',
-      link: '/ritualni-poslugy-kyiv',
+      link: '/ritualni-poslugy-v-kyievi',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -95,7 +95,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/08.png'),
       alt: 'Зображення 8',
       title: 'Поминальні обіди',
-      link: '/memorialdinners',
+      link: '/pomynalni-obidy-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -103,7 +103,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/09.png'),
       alt: 'Зображення 9',
       title: 'Оформлення документів',
-      link: '/processingdocuments',
+      link: '/oformlennia-dokumentiv-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -111,7 +111,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/10.png'),
       alt: 'Зображення 10',
       title: 'Ритуальна зала',
-      link: '/ritualhall',
+      link: '/rytualna-zala-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -119,7 +119,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/11.png'),
       alt: 'Зображення 11',
       title: 'Музичний супровід',
-      link: '/funeralmusic',
+      link: '/orkestr-na-pokhoron-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -127,7 +127,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/12.png'),
       alt: 'Зображення 12',
       title: 'Супровід медперсоналом',
-      link: '/medicalsupportonfuneral',
+      link: '/medychnyi-suprovid-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -135,7 +135,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/13.png'),
       alt: 'Зображення 13',
       title: 'Носії труни',
-      link: '/pallbearers',
+      link: '/nosii-truny-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -143,7 +143,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/14.png'),
       alt: 'Зображення 14',
       title: 'Ведучий на похорон',
-      link: '/funeralhost',
+      link: '/veduchyi-pokhoronu-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
     {
@@ -151,7 +151,7 @@ const FuneralSetPage = () => {
       src: require('../../images/servicesList/15.png'),
       alt: 'Зображення 15',
       title: 'Дезобробка',
-      link: '/disinfection',
+      link: '/dezynfektsiia-prymishchen-kyiv',
       linkTitle: 'ДЕТАЛЬНІШЕ',
     },
   ];
